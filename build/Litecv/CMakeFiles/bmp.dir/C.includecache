@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Litecv/inc/Core_inc/cv.h
+
+/home/swann/X86/opencv/Litecv/Litecv/Core/li_image.c
+cv.h
+/home/swann/X86/opencv/Litecv/Litecv/Core/cv.h
+stdlib.h
+/home/swann/X86/opencv/Litecv/Litecv/Core/stdlib.h
+

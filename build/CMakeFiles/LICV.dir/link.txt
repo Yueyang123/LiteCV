@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/LICV.dir/main.c.o  -o LICV  Litecv/liblicvcore.a -Wl,-Bstatic -ljpeg -lpng16 -lz -Wl,-Bdynamic -lm 

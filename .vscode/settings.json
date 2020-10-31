@@ -1,0 +1,51 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Default High Contrast",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    // 文件头部注释
+    "fileheader.customMade": {
+        "Descripttion": "",
+        "version": "",
+        "Author": "Yueyang",
+        "email": "1700695611@qq.com",
+        "Date": "Do not edit",
+        "LastEditors": "Yueyang",
+        "LastEditTime": "Do not Edit"
+    },
+    //函数注释
+    "fileheader.cursorMode": {
+        "name": "",
+        "msg": "",
+        "param": "",
+        "return": ""
+    },
+    "java.semanticHighlighting.enabled": true,
+    "java.requirements.JDK11Warning": false,
+    "editor.codeActionsOnSave": null,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "python.experiments.optOutFrom": [],
+    "git.enableSmartCommit": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "git.autofetch": true,
+    "java.templates.fileHeader": [],
+    "files.encoding": "utf8",
+    "window.zoomLevel": 0,
+    "java.home": "/usr/lib/jvm/java-14-openjdk-amd64",
+    "remote.SSH.remotePlatform": {
+        "123.57.93.3": "linux"
+    },
+    "python.languageServer": "Microsoft",
+    "html.format.contentUnformatted": "",
+    "files.associations": {
+        "system_error": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
+    },
+}

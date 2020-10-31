@@ -1,0 +1,6 @@
+/home/swann/X86/opencv/Litecv/build/CMakeFiles/rebuild_cache.dir
+/home/swann/X86/opencv/Litecv/build/CMakeFiles/edit_cache.dir
+/home/swann/X86/opencv/Litecv/build/CMakeFiles/LICV.dir
+/home/swann/X86/opencv/Litecv/build/Litecv/CMakeFiles/rebuild_cache.dir
+/home/swann/X86/opencv/Litecv/build/Litecv/CMakeFiles/edit_cache.dir
+/home/swann/X86/opencv/Litecv/build/Litecv/CMakeFiles/licvcore.dir
