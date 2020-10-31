@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Litecv/inc/Core_inc/bmp.h
+stdio.h
+../Litecv/inc/Core_inc/stdio.h
+cv.h
+../Litecv/inc/Core_inc/cv.h
+
+../Litecv/inc/Core_inc/cv.h
+
+../Litecv/inc/Core_inc/li_image.h
+cv.h
+../Litecv/inc/Core_inc/cv.h
+
+E:/WORKPLACE/Litecv/LiteCV/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+malloc.h
+-
+bmp.h
+E:/WORKPLACE/Litecv/LiteCV/bmp.h
+cv.h
+E:/WORKPLACE/Litecv/LiteCV/cv.h
+li_image.h
+E:/WORKPLACE/Litecv/LiteCV/li_image.h
+

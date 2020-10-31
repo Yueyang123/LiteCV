@@ -129,6 +129,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named EXP01
+
+# Build rule for target.
+EXP01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EXP01
+.PHONY : EXP01
+
+# fast build rule for target.
+EXP01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/build
+.PHONY : EXP01/fast
+
+#=============================================================================
 # Target rules for targets named LICV
 
 # Build rule for target.
@@ -153,6 +166,33 @@ licvcore: cmake_check_build_system
 licvcore/fast:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/build
 .PHONY : licvcore/fast
+
+example/basicio/basicio.obj: example/basicio/basicio.c.obj
+
+.PHONY : example/basicio/basicio.obj
+
+# target to build an object file
+example/basicio/basicio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.obj
+.PHONY : example/basicio/basicio.c.obj
+
+example/basicio/basicio.i: example/basicio/basicio.c.i
+
+.PHONY : example/basicio/basicio.i
+
+# target to preprocess a source file
+example/basicio/basicio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.i
+.PHONY : example/basicio/basicio.c.i
+
+example/basicio/basicio.s: example/basicio/basicio.c.s
+
+.PHONY : example/basicio/basicio.s
+
+# target to generate assembly for a file
+example/basicio/basicio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.s
+.PHONY : example/basicio/basicio.c.s
 
 main.obj: main.c.obj
 
@@ -189,8 +229,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... EXP01
 	@echo ... LICV
 	@echo ... licvcore
+	@echo ... example/basicio/basicio.obj
+	@echo ... example/basicio/basicio.i
+	@echo ... example/basicio/basicio.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
