@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/EXP01.dir/example/basicio/basicio.c.o  -o EXP01  Litecv/liblicvcore.a -Wl,-Bstatic -ljpeg -Wl,-Bdynamic ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a -lm 

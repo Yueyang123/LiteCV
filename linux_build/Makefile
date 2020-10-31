@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/swann/X86/opencv/Litecv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/swann/X86/opencv/Litecv/build
+CMAKE_BINARY_DIR = /home/swann/X86/opencv/Litecv/linux_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/X86/opencv/Litecv/build/CMakeFiles /home/swann/X86/opencv/Litecv/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/X86/opencv/Litecv/linux_build/CMakeFiles /home/swann/X86/opencv/Litecv/linux_build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/X86/opencv/Litecv/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/X86/opencv/Litecv/linux_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named EXP01
+
+# Build rule for target.
+EXP01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 EXP01
+.PHONY : EXP01
+
+# fast build rule for target.
+EXP01/fast:
+	$(MAKE) -f CMakeFiles/EXP01.dir/build.make CMakeFiles/EXP01.dir/build
+.PHONY : EXP01/fast
+
+#=============================================================================
 # Target rules for targets named LICV
 
 # Build rule for target.
@@ -135,6 +148,33 @@ licvcore: cmake_check_build_system
 licvcore/fast:
 	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
 .PHONY : licvcore/fast
+
+example/basicio/basicio.o: example/basicio/basicio.c.o
+
+.PHONY : example/basicio/basicio.o
+
+# target to build an object file
+example/basicio/basicio.c.o:
+	$(MAKE) -f CMakeFiles/EXP01.dir/build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.o
+.PHONY : example/basicio/basicio.c.o
+
+example/basicio/basicio.i: example/basicio/basicio.c.i
+
+.PHONY : example/basicio/basicio.i
+
+# target to preprocess a source file
+example/basicio/basicio.c.i:
+	$(MAKE) -f CMakeFiles/EXP01.dir/build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.i
+.PHONY : example/basicio/basicio.c.i
+
+example/basicio/basicio.s: example/basicio/basicio.c.s
+
+.PHONY : example/basicio/basicio.s
+
+# target to generate assembly for a file
+example/basicio/basicio.c.s:
+	$(MAKE) -f CMakeFiles/EXP01.dir/build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.s
+.PHONY : example/basicio/basicio.c.s
 
 main.o: main.c.o
 
@@ -171,8 +211,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... EXP01"
 	@echo "... LICV"
 	@echo "... licvcore"
+	@echo "... example/basicio/basicio.o"
+	@echo "... example/basicio/basicio.i"
+	@echo "... example/basicio/basicio.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

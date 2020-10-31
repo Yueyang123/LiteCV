@@ -1,20 +1,11 @@
 /*
- * @Descripttion: 
- * @version: 
- * @Author: Yueyang
- * @email: 1700695611@qq.com
- * @Date: 2020-10-31 23:15:40
- * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 03:27:40
- */
-/*
  * @Descripttion: 图像类基本的初始化函数
  * @version: V 2.0
  * @Author: Yueyang
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 03:08:11
+ * @LastEditTime: 2020-11-01 03:49:47
  */
 #include "cv.h"
 #include "bmp.h"

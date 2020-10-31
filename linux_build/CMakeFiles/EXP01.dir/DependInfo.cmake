@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/swann/X86/opencv/Litecv/Litecv/Core/bmp.c" "/home/swann/X86/opencv/Litecv/build/Litecv/CMakeFiles/bmp.dir/Core/bmp.c.o"
-  "/home/swann/X86/opencv/Litecv/Litecv/Core/li_image.c" "/home/swann/X86/opencv/Litecv/build/Litecv/CMakeFiles/bmp.dir/Core/li_image.c.o"
+  "/home/swann/X86/opencv/Litecv/example/basicio/basicio.c" "/home/swann/X86/opencv/Litecv/linux_build/CMakeFiles/EXP01.dir/example/basicio/basicio.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,6 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/swann/X86/opencv/Litecv/linux_build/Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
