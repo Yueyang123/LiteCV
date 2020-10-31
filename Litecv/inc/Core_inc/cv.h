@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-10-31 13:36:11
+ * @LastEditTime: 2020-11-01 03:22:17
  */
 
 
@@ -164,24 +164,37 @@ typedef struct tagLi_Mat
     void* (*atat)(void* data,LONG x,LONG y,LONG index);//更进一步换算某一个通道所在的指针域
 }Li_Mat;
 
+enum 
+{
+    RED_CHANNEL,
+    GREEN_CHANNEL,
+    BLUE_CHANNEL,
+};
+
+
+/**
+ *目前支持的图片类型 
+ *
+ *      从下至上，从左至右
+        BMP_8,    
+        BMP_888,//BGR 
+        BMP_32, //BGRA
+        JPEG ,  //存储形式为RGB
+        PNG，   //在数组中的存储形式为RGBA
+        BW      //黑白图片数据类型
+                //除了通过这个库其他的软件无法正常显示
+*/
+
 typedef struct tag_LI_Image
 {
     Li_Mat limat;
     PICTYPE pt;//指明图片类型
+    LONG width;
+    LONG height;
+    BYTE imgdepth;
     void* data;//指向Li_Mat中的arr，方便操作
     void* (*at)(void* data,LONG x,LONG y);//一个可以返回像素点对应的头指针的函数指针
     void* (*atat)(void* data,LONG x,LONG y,LONG index);//更进一步换算某一个通道所在的指针域
-    /**
-     *目前支持的图片类型 
-     *
-        BMP_8,    
-        BMP_888 , 
-        BMP_32  , 
-        JPEG ,
-        PNG，
-        BW      //黑白图片数据类型
-                //除了通过这个库其他的软件无法正常显示
-     */
 
 }Li_Image;
 

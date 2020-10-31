@@ -1,11 +1,20 @@
 /*
+ * @Descripttion: 
+ * @version: 
+ * @Author: Yueyang
+ * @email: 1700695611@qq.com
+ * @Date: 2020-10-31 23:15:40
+ * @LastEditors: Yueyang
+ * @LastEditTime: 2020-11-01 03:27:40
+ */
+/*
  * @Descripttion: 图像类基本的初始化函数
  * @version: V 2.0
  * @Author: Yueyang
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-10-31 14:47:35
+ * @LastEditTime: 2020-11-01 03:08:11
  */
 #include "cv.h"
 #include "bmp.h"
@@ -49,6 +58,27 @@ void li_free_arr(LiArr* arr)
     return free((void *)arr);
 }
 
+/**
+ * @name: ptr_li_mat_free
+ * @msg: 为LiMat释放内存
+ * @param {void}
+ * @return {void}
+ */
+void ptr_li_mat_free(Li_Mat* mat)
+{
+  li_free_arr(mat->arr);
+  free((void*)mat);
+}
+
+/**
+ * @name: ptr_li_mat_create
+ * @msg: 
+ * @param       LONG width,LONG height, 高和宽
+                BYTE depth,             图像深度
+                void* (*ath)(void* data,LONG x,LONG y),             搜索点的函数指针
+                void* (*atath)(void* data,LONG x,LONG y,LONG index) 搜索通道的函数指针
+ * @return {Li_Mat}
+ */
 Li_Mat* ptr_li_mat_create(
 LiArr* data,
 LONG width,LONG height,
@@ -96,7 +126,24 @@ BYTE depth,PICTYPE pth)
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->pt=pth;
     img->data=dt;
+    img->width=width;
+    img->height=height;
+    img->imgdepth=img->limat.datadepth;
+    return img;
+}
 
+
+/**
+ * @name: ptr_li_image_destroy
+ * @msg:  销毁Li_image  类型指针
+ * @param {Li_Image* }一个图片指针
+ *      
+ * @return void
+ */
+void ptr_li_image_destroy(Li_Image* img)
+{
+  li_free_arr(img->limat.arr);
+  free(img);
 }
 
 //获取默认的BMP文件头
@@ -169,12 +216,13 @@ BYTE Write_Jpeg(BYTE *filepath,JSAMPLE *image_buffer, LONG quality,LONG image_wi
   jpeg_stdio_dest(&cinfo, outfile);
   cinfo.image_width = image_width;    
   cinfo.image_height = image_height;
-  cinfo.input_components = 4;
-  cinfo.in_color_space = JCS_EXT_BGRA;
+  cinfo.input_components = 3;
+  cinfo.in_color_space = JCS_RGB;
   jpeg_set_defaults(&cinfo);
   jpeg_set_quality(&cinfo, quality, TRUE);
   jpeg_start_compress(&cinfo, TRUE);
-  row_stride = image_width * 4;
+  row_stride = image_width * 3;
+  int i=0,j=0;
   while (cinfo.next_scanline < cinfo.image_height) {
     row_pointer[0] = &image_buffer[(cinfo.image_height-cinfo.next_scanline) * row_stride];
     (void)jpeg_write_scanlines(&cinfo, row_pointer, 1);
@@ -231,18 +279,17 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
   jpeg_stdio_src(&cinfo, infile);
   jpeg_read_header(&cinfo, TRUE);
   jpeg_start_decompress(&cinfo);
-  row_stride = cinfo.output_width * 4;
-  imgData=(BYTE*)malloc(cinfo.output_height*cinfo.output_width*4);
+  row_stride = cinfo.output_width * 3;
+  imgData=(BYTE*)malloc(cinfo.output_height*cinfo.output_width*3);
   buffer =malloc(row_stride*1);
   while (cinfo.output_scanline < cinfo.output_height) {
      jpeg_read_scanlines(&cinfo, (JSAMPARRAY)&buffer,1);
-     
       char *p = (char*)buffer;
       for (int x = 0; x <cinfo.output_width; x++)
       {
-          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+4*x+2) = *p++;
-          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+4*x+1) = *p++;
-          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+4*x+0) = *p++; 
+          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+0) = *p++;
+          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+1) = *p++;
+          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+2) = *p++; 
       }
       
   }
@@ -491,9 +538,25 @@ BYTE Write_Png(BYTE* png_file_name, BYTE*  pixels , LONG width, LONG height)
  
 #endif //USE_PNG
 
+
+/**
+ * @name: Li_Save_Image
+ * @msg: 用户接口函数，用来保存一张图片
+ *       对于是否支持jpeg 与 png 可以通过cv.h中的宏定义调整
+ * @param
+ *        BYTE *filepath        图片路径
+ *        Li_Image* img         Litecv图片类型
+ * @return 0 (right) or -1(something wrong)
+ */
+
 LI_API
 BYTE Li_Save_Image(BYTE* filepath,Li_Image* img)
 {
+  if(img==NULL)
+  {
+    LILOG("A NULL IMG");
+    return -1;
+  }
   BYTE sta;
   BITMAPFILEHEADER bf;
   BITMAPINFOHEADER bi;
@@ -515,25 +578,39 @@ BYTE Li_Save_Image(BYTE* filepath,Li_Image* img)
      sta=Write_bmp(filepath,img->data,&bf,&bi,img->pt);    
     break; 
    
+#ifdef USE_JPEG
    case LI_JPEG:
      sta=Write_Jpeg(filepath,img->data,100,img->limat.width,img->limat.height);
      break;
-    
+#endif
+
+#ifdef USE_PNG
    case LI_PNG:
      sta=Write_Png(filepath,img->data,img->limat.width,img->limat.height);
      break;
-     
+#endif
+
   default:
     break;
   }
   return sta;
 }
 
+
+/**
+ * @name: Li_Load_Image
+ * @msg: 用户接口函数，用来读取一张图片
+ *       对于是否支持jpeg 与 png 可以通过cv.h中的宏定义调整
+ * @param
+ *        BYTE *filepath        图片路径
+ *        PICTYPE pt            图片类型
+ * @return 0 (right) or -1(something wrong)
+ */
 LI_API
 Li_Image* Li_Load_Image(BYTE* filepath,PICTYPE pt)
 {
     BYTE* data;
-    int width,height;
+    LONG width,height;
     int depth;
     BITMAPFILEHEADER bf;
     BITMAPINFOHEADER bi;
@@ -580,7 +657,7 @@ Li_Image* Li_Load_Image(BYTE* filepath,PICTYPE pt)
     case LI_JPEG:
       LILOG("JPEG");
       data=Read_Jpeg(filepath,&width,&height);
-      depth=LI_DEP_32U;
+      depth=LI_DEP_24U;
       img=ptr_li_image_create(data,width,height,depth,pt);
       break;
 #endif 
@@ -602,4 +679,17 @@ Li_Image* Li_Load_Image(BYTE* filepath,PICTYPE pt)
     return img;
 }
 
+
+/**
+ * @name: Li_Destroy_Image
+ * @msg: 用户接口函数，用来删除一张图片
+ * @param
+          Li_Image * img
+ * @return 0 (right) or -1(something wrong)
+ */
+LI_API
+void Li_Destroy_Image(Li_Image * img)
+{
+  ptr_li_image_destroy(img);
+}
 

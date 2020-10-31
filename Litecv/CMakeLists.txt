@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.2)
+﻿cmake_minimum_required(VERSION 3.2)
 include_directories(
     inc/Core_inc
 )
@@ -7,38 +7,34 @@ SET(LICV_CORE
 ${DIR_SRCS}
 )
 
+#根据实际情况修改静态库的绝对路径
 if(LINUX)
-    message(STATUS “LINUX_X86”)
     if(USE_JPEG)
-    message(STATUS “LINK_JPEG”)
-    link_directories("3rd/linux_3rd_lib/jpeg_liunx_install/lib")
+    include_directories(/home/swann/X86/opencv/Litecv/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include)
+    link_libraries(  /home/swann/X86/opencv/Litecv/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a )
     endif(USE_JPEG)
+
     if(USE_PNG)
-    message(STATUS “LINK_PNG”)
-    link_directories("3rd/linux_3rd_lib/png_liunx_install/lib")
-    link_directories("3rd/linux_3rd_lib/zlib_liunx_install/lib")
+    include_directories(/home/swann/X86/opencv/Litecv/Litecv/3rd/linux_3rd_lib/png_linux_install/include)
+    link_libraries(  /home/swann/X86/opencv/Litecv/Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a)
+    link_libraries(  /home/swann/X86/opencv/Litecv/Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a )
+    link_libraries(  m)
     endif(USE_PNG)
+
 elseif(WINDOWS)
-    message(STATUS “WIN_X86”)
     if(USE_JPEG)
-    message(STATUS “LINK_JPEG”)
-    link_directories("3rd/win_3rd_lib/jpeg_win_install/lib")
+    include_directories( E:/WORKPLACE/Litecv/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/include)
+    link_libraries(  E:/WORKPLACE/Litecv/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a )
     endif(USE_JPEG)
+
     if(USE_PNG)
-    message(STATUS “LINK_PNG”)
-    link_directories("3rd/win_3rd_lib/png_win_install/lib")
-    link_directories("3rd/win_3rd_lib/zlib_win_install/lib")
+    include_directories( E:/WORKPLACE/Litecv/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/include)
+    link_libraries(  E:/WORKPLACE/Litecv/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a)
+    link_libraries(  E:/WORKPLACE/Litecv/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a )
+    link_libraries(  m)
     endif(USE_PNG)
 endif()
 
+
 add_library(licvcore STATIC  ${LICV_CORE})
 
-if(USE_JPEG)
-target_link_libraries( licvcore libjpeg.a )
-endif(USE_JPEG)
-
-if(USE_PNG)
-target_link_libraries( licvcore libpng16.a)
-target_link_libraries( licvcore libz.a )
-target_link_libraries( licvcore m)
-endif(USE_PNG)

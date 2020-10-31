@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 03:29:28
+ * @LastEditTime: 2020-11-01 03:31:03
  */
 
 #include <stdio.h>
@@ -17,12 +17,6 @@
 #include "li_image.h"
 int main()
 {
-     //这里的指针只可以作为左值发生改变
-     //也就是说如果内存申请发生在函数里面的话
-     //指针实际上上不会发生改变的
-     //也就是说这里的指针等于说没有进行内存申请
-     //也就是说不要指望通过函数传参的方式为指针赋值
-
      Li_Image* out=Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);
      Li_Save_Image("./picture/1.bmp",out);
      Li_Destroy_Image(out);
