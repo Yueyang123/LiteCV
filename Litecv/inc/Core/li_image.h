@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 12:11:04
+ * @LastEditTime: 2020-11-01 14:13:00
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
@@ -50,11 +50,32 @@ LI_API
 void Li_Destroy_Image(Li_Image * img);
 
 
-
+/**
+ * @name: Li_Create_Imgae
+ * @msg: 用户接口函数，用来创建一张图片
+ * @param
+        LONG width  图片宽度
+        LONG height 图片高度
+        BYTE depth  颜色深度
+        PICTYPE pth 图片类型
+ * @return Li_Image*  一张图片
+ */
 LI_API
-Li_Image* Li_Create_Imgae(
-LONG width,LONG height,
-BYTE depth,PICTYPE pth);
+Li_Image* Li_Create_Imgae(LONG width,LONG height,BYTE depth,PICTYPE pth);
+
+
+/**
+ * @name: Li_Copy_Imgae
+ * @msg: 用户接口函数，用来创建一张图片
+ * @param
+        LONG width  图片宽度
+        LONG height 图片高度
+        BYTE depth  颜色深度
+        PICTYPE pth 图片类型
+ * @return Li_Image*  一张图片
+ */
+LI_API
+Li_Image* Li_Copy_Imgae(Li_Image *img);
 
 #endif // !LI_IMAGE_H
 

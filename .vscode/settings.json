@@ -36,7 +36,7 @@
     "git.autofetch": true,
     "java.templates.fileHeader": [],
     "files.encoding": "utf8",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "java.home": "/usr/lib/jvm/java-14-openjdk-amd64",
     "remote.SSH.remotePlatform": {
         "123.57.93.3": "linux"
@@ -46,6 +46,7 @@
     "files.associations": {
         "system_error": "cpp",
         "cmath": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "cstring": "cpp"
     },
 }

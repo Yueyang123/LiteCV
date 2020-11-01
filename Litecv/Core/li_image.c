@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 12:45:39
+ * @LastEditTime: 2020-11-01 14:20:19
  */
 #include "cv.h"
 #include "bmp.h"
@@ -65,6 +65,26 @@ LiArr* li_bgr_at(Li_Image* mat,LONG x,LONG y)
 {
   if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
   return mat->data+mat->width*3*y+3*x;
+  else {
+  LILOG("BEYOND THE MAT");
+  return NULL;
+  }
+}
+
+LiArr* li_gray_at(Li_Image* mat,LONG x,LONG y)
+{
+  if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
+  return mat->data+mat->width*1*y+1*x;
+  else {
+  LILOG("BEYOND THE MAT");
+  return NULL;
+  }
+}
+
+LiArr* li_rgba_at(Li_Image* mat,LONG x,LONG y)
+{
+  if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
+  return mat->data+mat->width*4*y+4*x;
   else {
   LILOG("BEYOND THE MAT");
   return NULL;
@@ -134,6 +154,30 @@ BYTE depth,PICTYPE pth)
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->at=li_bgr_at;
     break;
+  
+   case LI_JPEG:
+    limt= ptr_li_mat_create(dt,width,height,depth);
+    memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
+    img->at=li_bgr_at;
+    break;
+
+   case LI_BMP_8:
+    limt= ptr_li_mat_create(dt,width,height,depth);
+    memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
+    img->at=li_bgr_at;
+    break;  
+
+   case LI_BMP_32:
+    limt= ptr_li_mat_create(dt,width,height,depth);
+    memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
+    img->at=li_rgba_at;
+    break; 
+
+   case LI_PNG:
+    limt= ptr_li_mat_create(dt,width,height,depth);
+    memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
+    img->at=li_rgba_at;
+    break; 
   
   default:
     break;
@@ -234,6 +278,13 @@ BYTE Write_Jpeg(BYTE *filepath,JSAMPLE *image_buffer, LONG quality,LONG image_wi
   jpeg_start_compress(&cinfo, TRUE);
   row_stride = image_width * 3;
   int i=0,j=0;
+  for(i=0;i<image_height;i++)
+    for(j=0;j<image_width;j++)
+    {
+      BYTE temp=image_buffer[3*image_width*i+3*j];
+      image_buffer[3*image_width*i+3*j]=image_buffer[3*image_width*i+3*j+2];
+      image_buffer[3*image_width*i+3*j+2]=temp;
+    }
   while (cinfo.next_scanline < cinfo.image_height) {
     row_pointer[0] = &image_buffer[(cinfo.image_height-cinfo.next_scanline) * row_stride];
     (void)jpeg_write_scanlines(&cinfo, row_pointer, 1);
@@ -298,9 +349,9 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
       char *p = (char*)buffer;
       for (int x = 0; x <cinfo.output_width; x++)
       {
-          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+0) = *p++;
+          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+2) = *p++;
           *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+1) = *p++;
-          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+2) = *p++; 
+          *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+0) = *p++; 
       }
       
   }
@@ -704,7 +755,16 @@ void Li_Destroy_Image(Li_Image * img)
   ptr_li_image_destroy(img);
 }
 
-
+/**
+ * @name: Li_Create_Imgae
+ * @msg: 用户接口函数，用来创建一张图片
+ * @param
+        LONG width  图片宽度
+        LONG height 图片高度
+        BYTE depth  颜色深度
+        PICTYPE pth 图片类型
+ * @return Li_Image*  一张图片
+ */
 LI_API
 Li_Image* Li_Create_Imgae(
 LONG width,LONG height,
@@ -713,5 +773,25 @@ BYTE depth,PICTYPE pth)
   LiArr * data=li_malloc_arr(width*height*(depth+1));
   memset(data,0xFF,width*height*(depth+1));
   return ptr_li_image_create(data,width,height,depth,pth);
+}
+
+
+/**
+ * @name: Li_Copy_Imgae
+ * @msg: 用户接口函数，用来创建一张图片
+ * @param
+        LONG width  图片宽度
+        LONG height 图片高度
+        BYTE depth  颜色深度
+        PICTYPE pth 图片类型
+ * @return Li_Image*  一张图片
+ */
+LI_API
+Li_Image* Li_Copy_Imgae(Li_Image *img)
+{
+  Li_Image * out=NULL;
+  out=Li_Create_Imgae(img->width,img->height,img->imgdepth,img->pt);
+  memcpy((void*)out->data,(void*)img->data,img->width*img->height*(img->imgdepth+1));
+  return out;
 }
 

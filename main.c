@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 12:49:28
+ * @LastEditTime: 2020-11-01 23:37:54
  */
 
 #include <stdio.h>
@@ -15,6 +15,8 @@
 #include "bmp.h"
 #include "cv.h"
 #include "li_image.h"
+#include "li_painter.h"
+
 int main()
 {
      //这里的指针只可以作为左值发生改变
@@ -26,18 +28,13 @@ int main()
 
      BYTE* ptr=NULL;
      Li_Image* out =Li_Create_Imgae(300,300,LI_DEP_24U,LI_BMP_888);
-     ptr=out->at(out,10,10);
-     if(ptr!=NULL){
-          memset(ptr,0xFF,1);
-          memset(ptr+1,0,1);  
-          memset(ptr+2,0,1);            
-     }
-     else LILOG("somthing was wrong");
+     Li_Point(out,0xFF00FF,20,20);
+     Li_Circle(out,0xFF0000,100,100,30);
+     Li_Line(out,0xFF00FF,20,20,60,60);
+     Li_Char(out,0xFF00FF,40,40,'2',LI_FONT_12);
+     Li_Char(out,0xFF00FF,40,80,'2',LI_FONT_16);
+     Li_String(out,0xFFF00F,50,50,200,32,"321123",LI_FONT_32);
 
-     
-
-     
-     
 
      Li_Save_Image("./picture/1.bmp",out);
      Li_Destroy_Image(out);

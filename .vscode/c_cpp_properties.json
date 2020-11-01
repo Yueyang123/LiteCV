@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/Litecv/inc/Core_inc"
+                "${workspaceFolder}/Litecv/inc/Core",
+                "${workspaceFolder}/Litecv/inc/Image_proc"
             ],
             "defines": [
                 "_DEBUG",

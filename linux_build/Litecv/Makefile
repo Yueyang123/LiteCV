@@ -179,6 +179,60 @@ Core/li_image.c.s:
 	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s
 .PHONY : Core/li_image.c.s
 
+Core/li_image_proc.o: Core/li_image_proc.c.o
+
+.PHONY : Core/li_image_proc.o
+
+# target to build an object file
+Core/li_image_proc.c.o:
+	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o
+.PHONY : Core/li_image_proc.c.o
+
+Core/li_image_proc.i: Core/li_image_proc.c.i
+
+.PHONY : Core/li_image_proc.i
+
+# target to preprocess a source file
+Core/li_image_proc.c.i:
+	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.i
+.PHONY : Core/li_image_proc.c.i
+
+Core/li_image_proc.s: Core/li_image_proc.c.s
+
+.PHONY : Core/li_image_proc.s
+
+# target to generate assembly for a file
+Core/li_image_proc.c.s:
+	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.s
+.PHONY : Core/li_image_proc.c.s
+
+Core/li_painter.o: Core/li_painter.c.o
+
+.PHONY : Core/li_painter.o
+
+# target to build an object file
+Core/li_painter.c.o:
+	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o
+.PHONY : Core/li_painter.c.o
+
+Core/li_painter.i: Core/li_painter.c.i
+
+.PHONY : Core/li_painter.i
+
+# target to preprocess a source file
+Core/li_painter.c.i:
+	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.i
+.PHONY : Core/li_painter.c.i
+
+Core/li_painter.s: Core/li_painter.c.s
+
+.PHONY : Core/li_painter.s
+
+# target to generate assembly for a file
+Core/li_painter.c.s:
+	cd /home/swann/X86/opencv/Litecv/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.s
+.PHONY : Core/li_painter.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -194,6 +248,12 @@ help:
 	@echo "... Core/li_image.o"
 	@echo "... Core/li_image.i"
 	@echo "... Core/li_image.s"
+	@echo "... Core/li_image_proc.o"
+	@echo "... Core/li_image_proc.i"
+	@echo "... Core/li_image_proc.s"
+	@echo "... Core/li_painter.o"
+	@echo "... Core/li_painter.i"
+	@echo "... Core/li_painter.s"
 .PHONY : help
 
 

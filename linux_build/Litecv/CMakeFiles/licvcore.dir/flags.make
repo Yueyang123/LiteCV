@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/swann/X86/opencv/Litecv/Litecv/inc/Core_inc 
+C_INCLUDES = -I/home/swann/X86/opencv/Litecv/Litecv/inc/Core -I/home/swann/X86/opencv/Litecv/Litecv/inc/Image_proc -I/home/swann/X86/opencv/Litecv/Litecv/inc/image_proc 
 

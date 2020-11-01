@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 12:48:08
+ * @LastEditTime: 2020-11-01 23:28:32
  */
 
 
@@ -37,6 +37,7 @@
 #if EN_PNG
 #define USE_PNG
 #endif
+
 
 
 
@@ -133,11 +134,29 @@ enum{
 
 };
 
-typedef struct tagLiPoit
+
+//图片转换类型
+enum
 {
-    LONG x;
-    LONG y;
-}Li_Point;
+    LI_RGB2RGBA,
+    LI_RGBA2RGB,
+    LI_BGR2RGB,
+    LI_RGB2BGR,
+    LI_BGR2GRAY,
+    LI_BGRA2GRAY,
+    LI_RGB2GRAY,
+    LI_BGR2YUYV,
+    LI_YUYV2BGR,
+    LI_BGRA2YUYV
+};
+
+enum
+{
+  LI_FONT_12=12,
+  LI_FONT_16=16,
+  LI_FONT_24=24,
+  LI_FONT_32=32  
+};
 
 typedef void LiArr;
 
@@ -161,12 +180,8 @@ typedef struct tagLi_Mat
     BYTE Bitcount;   //一个像素点对应的BIT数（(DEP+1)*8）
 }Li_Mat;
 
-enum 
-{
-    RED_CHANNEL,
-    GREEN_CHANNEL,
-    BLUE_CHANNEL,
-};
+
+
 
 
 /**
@@ -176,10 +191,9 @@ enum
         BMP_8,    
         BMP_888,//BGR 
         BMP_32, //BGRA
-        JPEG ,  //存储形式为RGB
-        PNG，   //在数组中的存储形式为RGBA
-        BW      //黑白图片数据类型
-                //除了通过这个库其他的软件无法正常显示
+        JPEG ,  //存储形式为BGR
+        PNG，   //在数组中的存储形式为BGRA
+
 */
 
 typedef struct tag_LI_Image
@@ -191,7 +205,6 @@ typedef struct tag_LI_Image
     BYTE imgdepth;
     void* data;//指向Li_Mat中的arr，方便操作
     void* (*at)( struct tag_LI_Image* mat,LONG x,LONG y);//一个可以返回像素点对应的头指针的函数指针
-    void* (*atat)( struct tag_LI_Image* mat,LONG x,LONG y,LONG index);//更进一步换算某一个通道所在的指针域
 
 }Li_Image;
 

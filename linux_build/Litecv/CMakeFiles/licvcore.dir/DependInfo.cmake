@@ -6,12 +6,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/swann/X86/opencv/Litecv/Litecv/Core/bmp.c" "/home/swann/X86/opencv/Litecv/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.o"
   "/home/swann/X86/opencv/Litecv/Litecv/Core/li_image.c" "/home/swann/X86/opencv/Litecv/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o"
+  "/home/swann/X86/opencv/Litecv/Litecv/Core/li_image_proc.c" "/home/swann/X86/opencv/Litecv/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o"
+  "/home/swann/X86/opencv/Litecv/Litecv/Core/li_painter.c" "/home/swann/X86/opencv/Litecv/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../Litecv/inc/Core_inc"
+  "../Litecv/inc/Core"
+  "../Litecv/inc/Image_proc"
+  "../Litecv/inc/image_proc"
   )
 
 # Targets to which this target links.

@@ -83,19 +83,49 @@ Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_image.c.s"
 	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/X86/opencv/Litecv/Litecv/Core/li_image.c -o CMakeFiles/licvcore.dir/Core/li_image.c.s
 
+Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o: Litecv/CMakeFiles/licvcore.dir/flags.make
+Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o: ../Litecv/Core/li_image_proc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/X86/opencv/Litecv/linux_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o"
+	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/licvcore.dir/Core/li_image_proc.c.o   -c /home/swann/X86/opencv/Litecv/Litecv/Core/li_image_proc.c
+
+Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/li_image_proc.c.i"
+	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/X86/opencv/Litecv/Litecv/Core/li_image_proc.c > CMakeFiles/licvcore.dir/Core/li_image_proc.c.i
+
+Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_image_proc.c.s"
+	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/X86/opencv/Litecv/Litecv/Core/li_image_proc.c -o CMakeFiles/licvcore.dir/Core/li_image_proc.c.s
+
+Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o: Litecv/CMakeFiles/licvcore.dir/flags.make
+Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o: ../Litecv/Core/li_painter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/X86/opencv/Litecv/linux_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o"
+	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/licvcore.dir/Core/li_painter.c.o   -c /home/swann/X86/opencv/Litecv/Litecv/Core/li_painter.c
+
+Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/li_painter.c.i"
+	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/X86/opencv/Litecv/Litecv/Core/li_painter.c > CMakeFiles/licvcore.dir/Core/li_painter.c.i
+
+Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_painter.c.s"
+	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/X86/opencv/Litecv/Litecv/Core/li_painter.c -o CMakeFiles/licvcore.dir/Core/li_painter.c.s
+
 # Object files for target licvcore
 licvcore_OBJECTS = \
 "CMakeFiles/licvcore.dir/Core/bmp.c.o" \
-"CMakeFiles/licvcore.dir/Core/li_image.c.o"
+"CMakeFiles/licvcore.dir/Core/li_image.c.o" \
+"CMakeFiles/licvcore.dir/Core/li_image_proc.c.o" \
+"CMakeFiles/licvcore.dir/Core/li_painter.c.o"
 
 # External object files for target licvcore
 licvcore_EXTERNAL_OBJECTS =
 
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.o
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o
+Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o
+Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/build.make
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/X86/opencv/Litecv/linux_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library liblicvcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/X86/opencv/Litecv/linux_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library liblicvcore.a"
 	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && $(CMAKE_COMMAND) -P CMakeFiles/licvcore.dir/cmake_clean_target.cmake
 	cd /home/swann/X86/opencv/Litecv/linux_build/Litecv && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/licvcore.dir/link.txt --verbose=$(VERBOSE)
 
