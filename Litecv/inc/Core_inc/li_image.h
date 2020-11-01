@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 03:15:50
+ * @LastEditTime: 2020-11-01 12:11:04
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
@@ -49,6 +49,12 @@ BYTE Li_Save_Image(BYTE* filepath,Li_Image* img);
 LI_API
 void Li_Destroy_Image(Li_Image * img);
 
+
+
+LI_API
+Li_Image* Li_Create_Imgae(
+LONG width,LONG height,
+BYTE depth,PICTYPE pth);
 
 #endif // !LI_IMAGE_H
 

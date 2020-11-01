@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 03:22:17
+ * @LastEditTime: 2020-11-01 12:48:08
  */
 
 
@@ -159,9 +159,6 @@ typedef struct tagLi_Mat
     LONG matsize;    //图像的大小width*height
     LONG arrsize;    //数据的大小matsize*depth
     BYTE Bitcount;   //一个像素点对应的BIT数（(DEP+1)*8）
-
-    void* (*at)(void* data,LONG x,LONG y);//一个可以返回像素点对应的头指针的函数指针
-    void* (*atat)(void* data,LONG x,LONG y,LONG index);//更进一步换算某一个通道所在的指针域
 }Li_Mat;
 
 enum 
@@ -193,8 +190,8 @@ typedef struct tag_LI_Image
     LONG height;
     BYTE imgdepth;
     void* data;//指向Li_Mat中的arr，方便操作
-    void* (*at)(void* data,LONG x,LONG y);//一个可以返回像素点对应的头指针的函数指针
-    void* (*atat)(void* data,LONG x,LONG y,LONG index);//更进一步换算某一个通道所在的指针域
+    void* (*at)( struct tag_LI_Image* mat,LONG x,LONG y);//一个可以返回像素点对应的头指针的函数指针
+    void* (*atat)( struct tag_LI_Image* mat,LONG x,LONG y,LONG index);//更进一步换算某一个通道所在的指针域
 
 }Li_Image;
 

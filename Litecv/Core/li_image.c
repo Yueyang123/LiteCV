@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 03:49:47
+ * @LastEditTime: 2020-11-01 12:45:39
  */
 #include "cv.h"
 #include "bmp.h"
@@ -61,21 +61,27 @@ void ptr_li_mat_free(Li_Mat* mat)
   free((void*)mat);
 }
 
+LiArr* li_bgr_at(Li_Image* mat,LONG x,LONG y)
+{
+  if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
+  return mat->data+mat->width*3*y+3*x;
+  else {
+  LILOG("BEYOND THE MAT");
+  return NULL;
+  }
+}
+
 /**
  * @name: ptr_li_mat_create
  * @msg: 
  * @param       LONG width,LONG height, 高和宽
                 BYTE depth,             图像深度
-                void* (*ath)(void* data,LONG x,LONG y),             搜索点的函数指针
-                void* (*atath)(void* data,LONG x,LONG y,LONG index) 搜索通道的函数指针
  * @return {Li_Mat}
  */
 Li_Mat* ptr_li_mat_create(
 LiArr* data,
 LONG width,LONG height,
-BYTE depth,
-void* (*ath)(void* data,LONG x,LONG y),
-void* (*atath)(void* data,LONG x,LONG y,LONG index))
+BYTE depth)
 {
     Li_Mat* li_mat=(Li_Mat*)malloc(sizeof(Li_Mat));
     li_mat->datadepth= depth;
@@ -98,6 +104,7 @@ void* (*atath)(void* data,LONG x,LONG y,LONG index))
     return li_mat;
 }
 
+
 /**
  * @name: ptr_li_image_create
  * @msg:  创建Li_image  类型指针
@@ -113,13 +120,26 @@ LONG width,LONG height,
 BYTE depth,PICTYPE pth)
 {
     Li_Image* img =(Li_Image*)malloc(sizeof(Li_Image));
-    Li_Mat* limt= ptr_li_mat_create(dt,width,height,depth, NULL,NULL);
-    memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
+    Li_Mat* limt=NULL;
     img->pt=pth;
     img->data=dt;
     img->width=width;
     img->height=height;
-    img->imgdepth=img->limat.datadepth;
+    img->imgdepth=depth;
+
+  switch (pth)
+  {
+  case LI_BMP_888:
+    limt= ptr_li_mat_create(dt,width,height,depth);
+    memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
+    img->at=li_bgr_at;
+    break;
+  
+  default:
+    break;
+  }  
+
+
     return img;
 }
 
@@ -682,5 +702,16 @@ LI_API
 void Li_Destroy_Image(Li_Image * img)
 {
   ptr_li_image_destroy(img);
+}
+
+
+LI_API
+Li_Image* Li_Create_Imgae(
+LONG width,LONG height,
+BYTE depth,PICTYPE pth)
+{
+  LiArr * data=li_malloc_arr(width*height*(depth+1));
+  memset(data,0xFF,width*height*(depth+1));
+  return ptr_li_image_create(data,width,height,depth,pth);
 }
 
