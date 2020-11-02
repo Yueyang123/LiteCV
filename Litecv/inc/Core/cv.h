@@ -27,8 +27,8 @@
 #define LI_API
 
 //是否支持JPEG与PNG
-#define EN_JPEG 1
-#define EN_PNG  1
+#define EN_JPEG 0
+#define EN_PNG  0
 
 #if EN_JPEG
 #define USE_JPEG
@@ -181,17 +181,8 @@ typedef void LiArr;
 typedef struct tagLi_Mat
 {
     LiArr* arr;//图像数据指针
-    union
-    {
-       LONG width;
-       LONG cols;
-    };
-    union 
-    {
-        LONG height;
-        LONG rows;
-    };
-
+    LONG width;
+    LONG height;
     BYTE datadepth;  //图像数据的深度
     LONG matsize;    //图像的大小width*height
     LONG arrsize;    //数据的大小matsize*depth
