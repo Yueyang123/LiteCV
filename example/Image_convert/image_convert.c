@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-02 14:31:41
+ * @LastEditTime: 2020-11-02 16:28:57
  */
 
 #include <stdio.h>
@@ -46,6 +46,12 @@ int main()
      Li_Image* img2 =Li_Convert_Image(out7,LI_BMP_2_PNG);
      Li_Save_Image("./picture/3.png",img2);
 
+     BYTE* data=li_malloc_arr(2*out->width*out->height);
+     Li_CvtColor(out->data,data,out->width,out->height,LI_BGR2YUYV);
+     FILE* fd=fopen("2.yuv","wr");
+     fwrite(data,2,out->width*out->height,fd);
+     Li_CvtColor(data,out->data,out->width,out->height,LI_YUYV2BGR);
+     Li_Save_Image("1.bmp",out);
 
      LILOG("over");
      return 0; 
