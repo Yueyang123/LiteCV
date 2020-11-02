@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-02 13:48:16
+ * @LastEditTime: 2020-11-02 17:25:38
  */
 
 #include <stdio.h>
@@ -132,6 +132,90 @@ int main()
 
      printf("\r\n");
 
+
+    for(i=0;i<256;i++)
+     {
+     D[i]=i*4768;
+     D[i]=D[i]>>12;
+     E[i]=i*8266;
+     E[i]=E[i]>>12;
+     F[i]=i*0;
+     F[i]=F[i]>>12;
+     }
+
+     for(i=0;i<256;i++)
+     printf("%d,",D[i]);
+
+     printf("\r\n");
+
+
+     for(i=0;i<256;i++)
+     printf("%d,",E[i]);
+
+     printf("\r\n");
+
+     for(i=0;i<256;i++)
+     printf("%d,",F[i]);
+
+     printf("\r\n");
+     printf("\r\n");
+     printf("\r\n");
+
+     for(i=0;i<256;i++)
+     {
+     D[i]=i*4768;
+     D[i]=D[i]>>12;
+     E[i]=i*1556;
+     E[i]=E[i]>>12;
+     F[i]=i*3330;
+     F[i]=F[i]>>12;
+     }
+
+     for(i=0;i<256;i++)
+     printf("%d,",D[i]);
+
+     printf("\r\n");
+
+
+     for(i=0;i<256;i++)
+     printf("%d,",E[i]);
+
+     printf("\r\n");
+
+     for(i=0;i<256;i++)
+     printf("%d,",F[i]);
+
+     printf("\r\n");
+     printf("\r\n");
+     printf("\r\n");
+
+     for(i=0;i<256;i++)
+     {
+     D[i]=i*4768;
+     D[i]=D[i]>>12;
+     E[i]=i*0;
+     E[i]=E[i]>>12;
+     F[i]=i*4747;
+     F[i]=F[i]>>12;
+     }
+
+     for(i=0;i<256;i++)
+     printf("%d,",D[i]);
+
+     printf("\r\n");
+
+
+     for(i=0;i<256;i++)
+     printf("%d,",E[i]);
+
+     printf("\r\n");
+
+     for(i=0;i<256;i++)
+     printf("%d,",F[i]);
+
+     printf("\r\n");
+     printf("\r\n");
+     printf("\r\n");
 
      //LILOG("over");
      return 0; 
