@@ -47,6 +47,9 @@
         "system_error": "cpp",
         "cmath": "cpp",
         "complex": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "array": "c",
+        "string": "c",
+        "string_view": "c"
     },
 }

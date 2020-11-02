@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 23:28:32
+ * @LastEditTime: 2020-11-02 03:00:16
  */
 
 
@@ -107,13 +107,13 @@ typedef enum tagPICTYPE
 }PICTYPE;
 
 enum{
- LI_BMP_1   =    0,
- LI_BMP_8   =    1,
- LI_BMP_565 =    2,
- LI_BMP_888 =    3,
- LI_BMP_32  =    4,
- LI_JPEG    =    5,
- LI_PNG     =    6,
+ LI_BMP_1   ,
+ LI_BMP_8   ,
+ LI_BMP_565 ,
+ LI_BMP_888 ,
+ LI_BMP_32  ,
+ LI_JPEG    ,
+ LI_PNG     ,
 };
 
 /*
@@ -135,20 +135,38 @@ enum{
 };
 
 
-//图片转换类型
+//颜色转换类型
 enum
 {
     LI_RGB2RGBA,
     LI_RGBA2RGB,
+    LI_BGR2BGRA,
+    LI_BGRA2BGR,
     LI_BGR2RGB,
     LI_RGB2BGR,
     LI_BGR2GRAY,
+    LI_GRAY2BGR,
     LI_BGRA2GRAY,
     LI_RGB2GRAY,
     LI_BGR2YUYV,
     LI_YUYV2BGR,
     LI_BGRA2YUYV
 };
+
+//图片类型转换
+enum
+{
+    LI_JPEG_2_BMP,        //图像编解码
+    LI_PNG_2_BMP,
+    LI_BMP_2_JPEG,
+    LI_BMP_2_PNG,
+    LI_BMP_888_2_LI_BMP_8,//灰度化
+    LI_BMP_8_2_LI_BMP_888,
+    LI_BMP_888_2_LI_BMP32,//增加alpha
+    LI_BMP_32_2_LI_BMP888
+
+};
+
 
 enum
 {

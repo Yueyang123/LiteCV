@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 23:37:54
+ * @LastEditTime: 2020-11-02 15:48:38
  */
 
 #include <stdio.h>
@@ -16,7 +16,9 @@
 #include "cv.h"
 #include "li_image.h"
 #include "li_painter.h"
-
+	// *y = YMap[2][r]+YMap[1][g]+YMap[0][b];
+	// *u = UMap[2][r]+UMap[1][g]+UMap[0][b];
+	// *v = VMap[2][r]+VMap[1][g]+VMap[0][b];
 int main()
 {
      //这里的指针只可以作为左值发生改变
@@ -27,18 +29,16 @@ int main()
 
 
      BYTE* ptr=NULL;
-     Li_Image* out =Li_Create_Imgae(300,300,LI_DEP_24U,LI_BMP_888);
-     Li_Point(out,0xFF00FF,20,20);
-     Li_Circle(out,0xFF0000,100,100,30);
-     Li_Line(out,0xFF00FF,20,20,60,60);
-     Li_Char(out,0xFF00FF,40,40,'2',LI_FONT_12);
-     Li_Char(out,0xFF00FF,40,80,'2',LI_FONT_16);
-     Li_String(out,0xFFF00F,50,50,200,32,"321123",LI_FONT_32);
+     Li_Image* out =Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);
+     BYTE* data=li_malloc_arr(2*out->width*out->height);
+     Li_CvtColor(out->data,data,out->width,out->height,LI_BGR2YUYV);
+     FILE* fd=fopen("2.yuv","wr");
+     fwrite(data,2,out->width*out->height,fd);
 
 
-     Li_Save_Image("./picture/1.bmp",out);
-     Li_Destroy_Image(out);
-
+     Li_CvtColor(data,out->data,out->width,out->height,LI_YUYV2BGR);
+     Li_Save_Image("1.bmp",out);
+     
      LILOG("over");
      return 0; 
 }
