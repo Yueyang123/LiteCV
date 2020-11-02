@@ -129,19 +129,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named EXP01
-
-# Build rule for target.
-EXP01: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EXP01
-.PHONY : EXP01
-
-# fast build rule for target.
-EXP01/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/build
-.PHONY : EXP01/fast
-
-#=============================================================================
 # Target rules for targets named LICV
 
 # Build rule for target.
@@ -153,6 +140,32 @@ LICV: cmake_check_build_system
 LICV/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LICV.dir\build.make CMakeFiles/LICV.dir/build
 .PHONY : LICV/fast
+
+#=============================================================================
+# Target rules for targets named IO
+
+# Build rule for target.
+IO: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 IO
+.PHONY : IO
+
+# fast build rule for target.
+IO/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/build
+.PHONY : IO/fast
+
+#=============================================================================
+# Target rules for targets named Painter
+
+# Build rule for target.
+Painter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Painter
+.PHONY : Painter
+
+# fast build rule for target.
+Painter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/build
+.PHONY : Painter/fast
 
 #=============================================================================
 # Target rules for targets named licvcore
@@ -173,7 +186,7 @@ example/basicio/basicio.obj: example/basicio/basicio.c.obj
 
 # target to build an object file
 example/basicio/basicio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/example/basicio/basicio.c.obj
 .PHONY : example/basicio/basicio.c.obj
 
 example/basicio/basicio.i: example/basicio/basicio.c.i
@@ -182,7 +195,7 @@ example/basicio/basicio.i: example/basicio/basicio.c.i
 
 # target to preprocess a source file
 example/basicio/basicio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/example/basicio/basicio.c.i
 .PHONY : example/basicio/basicio.c.i
 
 example/basicio/basicio.s: example/basicio/basicio.c.s
@@ -191,8 +204,35 @@ example/basicio/basicio.s: example/basicio/basicio.c.s
 
 # target to generate assembly for a file
 example/basicio/basicio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EXP01.dir\build.make CMakeFiles/EXP01.dir/example/basicio/basicio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/example/basicio/basicio.c.s
 .PHONY : example/basicio/basicio.c.s
+
+example/painter/painter.obj: example/painter/painter.c.obj
+
+.PHONY : example/painter/painter.obj
+
+# target to build an object file
+example/painter/painter.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/example/painter/painter.c.obj
+.PHONY : example/painter/painter.c.obj
+
+example/painter/painter.i: example/painter/painter.c.i
+
+.PHONY : example/painter/painter.i
+
+# target to preprocess a source file
+example/painter/painter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/example/painter/painter.c.i
+.PHONY : example/painter/painter.c.i
+
+example/painter/painter.s: example/painter/painter.c.s
+
+.PHONY : example/painter/painter.s
+
+# target to generate assembly for a file
+example/painter/painter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/example/painter/painter.c.s
+.PHONY : example/painter/painter.c.s
 
 main.obj: main.c.obj
 
@@ -229,12 +269,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... EXP01
+	@echo ... IO
 	@echo ... LICV
+	@echo ... Painter
 	@echo ... licvcore
 	@echo ... example/basicio/basicio.obj
 	@echo ... example/basicio/basicio.i
 	@echo ... example/basicio/basicio.s
+	@echo ... example/painter/painter.obj
+	@echo ... example/painter/painter.i
+	@echo ... example/painter/painter.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
