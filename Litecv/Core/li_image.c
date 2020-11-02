@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-02 17:39:12
+ * @LastEditTime: 2020-11-03 00:41:14
  */
 #include "cv.h"
 #include "bmp.h"
@@ -348,7 +348,7 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
   jpeg_stdio_src(&cinfo, infile);
   jpeg_read_header(&cinfo, TRUE);
   jpeg_start_decompress(&cinfo);
-  row_stride = (cinfo.output_width * 3 + 3) & ~3;
+  row_stride = cinfo.output_width * 3 ;
   imgData=(BYTE*)malloc(cinfo.output_height*cinfo.output_width*3);
   buffer =malloc(row_stride*1);
   while (cinfo.output_scanline < cinfo.output_height) {
@@ -360,7 +360,6 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
           *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+1) = *p++;
           *(imgData+(cinfo.output_height-cinfo.output_scanline)*row_stride+3*x+0) = *p++; 
       }
-      
   }
   *width=cinfo.output_width;
   *height=cinfo.output_height;
@@ -649,6 +648,7 @@ BYTE Li_Save_Image(BYTE* filepath,Li_Image* img)
    
 #ifdef USE_JPEG
    case LI_JPEG:
+     LILOG("WRITE JPEG");
      sta=Write_Jpeg(filepath,img->data,100,img->limat.width,img->limat.height);
      break;
 #endif

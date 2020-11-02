@@ -99,6 +99,9 @@ Painter_EXTERNAL_OBJECTS =
 Painter.exe: CMakeFiles/Painter.dir/example/painter/painter.c.obj
 Painter.exe: CMakeFiles/Painter.dir/build.make
 Painter.exe: Litecv/liblicvcore.a
+Painter.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
+Painter.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
+Painter.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
 Painter.exe: CMakeFiles/Painter.dir/linklibs.rsp
 Painter.exe: CMakeFiles/Painter.dir/objects1.rsp
 Painter.exe: CMakeFiles/Painter.dir/link.txt

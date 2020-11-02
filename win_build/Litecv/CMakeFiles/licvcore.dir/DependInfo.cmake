@@ -16,6 +16,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Litecv/inc/Core"
   "../Litecv/inc/Image_proc"
   "../Litecv/inc/image_proc"
+  "../Litecv/3rd/win_3rd_lib/jpeg_win_install/include"
+  "../Litecv/3rd/win_3rd_lib/png_win_install/include"
   )
 
 # Targets to which this target links.
