@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -22,7 +22,7 @@ cv.h
 cv.h
 ../Litecv/inc/Core/cv.h
 
-/home/swann/IMX_283A/Qt/App/LiteCV/example/painter/painter.c
+/home/swann/LiteCV/example/painter/painter.c
 stdio.h
 -
 stdlib.h
@@ -32,11 +32,11 @@ string.h
 malloc.h
 -
 bmp.h
-/home/swann/IMX_283A/Qt/App/LiteCV/example/painter/bmp.h
+/home/swann/LiteCV/example/painter/bmp.h
 cv.h
-/home/swann/IMX_283A/Qt/App/LiteCV/example/painter/cv.h
+/home/swann/LiteCV/example/painter/cv.h
 li_image.h
-/home/swann/IMX_283A/Qt/App/LiteCV/example/painter/li_image.h
+/home/swann/LiteCV/example/painter/li_image.h
 li_painter.h
-/home/swann/IMX_283A/Qt/App/LiteCV/example/painter/li_painter.h
+/home/swann/LiteCV/example/painter/li_painter.h
 

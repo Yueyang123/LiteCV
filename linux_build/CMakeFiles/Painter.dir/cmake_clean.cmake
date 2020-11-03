@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Painter.dir/example/painter/painter.c.o"
-  "Painter.pdb"
   "Painter"
+  "Painter.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
