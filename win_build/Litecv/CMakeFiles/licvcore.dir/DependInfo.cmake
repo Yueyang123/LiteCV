@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/WORKPLACE/Litecv/LiteCV/Litecv/Core/bmp.c" "E:/WORKPLACE/Litecv/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj"
-  "E:/WORKPLACE/Litecv/LiteCV/Litecv/Core/li_image.c" "E:/WORKPLACE/Litecv/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj"
-  "E:/WORKPLACE/Litecv/LiteCV/Litecv/Core/li_image_proc.c" "E:/WORKPLACE/Litecv/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj"
-  "E:/WORKPLACE/Litecv/LiteCV/Litecv/Core/li_painter.c" "E:/WORKPLACE/Litecv/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj"
+  "E:/LiteCV/Litecv/Core/bmp.c" "E:/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj"
+  "E:/LiteCV/Litecv/Core/li_image.c" "E:/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj"
+  "E:/LiteCV/Litecv/Core/li_image_proc.c" "E:/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj"
+  "E:/LiteCV/Litecv/Core/li_painter.c" "E:/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

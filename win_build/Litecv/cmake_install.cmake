@@ -1,4 +1,4 @@
-# Install script for directory: E:/WORKPLACE/Litecv/LiteCV/Litecv
+# Install script for directory: E:/LiteCV/Litecv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

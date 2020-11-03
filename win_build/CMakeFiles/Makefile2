@@ -62,10 +62,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\WORKPLACE\Litecv\LiteCV
+CMAKE_SOURCE_DIR = E:\LiteCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\WORKPLACE\Litecv\LiteCV\win_build
+CMAKE_BINARY_DIR = E:\LiteCV\win_build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -116,14 +116,14 @@ Litecv/clean: Litecv/CMakeFiles/licvcore.dir/clean
 CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LICV.dir\build.make CMakeFiles/LICV.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LICV.dir\build.make CMakeFiles/LICV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=3,4 "Built target LICV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=3,4 "Built target LICV"
 .PHONY : CMakeFiles/LICV.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LICV.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LICV.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
 .PHONY : CMakeFiles/LICV.dir/rule
 
 # Convenience name for target.
@@ -143,14 +143,14 @@ CMakeFiles/LICV.dir/clean:
 CMakeFiles/IO.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=1,2 "Built target IO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=1,2 "Built target IO"
 .PHONY : CMakeFiles/IO.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/IO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
 .PHONY : CMakeFiles/IO.dir/rule
 
 # Convenience name for target.
@@ -170,14 +170,14 @@ CMakeFiles/IO.dir/clean:
 CMakeFiles/Painter.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=5,6 "Built target Painter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=5,6 "Built target Painter"
 .PHONY : CMakeFiles/Painter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Painter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Painter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
 .PHONY : CMakeFiles/Painter.dir/rule
 
 # Convenience name for target.
@@ -197,14 +197,14 @@ CMakeFiles/Painter.dir/clean:
 Litecv/CMakeFiles/licvcore.dir/all:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/depend
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=7,8,9,10,11 "Built target licvcore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=7,8,9,10,11 "Built target licvcore"
 .PHONY : Litecv/CMakeFiles/licvcore.dir/all
 
 # Build rule for subdir invocation for target.
 Litecv/CMakeFiles/licvcore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/CMakeFiles/licvcore.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
 .PHONY : Litecv/CMakeFiles/licvcore.dir/rule
 
 # Convenience name for target.

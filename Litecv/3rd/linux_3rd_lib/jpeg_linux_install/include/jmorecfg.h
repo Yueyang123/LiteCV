@@ -30,6 +30,10 @@
  * in all cases (see below).
  */
 
+#ifndef JMORE_H
+#define JMORE_H
+
+
 #define BITS_IN_JSAMPLE  8	/* use 8, 9, 10, 11, or 12 */
 
 
@@ -444,3 +448,5 @@ typedef enum { FALSE = 0, TRUE = 1 } boolean;
 #endif
 
 #endif /* JPEG_INTERNAL_OPTIONS */
+
+#endif

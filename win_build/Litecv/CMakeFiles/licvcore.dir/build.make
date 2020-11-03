@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\WORKPLACE\Litecv\LiteCV
+CMAKE_SOURCE_DIR = E:\LiteCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\WORKPLACE\Litecv\LiteCV\win_build
+CMAKE_BINARY_DIR = E:\LiteCV\win_build
 
 # Include any dependencies generated for this target.
 include Litecv/CMakeFiles/licvcore.dir/depend.make
@@ -78,58 +78,58 @@ include Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj: Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj: Litecv/CMakeFiles/licvcore.dir/includes_C.rsp
 Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj: ../Litecv/Core/bmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\bmp.c.obj -c E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\bmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj"
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\bmp.c.obj -c E:\LiteCV\Litecv\Core\bmp.c
 
 Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/bmp.c.i"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\bmp.c > CMakeFiles\licvcore.dir\Core\bmp.c.i
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\LiteCV\Litecv\Core\bmp.c > CMakeFiles\licvcore.dir\Core\bmp.c.i
 
 Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/bmp.c.s"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\bmp.c -o CMakeFiles\licvcore.dir\Core\bmp.c.s
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\LiteCV\Litecv\Core\bmp.c -o CMakeFiles\licvcore.dir\Core\bmp.c.s
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: Litecv/CMakeFiles/licvcore.dir/includes_C.rsp
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/Core/li_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\li_image.c.obj -c E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj"
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\li_image.c.obj -c E:\LiteCV\Litecv\Core\li_image.c
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/li_image.c.i"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_image.c > CMakeFiles\licvcore.dir\Core\li_image.c.i
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\LiteCV\Litecv\Core\li_image.c > CMakeFiles\licvcore.dir\Core\li_image.c.i
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_image.c.s"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_image.c -o CMakeFiles\licvcore.dir\Core\li_image.c.s
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\LiteCV\Litecv\Core\li_image.c -o CMakeFiles\licvcore.dir\Core\li_image.c.s
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj: Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj: Litecv/CMakeFiles/licvcore.dir/includes_C.rsp
 Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj: ../Litecv/Core/li_image_proc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\li_image_proc.c.obj -c E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_image_proc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj"
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\li_image_proc.c.obj -c E:\LiteCV\Litecv\Core\li_image_proc.c
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/li_image_proc.c.i"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_image_proc.c > CMakeFiles\licvcore.dir\Core\li_image_proc.c.i
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\LiteCV\Litecv\Core\li_image_proc.c > CMakeFiles\licvcore.dir\Core\li_image_proc.c.i
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_image_proc.c.s"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_image_proc.c -o CMakeFiles\licvcore.dir\Core\li_image_proc.c.s
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\LiteCV\Litecv\Core\li_image_proc.c -o CMakeFiles\licvcore.dir\Core\li_image_proc.c.s
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj: Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj: Litecv/CMakeFiles/licvcore.dir/includes_C.rsp
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj: ../Litecv/Core/li_painter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\li_painter.c.obj -c E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_painter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj"
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\licvcore.dir\Core\li_painter.c.obj -c E:\LiteCV\Litecv\Core\li_painter.c
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/li_painter.c.i"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_painter.c > CMakeFiles\licvcore.dir\Core\li_painter.c.i
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\LiteCV\Litecv\Core\li_painter.c > CMakeFiles\licvcore.dir\Core\li_painter.c.i
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_painter.c.s"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\WORKPLACE\Litecv\LiteCV\Litecv\Core\li_painter.c -o CMakeFiles\licvcore.dir\Core\li_painter.c.s
+	cd /d E:\LiteCV\win_build\Litecv && C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\LiteCV\Litecv\Core\li_painter.c -o CMakeFiles\licvcore.dir\Core\li_painter.c.s
 
 # Object files for target licvcore
 licvcore_OBJECTS = \
@@ -147,9 +147,9 @@ Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/build.make
 Litecv/liblicvcore.a: Litecv/CMakeFiles/licvcore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library liblicvcore.a"
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && $(CMAKE_COMMAND) -P CMakeFiles\licvcore.dir\cmake_clean_target.cmake
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\licvcore.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library liblicvcore.a"
+	cd /d E:\LiteCV\win_build\Litecv && $(CMAKE_COMMAND) -P CMakeFiles\licvcore.dir\cmake_clean_target.cmake
+	cd /d E:\LiteCV\win_build\Litecv && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\licvcore.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Litecv/CMakeFiles/licvcore.dir/build: Litecv/liblicvcore.a
@@ -157,10 +157,10 @@ Litecv/CMakeFiles/licvcore.dir/build: Litecv/liblicvcore.a
 .PHONY : Litecv/CMakeFiles/licvcore.dir/build
 
 Litecv/CMakeFiles/licvcore.dir/clean:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv && $(CMAKE_COMMAND) -P CMakeFiles\licvcore.dir\cmake_clean.cmake
+	cd /d E:\LiteCV\win_build\Litecv && $(CMAKE_COMMAND) -P CMakeFiles\licvcore.dir\cmake_clean.cmake
 .PHONY : Litecv/CMakeFiles/licvcore.dir/clean
 
 Litecv/CMakeFiles/licvcore.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\WORKPLACE\Litecv\LiteCV E:\WORKPLACE\Litecv\LiteCV\Litecv E:\WORKPLACE\Litecv\LiteCV\win_build E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv\CMakeFiles\licvcore.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\LiteCV E:\LiteCV\Litecv E:\LiteCV\win_build E:\LiteCV\win_build\Litecv E:\LiteCV\win_build\Litecv\CMakeFiles\licvcore.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : Litecv/CMakeFiles/licvcore.dir/depend
 

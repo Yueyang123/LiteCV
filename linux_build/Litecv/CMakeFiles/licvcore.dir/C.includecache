@@ -1,10 +1,46 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
 #IncludeRegexComplain: ^$
 
 #IncludeRegexTransform: 
+
+../Litecv/3rd/arm_3rd_build/png_arm_install/include/png.h
+pnglibconf.h
+../Litecv/3rd/arm_3rd_build/png_arm_install/include/pnglibconf.h
+pngconf.h
+../Litecv/3rd/arm_3rd_build/png_arm_install/include/pngconf.h
+
+../Litecv/3rd/arm_3rd_build/png_arm_install/include/pngconf.h
+limits.h
+-
+stddef.h
+-
+stdio.h
+-
+setjmp.h
+-
+time.h
+-
+
+../Litecv/3rd/arm_3rd_build/png_arm_install/include/pnglibconf.h
+
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jconfig.h
+
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jerror.h
+
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jmorecfg.h
+
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jpeglib.h
+jconfig.h
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jconfig.h
+jmorecfg.h
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jmorecfg.h
+jpegint.h
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jpegint.h
+jerror.h
+../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jerror.h
 
 ../Litecv/inc/Core/bmp.h
 stdio.h
@@ -14,7 +50,7 @@ cv.h
 
 ../Litecv/inc/Core/cv.h
 
-/home/swann/X86/opencv/Litecv/Litecv/Core/bmp.c
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/bmp.c
 stdio.h
 -
 stdlib.h
@@ -24,31 +60,35 @@ string.h
 malloc.h
 -
 string.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/string.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/string.h
 bmp.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/bmp.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/bmp.h
 
-/home/swann/X86/opencv/Litecv/Litecv/Core/li_image.c
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/li_image.c
 cv.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/cv.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/cv.h
 bmp.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/bmp.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/bmp.h
 stdlib.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/stdlib.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/stdlib.h
 string.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/string.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/string.h
 jconfig.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/jconfig.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/jconfig.h
 jmorecfg.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/jmorecfg.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/jmorecfg.h
 jpeglib.h
 -
 setjmp.h
 -
 png.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/png.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/png.h
 
-/home/swann/X86/opencv/Litecv/Litecv/Core/li_painter.c
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/li_image_proc.c
 cv.h
-/home/swann/X86/opencv/Litecv/Litecv/Core/cv.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/cv.h
+
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/li_painter.c
+cv.h
+/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/Core/cv.h
 

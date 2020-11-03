@@ -125,3 +125,10 @@ make
 </ul>
 最后将所有的库文件归拢一下就OK了
 
+### (3)
+
+./configure --prefix=/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/png_arm_install --host=arm-linux CC=arm-none-linux-gnueabi-gcc CFLAGS=-I/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/include LDFLAGS=-L/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/lib --prefix=/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/png_arm_install
+
+//change  makefile
+DEFAULT_INCLUDES = -I.
+DEFAULT_INCLUDES +=-I/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/include

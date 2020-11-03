@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\EXP01.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\EXP01.dir/objects.a @CMakeFiles\EXP01.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\EXP01.dir/objects.a -Wl,--no-whole-archive -o EXP01.exe -Wl,--out-implib,libEXP01.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\EXP01.dir\linklibs.rsp

@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/EXP02.dir/example/painter/painter.c.o  -o EXP02  Litecv/liblicvcore.a -Wl,-Bstatic -ljpeg -Wl,-Bdynamic ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a -lm 

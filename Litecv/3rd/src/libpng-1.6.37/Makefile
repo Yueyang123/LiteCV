@@ -99,21 +99,21 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
-host_triplet = x86_64-pc-linux-gnu
+host_triplet = arm-unknown-linux-gnu
 check_PROGRAMS = pngtest$(EXEEXT) pngunknown$(EXEEXT) \
 	pngstest$(EXEEXT) pngvalid$(EXEEXT) pngimage$(EXEEXT) \
 	pngcp$(EXEEXT) $(am__EXEEXT_1)
-am__append_1 = timepng
+#am__append_1 = timepng
 bin_PROGRAMS = pngfix$(EXEEXT) png-fix-itxt$(EXEEXT)
-#am__append_2 = arm/arm_init.c\
-#	arm/filter_neon.S arm/filter_neon_intrinsics.c \
-#	arm/palette_neon_intrinsics.c
+am__append_2 = arm/arm_init.c\
+	arm/filter_neon.S arm/filter_neon_intrinsics.c \
+	arm/palette_neon_intrinsics.c
 
 am__append_3 = mips/mips_init.c\
 	mips/filter_msa_intrinsics.c
 
-am__append_4 = intel/intel_init.c\
-	intel/filter_sse2_intrinsics.c
+#am__append_4 = intel/intel_init.c\
+#	intel/filter_sse2_intrinsics.c
 
 am__append_5 = powerpc/powerpc_init.c\
         powerpc/filter_vsx_intrinsics.c
@@ -147,7 +147,7 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(libdir)" \
 	"$(DESTDIR)$(bindir)" "$(DESTDIR)$(man3dir)" \
 	"$(DESTDIR)$(man5dir)" "$(DESTDIR)$(pkgconfigdir)" \
 	"$(DESTDIR)$(pkgincludedir)" "$(DESTDIR)$(pkgincludedir)"
-am__EXEEXT_1 = timepng$(EXEEXT)
+#am__EXEEXT_1 = timepng$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
@@ -189,13 +189,13 @@ am__libpng16_la_SOURCES_DIST = png.c \
 	intel/filter_sse2_intrinsics.c powerpc/powerpc_init.c \
 	powerpc/filter_vsx_intrinsics.c
 am__dirstamp = $(am__leading_dot)dirstamp
-#am__objects_1 = arm/arm_init.lo arm/filter_neon.lo \
-#	arm/filter_neon_intrinsics.lo \
-#	arm/palette_neon_intrinsics.lo
+am__objects_1 = arm/arm_init.lo arm/filter_neon.lo \
+	arm/filter_neon_intrinsics.lo \
+	arm/palette_neon_intrinsics.lo
 am__objects_2 = mips/mips_init.lo \
 	mips/filter_msa_intrinsics.lo
-am__objects_3 = intel/intel_init.lo \
-	intel/filter_sse2_intrinsics.lo
+#am__objects_3 = intel/intel_init.lo \
+#	intel/filter_sse2_intrinsics.lo
 am__objects_4 = powerpc/powerpc_init.lo \
 	powerpc/filter_vsx_intrinsics.lo
 am_libpng16_la_OBJECTS = png.lo pngerror.lo \
@@ -257,6 +257,7 @@ am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))
 am__v_at_0 = @
 am__v_at_1 = 
 DEFAULT_INCLUDES = -I.
+DEFAULT_INCLUDES +=-I/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/include
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__maybe_remake_depfiles = depfiles
 am__depfiles_remade = ./$(DEPDIR)/png.Plo ./$(DEPDIR)/pngerror.Plo \
@@ -557,22 +558,22 @@ distcleancheck_listfiles = find . -type f -print
 
 #distribute headers in /usr/include/libpng/*
 pkgincludedir = $(includedir)/$(PNGLIB_BASENAME)
-ACLOCAL = ${SHELL} /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37/missing aclocal-1.16
+ACLOCAL = ${SHELL} /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/missing aclocal-1.16
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AR = ar
+AR = arm-linux-ar
 AS = as
-AUTOCONF = ${SHELL} /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37/missing autoconf
-AUTOHEADER = ${SHELL} /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37/missing autoheader
-AUTOMAKE = ${SHELL} /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37/missing automake-1.16
+AUTOCONF = ${SHELL} /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/missing autoconf
+AUTOHEADER = ${SHELL} /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/missing autoheader
+AUTOMAKE = ${SHELL} /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/missing automake-1.16
 AWK = mawk
-CC = gcc
-CCAS = gcc
+CC = arm-none-linux-gnueabi-gcc
+CCAS = arm-none-linux-gnueabi-gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -g -O2
+CCASFLAGS = -I/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/include
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2
-CPP = gcc -E
+CFLAGS = -I/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/include
+CPP = arm-none-linux-gnueabi-gcc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -583,38 +584,38 @@ DEPDIR = .deps
 # checks input tokens for validity - effectively it performs part of the ANSI-C
 # parsing - and therefore fails with the .df files.  configure.ac has special
 # checks for this and sets DFNCPP appropriately.
-DFNCPP = gcc -E
+DFNCPP = arm-none-linux-gnueabi-gcc -E
 DLLTOOL = false
 DSYMUTIL = 
 DUMPBIN = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /usr/bin/grep -E
+EGREP = /bin/grep -E
 EXEEXT = 
-FGREP = /usr/bin/grep -F
-GREP = /usr/bin/grep
+FGREP = /bin/grep -F
+GREP = /bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = 
-LIBOBJS = 
+LD = /home/swann/IMX_283A/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/arm-fsl-linux-gnueabi/bin/ld
+LDFLAGS = -L/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/lib
+LIBOBJS =  ${LIBOBJDIR}strtod$U.o
 LIBS = -lm -lz -lm 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
-LTLIBOBJS = 
+LTLIBOBJS =  ${LIBOBJDIR}strtod$U.lo
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37/missing makeinfo
+MAKEINFO = ${SHELL} /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/missing makeinfo
 MANIFEST_TOOL = :
-MKDIR_P = /usr/bin/mkdir -p
-NM = /usr/bin/nm -B
+MKDIR_P = /bin/mkdir -p
+NM = /home/swann/IMX_283A/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-nm -B
 NMEDIT = 
-OBJDUMP = objdump
+OBJDUMP = arm-linux-objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
@@ -636,20 +637,20 @@ PNGLIB_VERSION = 1.6.37
 # AM_CFLAGS)
 PNG_COPTS = 
 PNG_PREFIX = 
-POW_LIB = 
-RANLIB = ranlib
-SED = /usr/bin/sed
+POW_LIB = -lm
+RANLIB = arm-linux-ranlib
+SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-STRIP = strip
+STRIP = arm-linux-strip
 SYMBOL_PREFIX = 
 VERSION = 1.6.37
-abs_builddir = /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37
-abs_srcdir = /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37
-abs_top_builddir = /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37
-abs_top_srcdir = /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37
-ac_ct_AR = ar
-ac_ct_CC = gcc
+abs_builddir = /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37
+abs_srcdir = /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37
+abs_top_builddir = /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37
+abs_top_srcdir = /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37
+ac_ct_AR = 
+ac_ct_CC = 
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
@@ -671,15 +672,15 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = x86_64-pc-linux-gnu
-host_alias = 
-host_cpu = x86_64
+host = arm-unknown-linux-gnu
+host_alias = arm-linux
+host_cpu = arm
 host_os = linux-gnu
-host_vendor = pc
+host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/swann/X86/opencv/Litecv/Litecv/3rd/src/libpng-1.6.37/install-sh
+install_sh = ${SHELL} /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -692,7 +693,7 @@ pdfdir = ${docdir}
 # pkg-config stuff, note that libpng.pc is always required in order
 # to get the correct library
 pkgconfigdir = ${libdir}/pkgconfig
-prefix = /usr/local
+prefix = /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/png_arm_install
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

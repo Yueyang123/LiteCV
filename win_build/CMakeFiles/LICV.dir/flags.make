@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/LICV.dir/includes_C.rsp
 
-C_FLAGS = 
+C_FLAGS = -std=c99
 

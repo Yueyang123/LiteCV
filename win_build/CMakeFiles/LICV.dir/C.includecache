@@ -22,7 +22,7 @@ cv.h
 cv.h
 ../Litecv/inc/Core/cv.h
 
-E:/WORKPLACE/Litecv/LiteCV/main.c
+E:/LiteCV/main.c
 stdio.h
 -
 stdlib.h
@@ -32,11 +32,11 @@ string.h
 malloc.h
 -
 bmp.h
-E:/WORKPLACE/Litecv/LiteCV/bmp.h
+E:/LiteCV/bmp.h
 cv.h
-E:/WORKPLACE/Litecv/LiteCV/cv.h
+E:/LiteCV/cv.h
 li_image.h
-E:/WORKPLACE/Litecv/LiteCV/li_image.h
+E:/LiteCV/li_image.h
 li_painter.h
-E:/WORKPLACE/Litecv/LiteCV/li_painter.h
+E:/LiteCV/li_painter.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: E:/WORKPLACE/Litecv/LiteCV
+# Install script for directory: E:/LiteCV
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("E:/WORKPLACE/Litecv/LiteCV/win_build/Litecv/cmake_install.cmake")
+  include("E:/LiteCV/win_build/Litecv/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/WORKPLACE/Litecv/LiteCV/win_build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/LiteCV/win_build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

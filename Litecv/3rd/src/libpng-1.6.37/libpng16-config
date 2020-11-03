@@ -12,7 +12,7 @@
 # Modeled after libxml-config.
 
 version="1.6.37"
-prefix="/usr/local"
+prefix="/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/libpng-1.6.37/png_arm_install"
 exec_prefix="${prefix}"
 libdir="${exec_prefix}/lib"
 includedir="${prefix}/include/libpng16"

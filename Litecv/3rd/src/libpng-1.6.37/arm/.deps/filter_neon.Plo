@@ -1,1 +1,10 @@
-# dummy
+arm/filter_neon.lo: arm/filter_neon.S arm/../pngpriv.h config.h \
+ arm/../pnglibconf.h arm/../png.h
+
+arm/../pngpriv.h:
+
+config.h:
+
+arm/../pnglibconf.h:
+
+arm/../png.h:

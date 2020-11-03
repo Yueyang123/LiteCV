@@ -66,10 +66,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\WORKPLACE\Litecv\LiteCV
+CMAKE_SOURCE_DIR = E:\LiteCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\WORKPLACE\Litecv\LiteCV\win_build
+CMAKE_BINARY_DIR = E:\LiteCV\win_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,14 +98,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles E:\WORKPLACE\Litecv\LiteCV\win_build\Litecv\\CMakeFiles\progress.marks
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\WORKPLACE\Litecv\LiteCV\win_build\CMakeFiles 0
+	cd /d E:\LiteCV\win_build && $(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles E:\LiteCV\win_build\Litecv\\CMakeFiles\progress.marks
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/clean
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/clean
 .PHONY : clean
 
 # The main clean target
@@ -115,22 +115,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/preinstall
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/preinstall
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d E:\LiteCV\win_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Litecv/CMakeFiles/licvcore.dir/rule:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/CMakeFiles/licvcore.dir/rule
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/CMakeFiles/licvcore.dir/rule
 .PHONY : Litecv/CMakeFiles/licvcore.dir/rule
 
 # Convenience name for target.
@@ -140,7 +140,7 @@ licvcore: Litecv/CMakeFiles/licvcore.dir/rule
 
 # fast build rule for target.
 licvcore/fast:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/build
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/build
 .PHONY : licvcore/fast
 
 Core/bmp.obj: Core/bmp.c.obj
@@ -149,7 +149,7 @@ Core/bmp.obj: Core/bmp.c.obj
 
 # target to build an object file
 Core/bmp.c.obj:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.obj
 .PHONY : Core/bmp.c.obj
 
 Core/bmp.i: Core/bmp.c.i
@@ -158,7 +158,7 @@ Core/bmp.i: Core/bmp.c.i
 
 # target to preprocess a source file
 Core/bmp.c.i:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.i
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.i
 .PHONY : Core/bmp.c.i
 
 Core/bmp.s: Core/bmp.c.s
@@ -167,7 +167,7 @@ Core/bmp.s: Core/bmp.c.s
 
 # target to generate assembly for a file
 Core/bmp.c.s:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.s
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.s
 .PHONY : Core/bmp.c.s
 
 Core/li_image.obj: Core/li_image.c.obj
@@ -176,7 +176,7 @@ Core/li_image.obj: Core/li_image.c.obj
 
 # target to build an object file
 Core/li_image.c.obj:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj
 .PHONY : Core/li_image.c.obj
 
 Core/li_image.i: Core/li_image.c.i
@@ -185,7 +185,7 @@ Core/li_image.i: Core/li_image.c.i
 
 # target to preprocess a source file
 Core/li_image.c.i:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.i
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.i
 .PHONY : Core/li_image.c.i
 
 Core/li_image.s: Core/li_image.c.s
@@ -194,7 +194,7 @@ Core/li_image.s: Core/li_image.c.s
 
 # target to generate assembly for a file
 Core/li_image.c.s:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s
 .PHONY : Core/li_image.c.s
 
 Core/li_image_proc.obj: Core/li_image_proc.c.obj
@@ -203,7 +203,7 @@ Core/li_image_proc.obj: Core/li_image_proc.c.obj
 
 # target to build an object file
 Core/li_image_proc.c.obj:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.obj
 .PHONY : Core/li_image_proc.c.obj
 
 Core/li_image_proc.i: Core/li_image_proc.c.i
@@ -212,7 +212,7 @@ Core/li_image_proc.i: Core/li_image_proc.c.i
 
 # target to preprocess a source file
 Core/li_image_proc.c.i:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.i
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.i
 .PHONY : Core/li_image_proc.c.i
 
 Core/li_image_proc.s: Core/li_image_proc.c.s
@@ -221,7 +221,7 @@ Core/li_image_proc.s: Core/li_image_proc.c.s
 
 # target to generate assembly for a file
 Core/li_image_proc.c.s:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.s
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.s
 .PHONY : Core/li_image_proc.c.s
 
 Core/li_painter.obj: Core/li_painter.c.obj
@@ -230,7 +230,7 @@ Core/li_painter.obj: Core/li_painter.c.obj
 
 # target to build an object file
 Core/li_painter.c.obj:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.obj
 .PHONY : Core/li_painter.c.obj
 
 Core/li_painter.i: Core/li_painter.c.i
@@ -239,7 +239,7 @@ Core/li_painter.i: Core/li_painter.c.i
 
 # target to preprocess a source file
 Core/li_painter.c.i:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.i
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.i
 .PHONY : Core/li_painter.c.i
 
 Core/li_painter.s: Core/li_painter.c.s
@@ -248,7 +248,7 @@ Core/li_painter.s: Core/li_painter.c.s
 
 # target to generate assembly for a file
 Core/li_painter.c.s:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.s
+	cd /d E:\LiteCV\win_build && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.s
 .PHONY : Core/li_painter.c.s
 
 # Help Target
@@ -283,6 +283,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d E:\WORKPLACE\Litecv\LiteCV\win_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d E:\LiteCV\win_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

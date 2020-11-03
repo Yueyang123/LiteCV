@@ -1,69 +1,77 @@
 --------------------
+./configure CC=arm-none-linux-gnueabi-gcc --prefix=/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/install --host=arm-none-linux-gnueabi
+Tue Nov  3 18:17:48 CST 2020
+unknown option: CC=arm-none-linux-gnueabi-gcc
+./configure --help for help
+** ./configure aborting.
+--------------------
+
+
+--------------------
 ./configure
-Thu 29 Oct 2020 12:45:30 AM CST
-Checking for gcc...
-=== ztest448383.c ===
+Tue Nov  3 18:19:41 CST 2020
+=== ztest11674.c ===
 extern int getchar();
 int hello() {return getchar();}
 ===
-gcc -c ztest448383.c
+arm-none-linux-gnueabi-gcc -c ztest11674.c
 ... using gcc
 
 Checking for obsessive-compulsive compiler options...
-=== ztest448383.c ===
+=== ztest11674.c ===
 int foo() { return 0; }
 ===
-gcc -c -O3 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 ztest11674.c
 
 Checking for shared library support...
-=== ztest448383.c ===
+=== ztest11674.c ===
 extern int getchar();
 int hello() {return getchar();}
 ===
-gcc -w -c -O3 -fPIC ztest448383.c
-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -O3 -fPIC -o ztest448383.so ztest448383.o
-Building shared library libz.so.1.2.11 with gcc.
+arm-none-linux-gnueabi-gcc -w -c -O3 -fPIC ztest11674.c
+arm-none-linux-gnueabi-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -O3 -fPIC -o ztest11674.so ztest11674.o
+Building shared library libz.so.1.2.11 with arm-none-linux-gnueabi-gcc.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <stdio.h>
 #include <stdlib.h>
 size_t dummy = 0;
 ===
-gcc -c -O3 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 ztest11674.c
 Checking for size_t... Yes.
 
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <sys/types.h>
 off64_t dummy = 0;
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest11674.c
 Checking for off64_t... Yes.
 Checking for fseeko... Yes.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <string.h>
 #include <errno.h>
 int main() { return strlen(strerror(errno)); }
 ===
-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest448383 ztest448383.c
+arm-none-linux-gnueabi-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest11674 ztest11674.c
 Checking for strerror... Yes.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <unistd.h>
 int main() { return 0; }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest11674.c
 Checking for unistd.h... Yes.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <stdarg.h>
 int main() { return 0; }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest11674.c
 Checking for stdarg.h... Yes.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <stdio.h>
 #include <stdarg.h>
 #include "zconf.h"
@@ -75,10 +83,10 @@ int main()
   return 0;
 }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest11674.c
 Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <stdio.h>
 #include <stdarg.h>
 int mytest(const char *fmt, ...)
@@ -95,10 +103,10 @@ int main()
   return (mytest("Hello%d\n", 1));
 }
 ===
-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest448383 ztest448383.c
+arm-none-linux-gnueabi-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest11674 ztest11674.c
 Checking for vsnprintf() in stdio.h... Yes.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #include <stdio.h>
 #include <stdarg.h>
 int mytest(const char *fmt, ...)
@@ -116,10 +124,10 @@ int main()
   return (mytest("Hello%d\n", 1));
 }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest11674.c
 Checking for return value of vsnprintf()... Yes.
 
-=== ztest448383.c ===
+=== ztest11674.c ===
 #define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
 int ZLIB_INTERNAL foo;
 int main()
@@ -127,19 +135,19 @@ int main()
   return 0;
 }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448383.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest11674.c
 Checking for attribute(visibility) support... Yes.
 
 ALL = static shared all64
 AR = ar
 ARFLAGS = rc
-CC = gcc
+CC = arm-none-linux-gnueabi-gcc
 CFLAGS = -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
-CPP = gcc -E
+CPP = arm-none-linux-gnueabi-gcc -E
 EXE =
 LDCONFIG = ldconfig
 LDFLAGS =
-LDSHARED = gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHARED = arm-none-linux-gnueabi-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
 LDSHAREDLIBC = -lc
 OBJC = $(OBJZ) $(OBJG)
 PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
@@ -164,64 +172,70 @@ uname = Linux
 
 
 --------------------
-./configure --static
-Thu 29 Oct 2020 12:45:42 AM CST
-Checking for gcc...
-=== ztest448501.c ===
+./configure -prefix=/zlib_arm_install
+Tue Nov  3 18:36:44 CST 2020
+=== ztest18587.c ===
 extern int getchar();
 int hello() {return getchar();}
 ===
-gcc -c ztest448501.c
+arm-none-linux-gnueabi-gcc -c ztest18587.c
 ... using gcc
 
 Checking for obsessive-compulsive compiler options...
-=== ztest448501.c ===
+=== ztest18587.c ===
 int foo() { return 0; }
 ===
-gcc -c -O3 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 ztest18587.c
 
-Building static library libz.a version 1.2.11 with gcc.
+Checking for shared library support...
+=== ztest18587.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-none-linux-gnueabi-gcc -w -c -O3 -fPIC ztest18587.c
+arm-none-linux-gnueabi-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -O3 -fPIC -o ztest18587.so ztest18587.o
+Building shared library libz.so.1.2.11 with arm-none-linux-gnueabi-gcc.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <stdio.h>
 #include <stdlib.h>
 size_t dummy = 0;
 ===
-gcc -c -O3 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 ztest18587.c
 Checking for size_t... Yes.
 
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <sys/types.h>
 off64_t dummy = 0;
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18587.c
 Checking for off64_t... Yes.
 Checking for fseeko... Yes.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <string.h>
 #include <errno.h>
 int main() { return strlen(strerror(errno)); }
 ===
-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest448501 ztest448501.c
+arm-none-linux-gnueabi-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest18587 ztest18587.c
 Checking for strerror... Yes.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <unistd.h>
 int main() { return 0; }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18587.c
 Checking for unistd.h... Yes.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <stdarg.h>
 int main() { return 0; }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18587.c
 Checking for stdarg.h... Yes.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <stdio.h>
 #include <stdarg.h>
 #include "zconf.h"
@@ -233,10 +247,10 @@ int main()
   return 0;
 }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18587.c
 Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <stdio.h>
 #include <stdarg.h>
 int mytest(const char *fmt, ...)
@@ -253,10 +267,10 @@ int main()
   return (mytest("Hello%d\n", 1));
 }
 ===
-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest448501 ztest448501.c
+arm-none-linux-gnueabi-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest18587 ztest18587.c
 Checking for vsnprintf() in stdio.h... Yes.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #include <stdio.h>
 #include <stdarg.h>
 int mytest(const char *fmt, ...)
@@ -274,10 +288,10 @@ int main()
   return (mytest("Hello%d\n", 1));
 }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18587.c
 Checking for return value of vsnprintf()... Yes.
 
-=== ztest448501.c ===
+=== ztest18587.c ===
 #define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
 int ZLIB_INTERNAL foo;
 int main()
@@ -285,29 +299,29 @@ int main()
   return 0;
 }
 ===
-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest448501.c
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18587.c
 Checking for attribute(visibility) support... Yes.
 
-ALL = static all64
+ALL = static shared all64
 AR = ar
 ARFLAGS = rc
-CC = gcc
+CC = arm-none-linux-gnueabi-gcc
 CFLAGS = -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
-CPP = gcc -E
+CPP = arm-none-linux-gnueabi-gcc -E
 EXE =
 LDCONFIG = ldconfig
 LDFLAGS =
-LDSHARED = gcc
+LDSHARED = arm-none-linux-gnueabi-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
 LDSHAREDLIBC = -lc
 OBJC = $(OBJZ) $(OBJG)
 PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
 RANLIB = ranlib
 SFLAGS = -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
-SHAREDLIB =
-SHAREDLIBM =
-SHAREDLIBV =
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
 STATICLIB = libz.a
-TEST = all teststatic test64
+TEST = all teststatic testshared test64
 VER = 1.2.11
 Z_U4 =
 SRCDIR =
@@ -315,7 +329,171 @@ exec_prefix = ${prefix}
 includedir = ${prefix}/include
 libdir = ${exec_prefix}/lib
 mandir = ${prefix}/share/man
-prefix = /usr/local
+prefix = /zlib_arm_install
+sharedlibdir = ${libdir}
+uname = Linux
+--------------------
+
+
+--------------------
+./configure -prefix=/home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/
+Tue Nov  3 18:39:05 CST 2020
+=== ztest18962.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-none-linux-gnueabi-gcc -c ztest18962.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest18962.c ===
+int foo() { return 0; }
+===
+arm-none-linux-gnueabi-gcc -c -O3 ztest18962.c
+
+Checking for shared library support...
+=== ztest18962.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-none-linux-gnueabi-gcc -w -c -O3 -fPIC ztest18962.c
+arm-none-linux-gnueabi-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -O3 -fPIC -o ztest18962.so ztest18962.o
+Building shared library libz.so.1.2.11 with arm-none-linux-gnueabi-gcc.
+
+=== ztest18962.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+arm-none-linux-gnueabi-gcc -c -O3 ztest18962.c
+Checking for size_t... Yes.
+
+
+=== ztest18962.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18962.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest18962.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+arm-none-linux-gnueabi-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest18962 ztest18962.c
+Checking for strerror... Yes.
+
+=== ztest18962.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18962.c
+Checking for unistd.h... Yes.
+
+=== ztest18962.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18962.c
+Checking for stdarg.h... Yes.
+
+=== ztest18962.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18962.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest18962.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-none-linux-gnueabi-gcc -O3 -D_LARGEFILE64_SOURCE=1 -o ztest18962 ztest18962.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest18962.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18962.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest18962.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+arm-none-linux-gnueabi-gcc -c -O3 -D_LARGEFILE64_SOURCE=1 ztest18962.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = arm-none-linux-gnueabi-gcc
+CFLAGS = -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = arm-none-linux-gnueabi-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = arm-none-linux-gnueabi-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/3rd/src/zlib-1.2.11/zlib_arm_install/
 sharedlibdir = ${libdir}
 uname = Linux
 --------------------
