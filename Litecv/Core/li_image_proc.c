@@ -5,6 +5,21 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:01:01
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 14:40:01
+ * @LastEditTime: 2020-11-03 16:11:51
  */
+#include "cv.h"
 
+
+#undef  LOG
+#define LOG  "LI_CV_PROC"
+
+/**
+ * @name: Li_Split
+ * @msg:  图像处理月老的mao
+ * @param {*}
+ * @return {*}
+ */
+Li_Image** Li_Split()
+{
+  
+}

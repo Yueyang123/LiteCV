@@ -5,11 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
-<<<<<<< HEAD
- * @LastEditTime: 2020-11-03 01:08:15
-=======
- * @LastEditTime: 2020-11-03 01:02:06
->>>>>>> 915eb4597c8ff849c8476ac29913a23e95d585d3
+ * @LastEditTime: 2020-11-03 12:13:14
  */
 #include "cv.h"
 #include "bmp.h"
@@ -187,8 +183,6 @@ BYTE depth,PICTYPE pth)
   default:
     break;
   }  
-
-
     return img;
 }
 
@@ -352,12 +346,7 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
   jpeg_stdio_src(&cinfo, infile);
   jpeg_read_header(&cinfo, TRUE);
   jpeg_start_decompress(&cinfo);
-  #if (defined _WIN32) || (defined WIN32) || (defined _WIN64) || (defined WIN64)
   row_stride = (cinfo.output_width * 3 );
-  #endif
-  #if (defined __linux__) || (defined __APPLE__)
-  row_stride = (cinfo.output_width * 3 + 3) & ~3;
-  #endif
   imgData=(BYTE*)malloc(cinfo.output_height*cinfo.output_width*3);
   buffer =malloc(row_stride*1);
   while (cinfo.output_scanline < cinfo.output_height) {
@@ -1298,4 +1287,5 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
   }
   return dst;
 }
+
 
