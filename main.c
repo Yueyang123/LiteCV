@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-03 12:04:40
+ * @LastEditTime: 2020-11-04 16:13:33
  */
 
 #include <stdio.h>
@@ -16,16 +16,20 @@
 #include "cv.h"
 #include "li_image.h"
 #include "li_painter.h"
+#include "li_image_proc.h"
 
 int main()
 {
      BYTE* ptr=NULL;
-     Li_Image* out7 =Li_Create_Imgae(300,300,LI_DEP_24U,LI_BMP_888);
-     ptr=out7->at(out7,40,20);
-     *ptr++=0;
-     *ptr++=0xFF;
-     *ptr++=0;
-     Li_Save_Image("1.bmp",out7);
+     Li_Image* out =Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);
+     Li_Image* img[3];
+     Li_Split(out,img);
+     Li_Save_Image("1.bmp",img[0]);
+     Li_Save_Image("2.bmp",img[1]);
+     Li_Save_Image("3.bmp",img[2]);
+
+     Li_Image* img2= Li_Combine(img,LI_DEP_24U);
+     Li_Save_Image("4.bmp",img2);
      LILOG("over");
      return 0; 
 }

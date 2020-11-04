@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 project(LICV)
 include_directories (Litecv/inc/Core)
-include_directories (Litecv/inc/Image_proc)
+include_directories (Litecv/inc/Imgproc)
 aux_source_directory(./ DIR_MAIN)
 set(LICV_MAIN ${DIR_MAIN})
 
@@ -37,6 +37,7 @@ add_subdirectory(Litecv)
 
 add_executable(${PROJECT_NAME} ${LICV_MAIN})
 target_link_libraries(${PROJECT_NAME} licvcore)
+target_link_libraries(${PROJECT_NAME} licvimgproc)
 
 add_executable(IO ${LICV_EXP01})
 target_link_libraries(IO licvcore)

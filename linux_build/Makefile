@@ -150,6 +150,19 @@ LICV/fast:
 .PHONY : LICV/fast
 
 #=============================================================================
+# Target rules for targets named licvimgproc
+
+# Build rule for target.
+licvimgproc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 licvimgproc
+.PHONY : licvimgproc
+
+# fast build rule for target.
+licvimgproc/fast:
+	$(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/build
+.PHONY : licvimgproc/fast
+
+#=============================================================================
 # Target rules for targets named licvcore
 
 # Build rule for target.
@@ -254,6 +267,7 @@ help:
 	@echo "... Painter"
 	@echo "... IO"
 	@echo "... LICV"
+	@echo "... licvimgproc"
 	@echo "... licvcore"
 	@echo "... example/basicio/basicio.o"
 	@echo "... example/basicio/basicio.i"

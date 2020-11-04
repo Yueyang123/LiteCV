@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-03 12:13:14
+ * @LastEditTime: 2020-11-04 16:26:29
  */
 #include "cv.h"
 #include "bmp.h"
@@ -51,12 +51,12 @@ void li_free_arr(LiArr* arr)
 }
 
 /**
- * @name: ptr_li_mat_free
+ * @name: Li_Destroy_Mat
  * @msg: 为LiMat释放内存
  * @param {void}
  * @return {void}
  */
-void ptr_li_mat_free(Li_Mat* mat)
+void Li_Destroy_Mat(Li_Mat* mat)
 {
   li_free_arr(mat->arr);
   free((void*)mat);
@@ -93,13 +93,13 @@ LiArr* li_rgba_at(Li_Image* mat,LONG x,LONG y)
 }
 
 /**
- * @name: ptr_li_mat_create
+ * @name: Li_Create_Mat
  * @msg: 
  * @param       LONG width,LONG height, 高和宽
                 BYTE depth,             图像深度
  * @return {Li_Mat}
  */
-Li_Mat* ptr_li_mat_create(
+Li_Mat* Li_Create_Mat(
 LiArr* data,
 LONG width,LONG height,
 BYTE depth)
@@ -151,31 +151,31 @@ BYTE depth,PICTYPE pth)
   switch (pth)
   {
   case LI_BMP_888:
-    limt= ptr_li_mat_create(dt,width,height,depth);
+    limt= Li_Create_Mat(dt,width,height,depth);
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->at=li_bgr_at;
     break;
   
    case LI_JPEG:
-    limt= ptr_li_mat_create(dt,width,height,depth);
+    limt= Li_Create_Mat(dt,width,height,depth);
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->at=li_bgr_at;
     break;
 
    case LI_BMP_8:
-    limt= ptr_li_mat_create(dt,width,height,depth);
+    limt= Li_Create_Mat(dt,width,height,depth);
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->at=li_bgr_at;
     break;  
 
    case LI_BMP_32:
-    limt= ptr_li_mat_create(dt,width,height,depth);
+    limt= Li_Create_Mat(dt,width,height,depth);
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->at=li_rgba_at;
     break; 
 
    case LI_PNG:
-    limt= ptr_li_mat_create(dt,width,height,depth);
+    limt= Li_Create_Mat(dt,width,height,depth);
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
     img->at=li_rgba_at;
     break; 
@@ -771,7 +771,7 @@ void Li_Destroy_Image(Li_Image * img)
  * @return Li_Image*  一张图片
  */
 LI_API
-Li_Image* Li_Create_Imgae(
+Li_Image* Li_Create_Image(
 LONG width,LONG height,
 BYTE depth,PICTYPE pth)
 {
@@ -792,10 +792,10 @@ BYTE depth,PICTYPE pth)
  * @return Li_Image*  一张图片
  */
 LI_API
-Li_Image* Li_Copy_Imgae(Li_Image *img)
+Li_Image* Li_Copy_Image(Li_Image *img)
 {
   Li_Image * out=NULL;
-  out=Li_Create_Imgae(img->width,img->height,img->imgdepth,img->pt);
+  out=Li_Create_Image(img->width,img->height,img->imgdepth,img->pt);
   memcpy((void*)out->data,(void*)img->data,img->width*img->height*(img->imgdepth+1));
   return out;
 }
@@ -1200,7 +1200,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
   case LI_JPEG_2_BMP:
 
   if(src->pt==LI_JPEG){
-   dst=Li_Copy_Imgae(src);
+   dst=Li_Copy_Image(src);
    dst->pt=LI_BMP_888;
   }else{
       LILOG("TYPE ERROR");
@@ -1211,7 +1211,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
   case LI_BMP_2_JPEG:
 
   if(src->pt==LI_BMP_888){
-   dst=Li_Copy_Imgae(src);
+   dst=Li_Copy_Image(src);
    dst->pt=LI_JPEG;
   }else{
       LILOG("TYPE ERROR");
@@ -1221,7 +1221,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_PNG_2_BMP:
   if(src->pt==LI_PNG){
-   dst=Li_Copy_Imgae(src);
+   dst=Li_Copy_Image(src);
    dst->pt=LI_BMP_32;
   }else{
       LILOG("TYPE ERROR");
@@ -1231,7 +1231,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_2_PNG:
   if(src->pt==LI_BMP_32){
-   dst=Li_Copy_Imgae(src);
+   dst=Li_Copy_Image(src);
    dst->pt=LI_PNG;
   }else{
       LILOG("TYPE ERROR");
@@ -1242,7 +1242,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_888_2_LI_BMP32:
     if(src->pt==LI_BMP_888){
-    dst=Li_Create_Imgae(src->width,src->height,LI_DEP_32U,LI_BMP_32);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_32U,LI_BMP_32);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_BGR2BGRA);
     }else {
       LILOG("TYPE ERROR");
@@ -1252,7 +1252,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_32_2_LI_BMP888:
     if(src->pt==LI_BMP_32){
-    dst=Li_Create_Imgae(src->width,src->height,LI_DEP_24U,LI_BMP_888);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_24U,LI_BMP_888);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_BGRA2BGR);
     }else {
       LILOG("TYPE ERROR");
@@ -1262,7 +1262,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_888_2_LI_BMP_8:
     if(src->pt==LI_BMP_888){
-    dst=Li_Create_Imgae(src->width,src->height,LI_DEP_8U,LI_BMP_8);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_8U,LI_BMP_8);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_BGR2GRAY);
     }else {
       LILOG("TYPE ERROR");
@@ -1272,7 +1272,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_8_2_LI_BMP_888:
     if(src->pt==LI_BMP_8){
-    dst=Li_Create_Imgae(src->width,src->height,LI_DEP_24U,LI_BMP_888);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_24U,LI_BMP_888);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_GRAY2BGR);
     }else {
       LILOG("TYPE ERROR");

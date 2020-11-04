@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/Litecv/inc/Core",
-                "${workspaceFolder}/Litecv/inc/Image_proc"
+                "${workspaceFolder}/Litecv/inc/Imgproc"
             ],
             "defines": [
                 "_DEBUG",

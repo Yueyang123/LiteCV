@@ -22,6 +22,12 @@ cv.h
 cv.h
 ../Litecv/inc/Core/cv.h
 
+../Litecv/inc/Imgproc/li_image_proc.h
+cv.h
+../Litecv/inc/Imgproc/cv.h
+li_image.h
+../Litecv/inc/Imgproc/li_image.h
+
 /home/swann/LiteCV/main.c
 stdio.h
 -
@@ -39,4 +45,6 @@ li_image.h
 /home/swann/LiteCV/li_image.h
 li_painter.h
 /home/swann/LiteCV/li_painter.h
+li_image_proc.h
+/home/swann/LiteCV/li_image_proc.h
 

@@ -6,5 +6,5 @@ C_FLAGS =   -std=c99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/swann/LiteCV/Litecv/inc/Core -I/home/swann/LiteCV/Litecv/inc/Image_proc 
+C_INCLUDES = -I/home/swann/LiteCV/Litecv/inc/Core -I/home/swann/LiteCV/Litecv/inc/Imgproc 
 

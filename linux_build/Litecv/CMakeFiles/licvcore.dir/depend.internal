@@ -16,9 +16,6 @@ Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o
  ../Litecv/inc/Core/bmp.h
  ../Litecv/inc/Core/cv.h
  /home/swann/LiteCV/Litecv/Core/li_image.c
-Litecv/CMakeFiles/licvcore.dir/Core/li_image_proc.c.o
- ../Litecv/inc/Core/cv.h
- /home/swann/LiteCV/Litecv/Core/li_image_proc.c
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o
  ../Litecv/inc/Core/cv.h
  /home/swann/LiteCV/Litecv/Core/li_painter.c

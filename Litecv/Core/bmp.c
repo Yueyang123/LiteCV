@@ -1,12 +1,13 @@
-﻿/*************************************************
-Copyright © Yueyang Co. Ltd. 2019-2029. All rights reserved.
-File name: bmp.c
-Author： Yueyang
-Version: V1.0
-Description: 提供对于bmp文件的操作函数
-Others: 
-Log: 11.3 Yueyang
-*************************************************/
+﻿/*
+ * @Descripttion: BMP的底层函数
+ * @version: V 2.0
+ * @Author: Yueyang
+ * @email: 1700695611@qq.com
+ * @Date: 2020-11-04 01:22:01
+ * @LastEditors: Yueyang
+ * @LastEditTime: 2020-11-04 17:36:31
+ */
+
 
 #include <stdio.h>
 #include <stdlib.h>

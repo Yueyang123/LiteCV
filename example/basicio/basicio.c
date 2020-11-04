@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-01 14:26:17
+ * @LastEditTime: 2020-11-04 15:50:21
  */
 
 #include <stdio.h>
@@ -41,7 +41,7 @@ int main()
 
      //创建图片并操作像素
      BYTE* ptr=NULL;
-     Li_Image* out7 =Li_Create_Imgae(300,300,LI_DEP_24U,LI_BMP_888);
+     Li_Image* out7 =Li_Create_Image(300,300,LI_DEP_24U,LI_BMP_888);
      ptr=out7->at(out7,10,10);
      if(ptr!=NULL){
           memset(ptr,0xFF,1);
@@ -70,7 +70,7 @@ int main()
      }
      Li_Save_Image("./picture/2.png",out5);
 
-     Li_Image* out6=Li_Copy_Imgae(out6);
+     Li_Image* out6=Li_Copy_Image(out5);
      Li_Save_Image("./picture/3.png",out6);
 
 

@@ -6,4 +6,5 @@ CMakeFiles/LICV.dir/main.c.o
  ../Litecv/inc/Core/cv.h
  ../Litecv/inc/Core/li_image.h
  ../Litecv/inc/Core/li_painter.h
+ ../Litecv/inc/Imgproc/li_image_proc.h
  /home/swann/LiteCV/main.c

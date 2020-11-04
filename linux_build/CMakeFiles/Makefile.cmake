@@ -50,5 +50,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Painter.dir/DependInfo.cmake"
   "CMakeFiles/IO.dir/DependInfo.cmake"
   "CMakeFiles/LICV.dir/DependInfo.cmake"
+  "Litecv/CMakeFiles/licvimgproc.dir/DependInfo.cmake"
   "Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
   )

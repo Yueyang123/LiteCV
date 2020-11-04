@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/licvcore.dir/Core/bmp.c.o"
   "CMakeFiles/licvcore.dir/Core/li_image.c.o"
-  "CMakeFiles/licvcore.dir/Core/li_image_proc.c.o"
   "CMakeFiles/licvcore.dir/Core/li_painter.c.o"
   "liblicvcore.a"
   "liblicvcore.pdb"

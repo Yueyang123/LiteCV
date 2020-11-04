@@ -77,6 +77,7 @@ clean: Litecv/clean
 # Directory level rules for directory Litecv
 
 # Recursive "all" directory target.
+Litecv/all: Litecv/CMakeFiles/licvimgproc.dir/all
 Litecv/all: Litecv/CMakeFiles/licvcore.dir/all
 
 .PHONY : Litecv/all
@@ -87,6 +88,7 @@ Litecv/preinstall:
 .PHONY : Litecv/preinstall
 
 # Recursive "clean" directory target.
+Litecv/clean: Litecv/CMakeFiles/licvimgproc.dir/clean
 Litecv/clean: Litecv/CMakeFiles/licvcore.dir/clean
 
 .PHONY : Litecv/clean
@@ -103,7 +105,7 @@ CMakeFiles/Painter.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Painter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Painter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 0
 .PHONY : CMakeFiles/Painter.dir/rule
@@ -130,7 +132,7 @@ CMakeFiles/IO.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/IO.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 0
 .PHONY : CMakeFiles/IO.dir/rule
@@ -149,6 +151,7 @@ CMakeFiles/IO.dir/clean:
 # Target rules for target CMakeFiles/LICV.dir
 
 # All Build rule for target.
+CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/LICV.dir/build.make CMakeFiles/LICV.dir/depend
 	$(MAKE) -f CMakeFiles/LICV.dir/build.make CMakeFiles/LICV.dir/build
@@ -157,7 +160,7 @@ CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LICV.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LICV.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 0
 .PHONY : CMakeFiles/LICV.dir/rule
@@ -173,18 +176,45 @@ CMakeFiles/LICV.dir/clean:
 .PHONY : CMakeFiles/LICV.dir/clean
 
 #=============================================================================
+# Target rules for target Litecv/CMakeFiles/licvimgproc.dir
+
+# All Build rule for target.
+Litecv/CMakeFiles/licvimgproc.dir/all:
+	$(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/depend
+	$(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/LiteCV/linux_build/CMakeFiles --progress-num=11,12 "Built target licvimgproc"
+.PHONY : Litecv/CMakeFiles/licvimgproc.dir/all
+
+# Build rule for subdir invocation for target.
+Litecv/CMakeFiles/licvimgproc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvimgproc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 0
+.PHONY : Litecv/CMakeFiles/licvimgproc.dir/rule
+
+# Convenience name for target.
+licvimgproc: Litecv/CMakeFiles/licvimgproc.dir/rule
+
+.PHONY : licvimgproc
+
+# clean rule for target.
+Litecv/CMakeFiles/licvimgproc.dir/clean:
+	$(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/clean
+.PHONY : Litecv/CMakeFiles/licvimgproc.dir/clean
+
+#=============================================================================
 # Target rules for target Litecv/CMakeFiles/licvcore.dir
 
 # All Build rule for target.
 Litecv/CMakeFiles/licvcore.dir/all:
 	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/depend
 	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/LiteCV/linux_build/CMakeFiles --progress-num=7,8,9,10,11 "Built target licvcore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/LiteCV/linux_build/CMakeFiles --progress-num=7,8,9,10 "Built target licvcore"
 .PHONY : Litecv/CMakeFiles/licvcore.dir/all
 
 # Build rule for subdir invocation for target.
 Litecv/CMakeFiles/licvcore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvcore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/LiteCV/linux_build/CMakeFiles 0
 .PHONY : Litecv/CMakeFiles/licvcore.dir/rule

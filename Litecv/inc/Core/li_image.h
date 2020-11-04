@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-02 14:33:38
+ * @LastEditTime: 2020-11-04 16:27:23
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
@@ -29,6 +29,24 @@ void li_free_arr(LiArr* arr);
  */
 LI_API
 LiArr* li_malloc_arr(LONG size);
+
+/**
+ * @name: Li_Create_Mat
+ * @msg: 
+ * @param       LONG width,LONG height, 高和宽
+                BYTE depth,             图像深度
+ * @return {Li_Mat}
+ */
+Li_Mat* Li_Create_Mat(LiArr* data,LONG width,LONG height,BYTE depth);
+
+
+/**
+ * @name: Li_Destroy_Mat
+ * @msg: 为LiMat释放内存
+ * @param {void}
+ * @return {void}
+ */
+void Li_Destroy_Mat(Li_Mat* mat);
 
 /**
  * @name: Li_Load_Image
@@ -79,7 +97,7 @@ void Li_Destroy_Image(Li_Image * img);
  * @return Li_Image*  一张图片
  */
 LI_API
-Li_Image* Li_Create_Imgae(LONG width,LONG height,BYTE depth,PICTYPE pth);
+Li_Image* Li_Create_Image(LONG width,LONG height,BYTE depth,PICTYPE pth);
 
 
 /**
@@ -93,7 +111,7 @@ Li_Image* Li_Create_Imgae(LONG width,LONG height,BYTE depth,PICTYPE pth);
  * @return Li_Image*  一张图片
  */
 LI_API
-Li_Image* Li_Copy_Imgae(Li_Image *img);
+Li_Image* Li_Copy_Image(Li_Image *img);
 
 
 /**

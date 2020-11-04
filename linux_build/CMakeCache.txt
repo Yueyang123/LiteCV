@@ -218,6 +218,9 @@ LICV_SOURCE_DIR:STATIC=/home/swann/LiteCV
 //Dependencies for the target
 licvcore_LIB_DEPENDS:STATIC=general;/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a;general;/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a;general;/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a;general;m;
 
+//Dependencies for the target
+licvimgproc_LIB_DEPENDS:STATIC=general;/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a;general;/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a;general;/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a;general;m;
+
 
 ########################
 # INTERNAL cache entries

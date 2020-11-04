@@ -5,4 +5,5 @@
 /home/swann/LiteCV/linux_build/CMakeFiles/LICV.dir
 /home/swann/LiteCV/linux_build/Litecv/CMakeFiles/rebuild_cache.dir
 /home/swann/LiteCV/linux_build/Litecv/CMakeFiles/edit_cache.dir
+/home/swann/LiteCV/linux_build/Litecv/CMakeFiles/licvimgproc.dir
 /home/swann/LiteCV/linux_build/Litecv/CMakeFiles/licvcore.dir

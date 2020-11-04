@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-02 00:05:16
+ * @LastEditTime: 2020-11-04 15:49:42
  */
 
 #include <stdio.h>
@@ -27,7 +27,7 @@ int main()
 
 
      BYTE* ptr=NULL;
-     Li_Image* out =Li_Create_Imgae(300,300,LI_DEP_24U,LI_BMP_888);
+     Li_Image* out =Li_Create_Image(300,300,LI_DEP_24U,LI_BMP_888);
      Li_Point(out,0xFF00FF,20,20);
      Li_Circle(out,0xFF0000,100,100,30);
      Li_Line(out,0xFF00FF,20,20,60,60);
