@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-04 16:26:29
+ * @LastEditTime: 2020-11-10 00:28:13
  */
 #include "cv.h"
 #include "bmp.h"
@@ -62,6 +62,14 @@ void Li_Destroy_Mat(Li_Mat* mat)
   free((void*)mat);
 }
 
+/**
+ * @name: li_bgr_at
+ * @msg: 
+ * @param {Li_Image* mat
+ *         LONG x 指针所在列号
+ *         LONG y 所在行号}
+ * @return {*}
+ */
 LiArr* li_bgr_at(Li_Image* mat,LONG x,LONG y)
 {
   if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
@@ -77,7 +85,7 @@ LiArr* li_gray_at(Li_Image* mat,LONG x,LONG y)
   if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
   return mat->data+mat->width*1*y+1*x;
   else {
-  LILOG("BEYOND THE MAT");
+  //LILOG("BEYOND THE MAT");
   return NULL;
   }
 }
@@ -165,7 +173,7 @@ BYTE depth,PICTYPE pth)
    case LI_BMP_8:
     limt= Li_Create_Mat(dt,width,height,depth);
     memcpy(&img->limat,limt,sizeof(Li_Mat));//数据指针一并过来了，所以li_mat->arr不能释放
-    img->at=li_bgr_at;
+    img->at=li_gray_at;
     break;  
 
    case LI_BMP_32:

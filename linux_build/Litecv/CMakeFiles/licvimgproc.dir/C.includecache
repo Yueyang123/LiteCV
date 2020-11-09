@@ -23,4 +23,6 @@ li_image_proc.h
 /home/swann/LiteCV/Litecv/Imgproc/li_image_proc.h
 string.h
 /home/swann/LiteCV/Litecv/Imgproc/string.h
+stdio.h
+/home/swann/LiteCV/Litecv/Imgproc/stdio.h
 

@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-04 16:13:33
+ * @LastEditTime: 2020-11-10 01:42:33
  */
 
 #include <stdio.h>
@@ -21,15 +21,11 @@
 int main()
 {
      BYTE* ptr=NULL;
-     Li_Image* out =Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);
-     Li_Image* img[3];
-     Li_Split(out,img);
-     Li_Save_Image("1.bmp",img[0]);
-     Li_Save_Image("2.bmp",img[1]);
-     Li_Save_Image("3.bmp",img[2]);
-
-     Li_Image* img2= Li_Combine(img,LI_DEP_24U);
-     Li_Save_Image("4.bmp",img2);
+     Li_Image* out =Li_Load_Image("./picture/whu_rgba.bmp",LI_BMP_32);
+     double data[9]={0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1};
+     Li_Kernel* kernel=Li_GetKernel(data,3);
+     Li_Image* conv= Li_Convolute(out,kernel);
+     Li_Save_Image("conv.bmp",conv);
      LILOG("over");
      return 0; 
 }
