@@ -14,7 +14,12 @@ Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/pn
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/png_linux_install/include/pnglibconf.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/bmp.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/cv.h
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/bmp.c
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/jpeg.c
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/li_convert.c
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/li_image.c
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/li_painter.c
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/png.c
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o: ../Litecv/inc/Core/cv.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o: ../Litecv/Core/li_painter.c

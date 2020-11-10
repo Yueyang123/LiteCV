@@ -5,11 +5,13 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:01:01
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 01:43:54
+ * @LastEditTime: 2020-11-10 22:07:30
  */
 #include "li_image_proc.h"
 #include "string.h"
 #include "stdio.h"
+#include <stdlib.h>
+#include <math.h>
 #undef  LOG
 #define LOG  "LI_CV_PROC"
 
@@ -94,88 +96,43 @@ Li_Image* Li_Threshold(Li_Image* img,double threshold)
             }
         return out;
     }
-    
 }
 
 
 /**
- * @name: Li_GetKernel
- * @msg:  得到卷积核矩阵
- * @param {*}
- * @return {*}
+ * @name: Li_Double_Threshold
+ * @msg:  图像双阈值化
+ * @param {Li_Image* img 原图像
+ *         double min    小阈值
+ *         double max    大阈值
+ *         }
+ * @return {Li_Image* 二值化后的灰白图像}
  */
 LI_API 
-Li_Kernel* Li_GetKernel(double* data,BYTE KernalKind)
+Li_Image* Li_Double_Threshold(Li_Image* img,double min,double max)
 {
-    Li_Kernel * kernel;
-    kernel=(Li_Kernel*)li_malloc_arr(sizeof(Li_Kernel));
-    kernel->arr=(double*)li_malloc_arr(KernalKind*KernalKind*sizeof(double));
-    for(int i=0;i<KernalKind*KernalKind-1;i++)
-    kernel->arr[i]=data[i];
-    kernel->width=KernalKind;
-    kernel->height=KernalKind;
-    kernel->arrsize=KernalKind*KernalKind;
-    return kernel;
+    Li_Image* out=Li_Copy_Image(img);
+    if(img->pt!=LI_BMP_8)return NULL;
+    else
+    {
+        
+        for(int i=0;i<img->height;i++)
+            for(int j=0;j<img->width;j++)
+            {
+                BYTE * ptr1 =img->at(img,j,i);
+                BYTE * ptr2 =out->at(out,j,i);
+                if(*ptr1>max)
+                {
+                    *ptr2=0xFF;
+                }else if(*ptr1<min)
+                {
+                    *ptr2=0x00;
+                }
+            }
+        return out;
+    }
 }
 
-/**
- * @name: Li_Convolute
- * @msg: 计算图像卷积
- * @param {Li_Image* img 卷积图像
- *         Li_Kernel* kernal 卷积核 }
- * @return {Li_Image*}
- */
-LI_API
-Li_Image* Li_Convolute(Li_Image* img,Li_Kernel* kernal)
-{
-  if(img->imgdepth==LI_DEP_8U){
-    if(kernal->width!=3) return NULL;
-    BYTE* ptr[9]={0};
-    BYTE* ptro;
-    Li_Image* out=Li_Copy_Image(img);
-    for(int i=0;i<img->height;i++)
-        for(int j=0;j<img->width;j++)
-        {
-             BYTE sum=0;
-             if(j-1>=0&&i-1>=0)
-             ptr[0]=(BYTE*)img->at(img,j-1,i-1);
-             if(j>=0&&i-1>=0)
-             ptr[1]=(BYTE*)img->at(img,j+0,i-1);
-             if(j+1<=img->width&&i-1>=0)
-             ptr[2]=(BYTE*)img->at(img,j+1,i-1);
-             if(j-1>=0&&i>=0)
-             ptr[3]=(BYTE*)img->at(img,j-1,i+0);
-             if(j>=0&&i>=0)
-             ptr[4]=(BYTE*)img->at(img,j+0,i+0);
-             if(j+1<=img->width&&i>=0)
-             ptr[5]=(BYTE*)img->at(img,j+1,i+0);
-             if(j-1>=0&&i+1<=img->height)
-             ptr[6]=(BYTE*)img->at(img,j-1,i+1);
-             if(j>=0&&i+1<=img->height)
-             ptr[7]=(BYTE*)img->at(img,j+0,i+1);
-             if(j+1<=img->width&&i+1<=img->height)
-             ptr[8]=(BYTE*)img->at(img,j+1,i+1);
-            for(int k=0;k<9;k++)
-            {
-                double* ptr2=(double*)(kernal->arr+k);
-                if(ptr[k]!=NULL)
-                {
-                    sum+= (BYTE)(*ptr[k] * (*ptr2));
-                }
-                else  sum+=0;
-            }
-            ptro=(BYTE*)out->at(out,j+0,i+0);
-            *ptro=sum;
-        }
-        return out;
-  }else if (img->imgdepth==LI_DEP_24U||img->imgdepth==LI_DEP_32U)
-  {
-     Li_Image* imgH[img->imgdepth+1];
-     Li_Image* imgL[img->imgdepth+1];
-     Li_Split(img,imgH);
-     for(int i=0;i<img->imgdepth+1;i++)
-     imgL[i]= Li_Convolute(imgH[i],kernal);     
-     Li_Image* out2=Li_Combine(imgL,LI_DEP_32U);
-     return out2;
-  }
-}
+#include "li_canny.c"
+#include "li_smooth.c"
+#include "li_conv.c"

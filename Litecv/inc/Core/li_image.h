@@ -5,12 +5,13 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-04 16:27:23
+ * @LastEditTime: 2020-11-10 22:22:55
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
 
 #include "cv.h"
+#include "bmp.h"
 
 /**
  * @name: li_free_arr
@@ -137,6 +138,14 @@ void Li_CvtColor(const LiArr* src,LiArr *dst,LONG width,LONG height,BYTE cvtype)
  */
 LI_API
 Li_Image* Li_Convert_Image(const Li_Image* src,BYTE convertype);
+
+
+LI_API
+Li_Image* Li_Get_Roi(Li_Image* img,LONG x1,LONG y1,LONG x2,LONG y2);
+
+
+LI_API
+Li_Image* Li_ReShape(Li_Image* img,LONG tag_width,LONG tag_height);
 
 #endif // !LI_IMAGE_H
 

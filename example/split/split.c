@@ -1,11 +1,11 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 图像色道分离与合并
  * @version: 
  * @Author: Yueyang
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-04 16:16:33
+ * @LastEditTime: 2020-11-10 19:28:47
  */
 
 #include <stdio.h>
