@@ -5,8 +5,12 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:18:19
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:32:30
+ * @LastEditTime: 2020-11-10 22:41:48
  */
+
+#ifndef LI_PNG_C
+#define LI_PNG_C
+
 
 #ifdef USE_PNG
 #include "png.h"
@@ -242,3 +246,6 @@ BYTE Write_Png(BYTE* png_file_name, BYTE*  pixels , LONG width, LONG height)
  
  
 #endif //USE_PNG
+
+
+#endif // !LI_PAINTER_C

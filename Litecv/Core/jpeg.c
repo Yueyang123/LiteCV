@@ -5,8 +5,12 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:18:19
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:32:19
+ * @LastEditTime: 2020-11-10 22:40:47
  */
+#ifndef JPEG_C
+#define JPEG_C
+
+
 #ifdef USE_JPEG
 #include "jconfig.h"
 #include "jmorecfg.h"
@@ -136,3 +140,6 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
 }
 
 #endif //USE_JPEG
+
+
+#endif // !JPE_CG

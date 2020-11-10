@@ -5,4 +5,5 @@ E:/LiteCV/win_build/CMakeFiles/Painter.dir
 E:/LiteCV/win_build/CMakeFiles/rebuild_cache.dir
 E:/LiteCV/win_build/Litecv/CMakeFiles/edit_cache.dir
 E:/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir
+E:/LiteCV/win_build/Litecv/CMakeFiles/licvimgproc.dir
 E:/LiteCV/win_build/Litecv/CMakeFiles/rebuild_cache.dir

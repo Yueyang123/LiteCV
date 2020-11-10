@@ -1,3 +1,9 @@
+#ifndef LI_CANNY_C
+#define LI_CANNY_C
+
+
+
+
 #include "cv.h"
 #include "li_image_proc.h"
 #include <stdio.h>
@@ -250,6 +256,4 @@ Li_Image* Li_Canny(Li_Image* img,BYTE CannyType,BYTE min,BYTE max)
     return out1;
 }
 
-
-
-
+#endif // !LI_CANNY_C

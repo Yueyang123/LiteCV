@@ -3,8 +3,9 @@ include_directories(
     inc/Core
     inc/Imgproc
 )
-aux_source_directory(Core    DIR_SRCS)
-aux_source_directory(Imgproc PROC_SRCS)
+FILE(GLOB DIR_SRCS  "Core/li_image.c")
+FILE(GLOB PROC_SRCS "Imgproc/li_image_proc.c")
+
 SET(LICV_CORE ${DIR_SRCS})
 SET(LICV_PROC ${PROC_SRCS})
 

@@ -5,8 +5,12 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:01:04
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:04:12
+ * @LastEditTime: 2020-11-10 22:44:07
  */
+#ifndef LI_SMOOTH_C
+#define LI_SMOOTH_C
+
+
 
 #include "cv.h"
 #include "li_image_proc.h"
@@ -157,3 +161,6 @@ Li_Image* Li_Salt_Noise(Li_Image* img,LONG num)
     }
     return out; 
 }
+
+
+#endif // !LI_SMOOTH_C

@@ -5,8 +5,12 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 21:59:39
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:06:18
+ * @LastEditTime: 2020-11-10 22:43:22
  */
+#ifndef LI_CONV_C
+#define LI_CONV_C
+
+
 
 #include "cv.h"
 #include "li_image_proc.h"
@@ -164,3 +168,4 @@ Li_Image* Li_Emboss(Li_Image* img)
     }
 }
 
+#endif // !LI_CONV_C

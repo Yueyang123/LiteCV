@@ -5,8 +5,12 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:15:24
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:31:54
+ * @LastEditTime: 2020-11-10 22:39:39
  */
+#ifndef LI_CONVERT
+#define LI_CONVERT
+
+
 #include "cv.h"
 #include "bmp.h"
 #include "stdlib.h"
@@ -550,3 +554,4 @@ Li_Image* Li_ReShape(Li_Image* img,LONG tag_width,LONG tag_height)
     return out;
 }
 
+#endif // !LI_CONVERT

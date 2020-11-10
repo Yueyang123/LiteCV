@@ -6,8 +6,12 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:43:37
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-02 00:03:50
+ * @LastEditTime: 2020-11-10 22:42:15
  */
+#ifndef LI_PAINTER_C
+#define LI_PAINTER_C
+
+
 #include "cv.h"
 
 const unsigned char asc2_1206[95][12]={
@@ -528,3 +532,6 @@ void Li_String(Li_Image* mat,LONG color,LONG x,LONG y,LONG width,LONG height,BYT
         p++;
     }
 }
+
+
+#endif // !LI_PAINTER_C

@@ -180,6 +180,19 @@ licvcore/fast:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/build
 .PHONY : licvcore/fast
 
+#=============================================================================
+# Target rules for targets named licvimgproc
+
+# Build rule for target.
+licvimgproc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 licvimgproc
+.PHONY : licvimgproc
+
+# fast build rule for target.
+licvimgproc/fast:
+	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/build
+.PHONY : licvimgproc/fast
+
 example/basicio/basicio.obj: example/basicio/basicio.c.obj
 
 .PHONY : example/basicio/basicio.obj
@@ -273,6 +286,7 @@ help:
 	@echo ... LICV
 	@echo ... Painter
 	@echo ... licvcore
+	@echo ... licvimgproc
 	@echo ... example/basicio/basicio.obj
 	@echo ... example/basicio/basicio.i
 	@echo ... example/basicio/basicio.s

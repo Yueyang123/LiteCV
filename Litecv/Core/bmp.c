@@ -5,8 +5,11 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-04 01:22:01
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-04 17:36:31
+ * @LastEditTime: 2020-11-10 22:40:10
  */
+#ifndef BMP_H
+#define BMP_H
+
 
 
 #include <stdio.h>
@@ -431,3 +434,4 @@ BYTE Write_bmp(BYTE *filepath,BYTE *imgData,BITMAPFILEHEADER *bmf,BITMAPINFOHEAD
 
 }
 
+#endif // !BMP_H
