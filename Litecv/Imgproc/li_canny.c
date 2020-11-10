@@ -29,10 +29,10 @@ Li_Image* Li_Canny(Li_Image* img,BYTE CannyType,BYTE min,BYTE max)
     Li_Image* PP =Li_Copy_Image(img); 
     Li_Image* QQ =Li_Copy_Image(img);
     Li_Kernel* SX,*SY;
-    double P[img->width*img->height];/*x方向偏导*/
-    double Q[img->width*img->height]; /*y方向偏导*/
+    double *P =(double*)malloc(sizeof(double)*img->width*img->height);/*x方向偏导*/
+    double *Q =(double*)malloc(sizeof(double)*img->width*img->height); /*y方向偏导*/
     /*PI*-1/2* --  PI*1/2*/
-    double Threa[img->width*img->height];
+    double *Threa =(double*)malloc(sizeof(double)*img->width*img->height);
 
     #ifdef DEBUG
     Li_Save_Image("before_minus.bmp",out);

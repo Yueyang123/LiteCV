@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:52:02
+ * @LastEditTime: 2020-11-10 22:56:54
  */
 
 #include <stdio.h>
@@ -25,6 +25,7 @@ int main()
      Li_Image* gray=Li_Convert_Image(out,LI_BMP_888_2_LI_BMP_8);
 
      Li_Image* smooth=Li_Smooth(gray,Li_GAUSS);
+     Li_Save_Image("./smooth.bmp",smooth);
      Li_Image* img= Li_Canny(smooth,LI_CANNY_SOBEL,30,120);
      Li_Save_Image("./canny_sobel.bmp",img);
 
