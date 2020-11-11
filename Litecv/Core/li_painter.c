@@ -6,13 +6,14 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:43:37
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:42:15
+ * @LastEditTime: 2020-11-11 14:09:19
  */
 #ifndef LI_PAINTER_C
 #define LI_PAINTER_C
 
 
 #include "cv.h"
+#include "math.h"
 
 const unsigned char asc2_1206[95][12]={
 {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},/*" ",0*/
@@ -410,7 +411,7 @@ const unsigned char asc2_3216[95][128]={
 LI_API
 void Li_Point(Li_Image* mat,LONG color,LONG x,LONG y)
 {
-    if(x>=0&&x<=mat->width&&y>0&&y<mat->height)
+    if(x>=0&&x<mat->width&&y>0&&y<mat->height)
     {
         BYTE* inaddr;
         inaddr=mat->at(mat,x,y);
@@ -419,6 +420,7 @@ void Li_Point(Li_Image* mat,LONG color,LONG x,LONG y)
         *(inaddr+2)=(u8)(color&0x000000FF);//R
     }
 }
+
 
 LI_API
 void Li_Line(Li_Image* mat,LONG color,LONG x1, LONG y1, LONG x2, LONG y2)
@@ -455,6 +457,20 @@ void Li_Line(Li_Image* mat,LONG color,LONG x1, LONG y1, LONG x2, LONG y2)
         }
     }
 }
+
+LI_API
+void Li_Line_P(Li_Image* mat,LONG color,LONG threa, LONG R)
+{
+    float fRate = (float)(PI/180);
+    for(int x=1;x<mat->width;x++)
+     {
+          LONG y=(R-x*cos(threa*fRate))/sin(threa* fRate);
+          LONG y1=(R-(x-1)*cos(threa*fRate))/sin(threa* fRate);
+          if(y<mat->height&&y1<mat->height)
+          Li_Line(mat,color, x,  y,  x-1,  y1);
+     }
+}
+
 
 LI_API
 void Li_Circle(Li_Image* mat ,LONG color,LONG x0,LONG y0,LONG r)

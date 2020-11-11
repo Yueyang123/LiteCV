@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:01:01
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:07:30
+ * @LastEditTime: 2020-11-11 09:30:04
  */
 #include "li_image_proc.h"
 #include "string.h"
@@ -136,3 +136,4 @@ Li_Image* Li_Double_Threshold(Li_Image* img,double min,double max)
 #include "li_canny.c"
 #include "li_smooth.c"
 #include "li_conv.c"
+#include "li_hough.c"

@@ -140,33 +140,6 @@ licvcore/fast:
 	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
 .PHONY : licvcore/fast
 
-Core/bmp.o: Core/bmp.c.o
-
-.PHONY : Core/bmp.o
-
-# target to build an object file
-Core/bmp.c.o:
-	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.o
-.PHONY : Core/bmp.c.o
-
-Core/bmp.i: Core/bmp.c.i
-
-.PHONY : Core/bmp.i
-
-# target to preprocess a source file
-Core/bmp.c.i:
-	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.i
-.PHONY : Core/bmp.c.i
-
-Core/bmp.s: Core/bmp.c.s
-
-.PHONY : Core/bmp.s
-
-# target to generate assembly for a file
-Core/bmp.c.s:
-	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.s
-.PHONY : Core/bmp.c.s
-
 Core/li_image.o: Core/li_image.c.o
 
 .PHONY : Core/li_image.o
@@ -193,33 +166,6 @@ Core/li_image.s: Core/li_image.c.s
 Core/li_image.c.s:
 	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s
 .PHONY : Core/li_image.c.s
-
-Core/li_painter.o: Core/li_painter.c.o
-
-.PHONY : Core/li_painter.o
-
-# target to build an object file
-Core/li_painter.c.o:
-	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o
-.PHONY : Core/li_painter.c.o
-
-Core/li_painter.i: Core/li_painter.c.i
-
-.PHONY : Core/li_painter.i
-
-# target to preprocess a source file
-Core/li_painter.c.i:
-	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.i
-.PHONY : Core/li_painter.c.i
-
-Core/li_painter.s: Core/li_painter.c.s
-
-.PHONY : Core/li_painter.s
-
-# target to generate assembly for a file
-Core/li_painter.c.s:
-	cd /home/swann/LiteCV/linux_build && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.s
-.PHONY : Core/li_painter.c.s
 
 Imgproc/li_image_proc.o: Imgproc/li_image_proc.c.o
 
@@ -258,15 +204,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... licvimgproc"
 	@echo "... licvcore"
-	@echo "... Core/bmp.o"
-	@echo "... Core/bmp.i"
-	@echo "... Core/bmp.s"
 	@echo "... Core/li_image.o"
 	@echo "... Core/li_image.i"
 	@echo "... Core/li_image.s"
-	@echo "... Core/li_painter.o"
-	@echo "... Core/li_painter.i"
-	@echo "... Core/li_painter.s"
 	@echo "... Imgproc/li_image_proc.o"
 	@echo "... Imgproc/li_image_proc.i"
 	@echo "... Imgproc/li_image_proc.s"

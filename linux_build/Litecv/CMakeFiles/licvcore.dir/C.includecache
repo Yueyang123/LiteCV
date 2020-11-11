@@ -107,6 +107,8 @@ li_painter.c
 /home/swann/LiteCV/Litecv/Core/li_painter.c
 cv.h
 /home/swann/LiteCV/Litecv/Core/cv.h
+math.h
+/home/swann/LiteCV/Litecv/Core/math.h
 
 /home/swann/LiteCV/Litecv/Core/png.c
 png.h

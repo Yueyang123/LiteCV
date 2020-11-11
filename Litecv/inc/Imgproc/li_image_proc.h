@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-04 15:41:55
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:08:22
+ * @LastEditTime: 2020-11-11 14:42:56
  */
 #ifndef LI_IMG_PROC
 #define LI_IMG_PROC
@@ -29,9 +29,24 @@ typedef struct tagLi_Line
     LONG start_y;
     LONG end_x;
     LONG end_y;
-    double thera;
-    double r;
+    LONG thera;
+    LONG r;
 }LiLine;
+
+
+typedef struct tag_LiPoint
+{
+    LONG x;
+    LONG y;
+    struct tag_LiPoint* nextpoint;    
+}LiPoint;
+
+typedef struct tag_LiCircle
+{
+    LONG x;
+    LONG y;
+    LONG r;
+}LiCircle;
 
 
 enum Li_Smooth_Type
@@ -166,5 +181,18 @@ Li_Image* Li_Double_Threshold(Li_Image* img,double min,double max);
  */
 LI_API
 Li_Image* Li_Canny(Li_Image* img,BYTE CannyType,BYTE min,BYTE max);
+
+
+
+LI_API 
+void Li_Hough_Line(Li_Image* img,LiLine* lines, LONG maxthrea,LONG maxr);
+
+
+LI_API 
+LONG Li_Hough_Circle_R(Li_Image* img,LiCircle* circles, LONG R,LONG* range);
+
+
+LI_API 
+void Li_Hough_Circle(Li_Image* img,LiCircle* circles, LONG Rmin,LONG Rmax,LONG* range);
 
 #endif // !LI_IMG_PROC

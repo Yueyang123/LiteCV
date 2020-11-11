@@ -4,9 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/swann/LiteCV/Litecv/Core/bmp.c" "/home/swann/LiteCV/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/bmp.c.o"
   "/home/swann/LiteCV/Litecv/Core/li_image.c" "/home/swann/LiteCV/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o"
-  "/home/swann/LiteCV/Litecv/Core/li_painter.c" "/home/swann/LiteCV/linux_build/Litecv/CMakeFiles/licvcore.dir/Core/li_painter.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
