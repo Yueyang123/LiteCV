@@ -5,8 +5,10 @@ Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj
  ../Litecv/inc/Core/bmp.h
  ../Litecv/inc/Core/cv.h
  ../Litecv/inc/Core/li_image.h
+ ../Litecv/inc/Core/li_painter.h
  ../Litecv/inc/Imgproc/li_image_proc.h
  E:/LiteCV/Litecv/Imgproc/li_canny.c
  E:/LiteCV/Litecv/Imgproc/li_conv.c
+ E:/LiteCV/Litecv/Imgproc/li_hough.c
  E:/LiteCV/Litecv/Imgproc/li_image_proc.c
  E:/LiteCV/Litecv/Imgproc/li_smooth.c

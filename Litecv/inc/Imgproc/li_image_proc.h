@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-04 15:41:55
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-11 14:42:56
+ * @LastEditTime: 2020-11-11 23:22:46
  */
 #ifndef LI_IMG_PROC
 #define LI_IMG_PROC
@@ -181,7 +181,6 @@ Li_Image* Li_Double_Threshold(Li_Image* img,double min,double max);
  */
 LI_API
 Li_Image* Li_Canny(Li_Image* img,BYTE CannyType,BYTE min,BYTE max);
-
 
 
 LI_API 

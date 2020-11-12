@@ -73,7 +73,9 @@ CMAKE_BINARY_DIR = E:\LiteCV\win_build
 # The main recursive "all" target.
 all: CMakeFiles/LICV.dir/all
 all: CMakeFiles/IO.dir/all
+all: CMakeFiles/canny.dir/all
 all: CMakeFiles/Painter.dir/all
+all: CMakeFiles/smooth.dir/all
 all: Litecv/all
 
 .PHONY : all
@@ -86,7 +88,9 @@ preinstall: Litecv/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/LICV.dir/clean
 clean: CMakeFiles/IO.dir/clean
+clean: CMakeFiles/canny.dir/clean
 clean: CMakeFiles/Painter.dir/clean
+clean: CMakeFiles/smooth.dir/clean
 clean: Litecv/clean
 
 .PHONY : clean
@@ -167,6 +171,34 @@ CMakeFiles/IO.dir/clean:
 .PHONY : CMakeFiles/IO.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/canny.dir
+
+# All Build rule for target.
+CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=7,8 "Built target canny"
+.PHONY : CMakeFiles/canny.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/canny.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/canny.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
+.PHONY : CMakeFiles/canny.dir/rule
+
+# Convenience name for target.
+canny: CMakeFiles/canny.dir/rule
+
+.PHONY : canny
+
+# clean rule for target.
+CMakeFiles/canny.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/clean
+.PHONY : CMakeFiles/canny.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Painter.dir
 
 # All Build rule for target.
@@ -194,13 +226,41 @@ CMakeFiles/Painter.dir/clean:
 .PHONY : CMakeFiles/Painter.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/smooth.dir
+
+# All Build rule for target.
+CMakeFiles/smooth.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/smooth.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=13,14 "Built target smooth"
+.PHONY : CMakeFiles/smooth.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/smooth.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/smooth.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\LiteCV\win_build\CMakeFiles 0
+.PHONY : CMakeFiles/smooth.dir/rule
+
+# Convenience name for target.
+smooth: CMakeFiles/smooth.dir/rule
+
+.PHONY : smooth
+
+# clean rule for target.
+CMakeFiles/smooth.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/clean
+.PHONY : CMakeFiles/smooth.dir/clean
+
+#=============================================================================
 # Target rules for target Litecv/CMakeFiles/licvcore.dir
 
 # All Build rule for target.
 Litecv/CMakeFiles/licvcore.dir/all:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/depend
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvcore.dir\build.make Litecv/CMakeFiles/licvcore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=7,8 "Built target licvcore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=9,10 "Built target licvcore"
 .PHONY : Litecv/CMakeFiles/licvcore.dir/all
 
 # Build rule for subdir invocation for target.
@@ -227,7 +287,7 @@ Litecv/CMakeFiles/licvcore.dir/clean:
 Litecv/CMakeFiles/licvimgproc.dir/all:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/depend
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=9,10 "Built target licvimgproc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\LiteCV\win_build\CMakeFiles --progress-num=11,12 "Built target licvimgproc"
 .PHONY : Litecv/CMakeFiles/licvimgproc.dir/all
 
 # Build rule for subdir invocation for target.

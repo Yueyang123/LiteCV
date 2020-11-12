@@ -1,7 +1,9 @@
 E:/LiteCV/win_build/CMakeFiles/LICV.dir
 E:/LiteCV/win_build/CMakeFiles/IO.dir
 E:/LiteCV/win_build/CMakeFiles/edit_cache.dir
+E:/LiteCV/win_build/CMakeFiles/canny.dir
 E:/LiteCV/win_build/CMakeFiles/Painter.dir
+E:/LiteCV/win_build/CMakeFiles/smooth.dir
 E:/LiteCV/win_build/CMakeFiles/rebuild_cache.dir
 E:/LiteCV/win_build/Litecv/CMakeFiles/edit_cache.dir
 E:/LiteCV/win_build/Litecv/CMakeFiles/licvcore.dir

@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 12:44:31
+ * @LastEditTime: 2020-11-12 01:03:44
  */
 
 #include <stdio.h>
@@ -29,12 +29,12 @@ int main()
      Li_Image* med =Li_Smooth(noise,Li_MEDIUM);//中值滤波
      Li_Image* conv=Li_Smooth(noise,Li_GAUSS);//高斯滤波
      Li_Image* ave=Li_Smooth(noise,Li_AVERAGE);//均值滤波
-     Li_Save_Image("conv.bmp",conv);
-     Li_Save_Image("sharp.bmp",sharp);
-     Li_Save_Image("emboss.bmp",emboss);   
-     Li_Save_Image("med.bmp",med); 
-     Li_Save_Image("ave.bmp",ave); 
-     Li_Save_Image("noise.bmp",noise);
+     Li_Save_Image("conv.jpg",conv);
+     Li_Save_Image("sharp.jpg",sharp);
+     Li_Save_Image("emboss.jpg",emboss);   
+     Li_Save_Image("med.jpg",med); 
+     Li_Save_Image("ave.jpg",ave); 
+     Li_Save_Image("noise.jpg",noise);
      LILOG("over");
      return 0; 
 }

@@ -54,7 +54,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/LICV.dir/DependInfo.cmake"
   "CMakeFiles/IO.dir/DependInfo.cmake"
+  "CMakeFiles/canny.dir/DependInfo.cmake"
   "CMakeFiles/Painter.dir/DependInfo.cmake"
+  "CMakeFiles/smooth.dir/DependInfo.cmake"
   "Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
   "Litecv/CMakeFiles/licvimgproc.dir/DependInfo.cmake"
   )

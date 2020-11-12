@@ -11,7 +11,10 @@ aux_source_directory(./example/basicio DIR_EXP01)
 set(LICV_EXP01 ${DIR_EXP01})
 aux_source_directory(./example/painter DIR_EXP02)
 set(LICV_EXP02 ${DIR_EXP02})
-
+aux_source_directory(./example/conv   DIR_EXP04)
+set(LICV_EXP04 ${DIR_EXP04})
+aux_source_directory(./example/canny   DIR_EXP05)
+set(LICV_EXP05 ${DIR_EXP05})
 
 set(ARM OFF)
 
@@ -44,6 +47,15 @@ target_link_libraries(IO licvcore)
 
 add_executable(Painter ${LICV_EXP02})
 target_link_libraries(Painter licvcore)
+
+add_executable(smooth ${LICV_EXP04})
+target_link_libraries(smooth licvcore)
+target_link_libraries(smooth licvimgproc)
+
+add_executable(canny ${LICV_EXP05})
+target_link_libraries(canny licvcore)
+target_link_libraries(canny licvimgproc)
+
 
 if(ARM)
 add_executable(display ${LICV_EXP03})

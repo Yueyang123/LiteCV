@@ -1,0 +1,445 @@
+{
+    "root": {
+        "data": {
+            "id": "c70iqjv26qo0",
+            "created": 1605106415871,
+            "text": "Litecv",
+            "priority": 1,
+            "progress": null
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c70iradv65c0",
+                    "created": 1605106473604,
+                    "text": "Core ",
+                    "priority": 2,
+                    "note": "提供对于常见图片类型的底层支持，对应于Litecv/Core文件加下的所有文件.可以得到liblicvcore.a库文件",
+                    "layout_mind_offset": {
+                        "x": -74,
+                        "y": -2
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c70isxk9eq80",
+                            "created": 1605106602421,
+                            "text": "Li_image",
+                            "priority": 3,
+                            "layout_right_offset": {
+                                "x": 26.666666799121003,
+                                "y": 100.99999523162853
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70iu86hgl40",
+                                    "created": 1605106703897,
+                                    "text": "Li_Mat",
+                                    "priority": 4
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c70iu9m7z8g0",
+                                            "created": 1605106707025,
+                                            "text": "LiArr",
+                                            "priority": 5
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c70j2c2pyhs0",
+                                    "created": 1605107339290,
+                                    "text": "支持如下七种图片类型enum{\n LI_BMP_1   ,\n LI_BMP_8   ,\n LI_BMP_565 ,\n LI_BMP_888 ,\n LI_BMP_32  ,\n LI_JPEG    ,\n LI_PNG     ,\n};",
+                                    "priority": 4,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70ix20otko0",
+                            "created": 1605106925578,
+                            "text": "底层IO方法",
+                            "priority": 3,
+                            "layout_right_offset": {
+                                "x": 20,
+                                "y": -4
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70iy7zod5c0",
+                                    "created": 1605107016942,
+                                    "text": "LI_API\nvoid li_free_arr(LiArr* arr);\nLI_API\nLiArr* li_malloc_arr(LONG size);\nLi_Mat* Li_Create_Mat(LiArr* data,LONG width,LONG height,BYTE depth);\nvoid Li_Destroy_Mat(Li_Mat* mat);\nLI_API\nLi_Image* Li_Load_Image(BYTE* filepath,PICTYPE pt);\nLI_API\nBYTE Li_Save_Image(BYTE* filepath,Li_Image* img);\nLI_API\nvoid Li_Destroy_Image(Li_Image * img);\nLI_API\nLi_Image* Li_Create_Image(LONG width,LONG height,BYTE depth,PICTYPE pth);\nLI_API\nLi_Image* Li_Copy_Image(Li_Image *img);",
+                                    "layout_right_offset": {
+                                        "x": 286.4999988153571,
+                                        "y": -133.49999795109053
+                                    },
+                                    "priority": 5
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c70j5h23bts0",
+                                            "created": 1605107585229,
+                                            "text": "png",
+                                            "priority": 7
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c70j5ii0dm80",
+                                            "created": 1605107588367,
+                                            "text": "jpeg",
+                                            "priority": 6
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c70j5jnomi00",
+                                            "created": 1605107590887,
+                                            "text": "bmp",
+                                            "priority": 6
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70ix2ld3yo0",
+                            "created": 1605106926828,
+                            "text": "图像转换方法",
+                            "layout_right_offset": {
+                                "x": 23.333332654502556,
+                                "y": -133.7499994970858
+                            },
+                            "priority": 3,
+                            "note": "常见图像转化",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70j0nqg71c0",
+                                    "created": 1605107207941,
+                                    "text": "LI_API\nvoid Li_CvtColor(const LiArr* src,LiArr *dst,LONG width,LONG height,BYTE cvtype);\nLI_API\nLi_Image* Li_Convert_Image(const Li_Image* src,BYTE convertype);",
+                                    "layout_right_offset": {
+                                        "x": 250,
+                                        "y": 18
+                                    },
+                                    "priority": 5
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c70j3ykipi00",
+                                    "created": 1605107466619,
+                                    "text": "支持如下转换类型enum{\n\tLI_RGB2RGBA,\n\tLI_RGBA2RGB,\n\tLI_BGR2BGRA,\n\tLI_BGRA2BGR,\n\tLI_BGR2RGB,\n\tLI_RGB2BGR,\n\tLI_BGR2GRAY,\n\tLI_GRAY2BGR,\n\tLI_BGRA2GRAY,\n\tLI_RGB2GRAY,\n\tLI_BGR2YUYV,\n\tLI_YUYV2BGR,\n\tLI_BGRA2YUYV\n};",
+                                    "priority": 4,
+                                    "layout_right_offset": {
+                                        "x": 12,
+                                        "y": 110
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70jbg8ix280",
+                            "created": 1605108053625,
+                            "text": "画笔工具",
+                            "layout_right_offset": {
+                                "x": 42,
+                                "y": -82
+                            },
+                            "priority": 3
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70jbyqlpeo0",
+                                    "created": 1605108093900,
+                                    "text": "LI_API\nvoid Li_Point(Li_Image* mat,LONG color,LONG x,LONG y);\n\nLI_API\nvoid Li_Line(Li_Image* mat,LONG color,LONG x1, LONG y1, LONG x2, LONG y2);\n\nLI_API\nvoid Li_Circle(Li_Image* mat ,LONG color,LONG x0,LONG y0,LONG r);\n\nLI_API\nvoid Li_Char(Li_Image* mat,LONG color,LONG x,LONG y,BYTE num,BYTE size);\n\nLI_API\nvoid Li_String(Li_Image* mat,LONG color,LONG x,LONG y,LONG width,LONG height,BYTE*p,BYTE size);\n\nLI_API\nvoid Li_Line_P(Li_Image* mat,LONG color,LONG threa, LONG R);",
+                                    "layout_right_offset": {
+                                        "x": 280,
+                                        "y": -140
+                                    },
+                                    "priority": 5
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c70jhg0qbqg0",
+                    "created": 1605108523339,
+                    "text": "ImgProc",
+                    "priority": 2,
+                    "expandState": "expand",
+                    "note": "ImgProc模块实现常见的图像处理算法\n编译得到libliimgproc.a库文件",
+                    "layout_mind_offset": {
+                        "x": 59.583329134103906,
+                        "y": -3.3333339459367153
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c70jhrx6u3k0",
+                            "created": 1605108549246,
+                            "text": "canny",
+                            "layout_left_offset": {
+                                "x": -18.749999720603284,
+                                "y": -25.4999994412064
+                            },
+                            "priority": 3
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70jls59bu00",
+                                    "created": 1605108863191,
+                                    "text": "LI_API\nLi_Image* Li_Canny(Li_Image* img,BYTE CannyType,BYTE min,BYTE max);",
+                                    "layout_left_offset": {
+                                        "x": -39.50000598281656,
+                                        "y": -5.684341886080802e-14
+                                    },
+                                    "priority": 5
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70jj1maxq80",
+                            "created": 1605108648720,
+                            "text": "conv图像卷积",
+                            "layout_left_offset": {
+                                "x": -29.999999552965164,
+                                "y": -17.49999973922968
+                            },
+                            "priority": 3
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70jkcd6tq00",
+                                    "created": 1605108750478,
+                                    "text": "smooth",
+                                    "priority": 4,
+                                    "layout_left_offset": {
+                                        "x": -11.249999832361937,
+                                        "y": 2.49999996274704
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c70jmlz6pzk0",
+                                            "created": 1605108928127,
+                                            "text": "LI_API\nLi_Image* Li_Smooth(Li_Image* img,BYTE smoothtype);",
+                                            "priority": 5
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c70jmvhcink0",
+                                            "created": 1605108948816,
+                                            "text": "支持平滑类型enum Li_Smooth_Type{\n\tLi_GAUSS,   //高斯滤波\n\tLi_AVERAGE, //均值滤波\n\tLi_MEDIUM,  //中值滤波\n\t\n};",
+                                            "priority": 5
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c70jlb6lycg0",
+                                    "created": 1605108826267,
+                                    "text": "sharp图像锐化",
+                                    "priority": 4
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c70jqgmulog0",
+                                            "created": 1605109229954,
+                                            "text": "LI_API\nLi_Image* Li_Sharp(Li_Image* img);",
+                                            "layout_left_offset": {
+                                                "x": -1.000002309679985,
+                                                "y": -18.499999664723816
+                                            },
+                                            "expandState": "expand",
+                                            "priority": 5
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c70jlbtopig0",
+                                    "created": 1605108827662,
+                                    "text": "Emboss图像雕版",
+                                    "priority": 4,
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c70jql6r6yw0",
+                                            "created": 1605109239865,
+                                            "text": "LI_API\nLi_Image* Li_Emboss(Li_Image* img);",
+                                            "layout_left_offset": {
+                                                "x": 18.749999720603228,
+                                                "y": -4.999999925494194
+                                            },
+                                            "priority": 5
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70jj0xkrrs0",
+                            "created": 1605108647225,
+                            "text": "图像色道分离与合并",
+                            "layout_left_offset": {
+                                "x": 6.666666401757084,
+                                "y": -57.916664396309216
+                            },
+                            "priority": 3
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70jrncs5c00",
+                                    "created": 1605109322947,
+                                    "text": "LI_API\nvoid Li_Split(Li_Image* img,Li_Image** out);",
+                                    "layout_left_offset": {
+                                        "x": -104.16666931990085,
+                                        "y": 16.499998919665813
+                                    },
+                                    "priority": 5
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c70jro3130w0",
+                                    "created": 1605109324534,
+                                    "text": "LI_API\nLi_Image*  Li_Combine(Li_Image** out,BYTE depth);",
+                                    "layout_left_offset": {
+                                        "x": -60.33333436813609,
+                                        "y": 18.249998913457034
+                                    },
+                                    "priority": 5
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70jkwvl3q00",
+                            "created": 1605108795126,
+                            "text": "二值化",
+                            "layout_left_offset": {
+                                "x": -3.7499999441201908,
+                                "y": -44.58333010267887
+                            },
+                            "priority": 3
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70jr5c7q2o0",
+                                    "created": 1605109283730,
+                                    "text": "LI_API \nLi_Image* Li_Double_Threshold(Li_Image* img,double min,double max);",
+                                    "priority": 5
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c70jrgl92000",
+                                    "created": 1605109308221,
+                                    "text": "LI_API \nLi_Image* Li_Threshold(Li_Image* img,double threshold);",
+                                    "priority": 5
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c70jtw4hgag0",
+                            "created": 1605109498764,
+                            "text": "霍夫变换",
+                            "priority": 3,
+                            "layout_left_offset": {
+                                "x": -4,
+                                "y": -12
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c70jud7k4ao0",
+                                    "created": 1605109535956,
+                                    "text": "HOUGH直线检测",
+                                    "priority": 4
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c70judsy3wo0",
+                                    "created": 1605109537249,
+                                    "text": "HOUGHyuanjiance",
+                                    "priority": 4,
+                                    "layout_left_offset": {
+                                        "x": 16,
+                                        "y": 4
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

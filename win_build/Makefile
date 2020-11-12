@@ -155,6 +155,19 @@ IO/fast:
 .PHONY : IO/fast
 
 #=============================================================================
+# Target rules for targets named canny
+
+# Build rule for target.
+canny: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 canny
+.PHONY : canny
+
+# fast build rule for target.
+canny/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/build
+.PHONY : canny/fast
+
+#=============================================================================
 # Target rules for targets named Painter
 
 # Build rule for target.
@@ -166,6 +179,19 @@ Painter: cmake_check_build_system
 Painter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Painter.dir\build.make CMakeFiles/Painter.dir/build
 .PHONY : Painter/fast
+
+#=============================================================================
+# Target rules for targets named smooth
+
+# Build rule for target.
+smooth: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 smooth
+.PHONY : smooth
+
+# fast build rule for target.
+smooth/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/build
+.PHONY : smooth/fast
 
 #=============================================================================
 # Target rules for targets named licvcore
@@ -219,6 +245,60 @@ example/basicio/basicio.s: example/basicio/basicio.c.s
 example/basicio/basicio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\IO.dir\build.make CMakeFiles/IO.dir/example/basicio/basicio.c.s
 .PHONY : example/basicio/basicio.c.s
+
+example/canny/canny.obj: example/canny/canny.c.obj
+
+.PHONY : example/canny/canny.obj
+
+# target to build an object file
+example/canny/canny.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/example/canny/canny.c.obj
+.PHONY : example/canny/canny.c.obj
+
+example/canny/canny.i: example/canny/canny.c.i
+
+.PHONY : example/canny/canny.i
+
+# target to preprocess a source file
+example/canny/canny.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/example/canny/canny.c.i
+.PHONY : example/canny/canny.c.i
+
+example/canny/canny.s: example/canny/canny.c.s
+
+.PHONY : example/canny/canny.s
+
+# target to generate assembly for a file
+example/canny/canny.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\canny.dir\build.make CMakeFiles/canny.dir/example/canny/canny.c.s
+.PHONY : example/canny/canny.c.s
+
+example/conv/conv.obj: example/conv/conv.c.obj
+
+.PHONY : example/conv/conv.obj
+
+# target to build an object file
+example/conv/conv.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/example/conv/conv.c.obj
+.PHONY : example/conv/conv.c.obj
+
+example/conv/conv.i: example/conv/conv.c.i
+
+.PHONY : example/conv/conv.i
+
+# target to preprocess a source file
+example/conv/conv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/example/conv/conv.c.i
+.PHONY : example/conv/conv.c.i
+
+example/conv/conv.s: example/conv/conv.c.s
+
+.PHONY : example/conv/conv.s
+
+# target to generate assembly for a file
+example/conv/conv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/example/conv/conv.c.s
+.PHONY : example/conv/conv.c.s
 
 example/painter/painter.obj: example/painter/painter.c.obj
 
@@ -285,11 +365,19 @@ help:
 	@echo ... IO
 	@echo ... LICV
 	@echo ... Painter
+	@echo ... canny
 	@echo ... licvcore
 	@echo ... licvimgproc
+	@echo ... smooth
 	@echo ... example/basicio/basicio.obj
 	@echo ... example/basicio/basicio.i
 	@echo ... example/basicio/basicio.s
+	@echo ... example/canny/canny.obj
+	@echo ... example/canny/canny.i
+	@echo ... example/canny/canny.s
+	@echo ... example/conv/conv.obj
+	@echo ... example/conv/conv.i
+	@echo ... example/conv/conv.s
 	@echo ... example/painter/painter.obj
 	@echo ... example/painter/painter.i
 	@echo ... example/painter/painter.s

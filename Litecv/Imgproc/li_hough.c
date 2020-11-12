@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-11 08:22:08
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-11 14:49:52
+ * @LastEditTime: 2020-11-11 23:27:31
  */
 #ifndef HOUGH_C
 #define HOUGH_C
@@ -16,7 +16,15 @@
 #include "math.h"
 #include "li_painter.h"
 
-
+/**
+ * @name: Li_Hough_Line
+ * @msg: 霍夫直线变换
+ * @param {Li_Image* img 原图像
+ * 		   LiLine* lines 返回的直线类型指针
+ * 		   LONG maxthrea 允许的最大角度
+ * 		   LONG maxr     语序的最大半径}
+ * @return {*}
+ */
 LI_API 
 void Li_Hough_Line(Li_Image* img,LiLine* lines, LONG maxthrea,LONG maxr)
 {
@@ -88,6 +96,15 @@ void Li_Hough_Line(Li_Image* img,LiLine* lines, LONG maxthrea,LONG maxr)
    lines->r=lineR;
 }
 
+/**
+ * @name: Li_Hough_Circle_R
+ * @msg:  固定半径的Hough变换
+ * @param {Li_Image* img  		原图像
+ * 		   LiCircle* circles    返回的圆指针（不会再内部分配内存）
+ * 		   LONG R				变换半径
+ * 		   LONG* range}			圆心得范围
+ * @return {*}
+ */
 LI_API 
 LONG Li_Hough_Circle_R(Li_Image* img,LiCircle* circles, LONG R,LONG* range)
 {
@@ -134,6 +151,15 @@ LONG Li_Hough_Circle_R(Li_Image* img,LiCircle* circles, LONG R,LONG* range)
 }
 
 
+/**
+ * @name: Li_Hough_Circle
+ * @msg:  给定范围的Hough变换
+ * @param {Li_Image* img  		原图像
+ * 		   LiCircle* circles    返回的圆指针（不会再内部分配内存）
+ * 		   LONG Rmin,LONG Rmax  最小最大半径
+ * 		   LONG* range}			圆心得范围
+ * @return {*}
+ */
 LI_API 
 void Li_Hough_Circle(Li_Image* img,LiCircle* circles, LONG Rmin,LONG Rmax,LONG* range)
 {
