@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:22:55
+ * @LastEditTime: 2020-11-13 18:06:26
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
@@ -139,11 +139,27 @@ void Li_CvtColor(const LiArr* src,LiArr *dst,LONG width,LONG height,BYTE cvtype)
 LI_API
 Li_Image* Li_Convert_Image(const Li_Image* src,BYTE convertype);
 
-
+/**
+ * @name: Li_Get_Roi
+ * @msg: 获取感兴趣区域
+ * @param {Li_Image* img 原图像
+ *         LONG x1       左下角所在列号
+ *         LONG y1       左下角所在行号
+ *         LONG x2       右上角所在列号
+ *         LONG y2}      右上角所在行号
+ * @return {Li_Image*}
+ */
 LI_API
 Li_Image* Li_Get_Roi(Li_Image* img,LONG x1,LONG y1,LONG x2,LONG y2);
 
-
+/**
+ * @name: Li_ReShape
+ * @msg: 调整图像大小
+ * @param Li_Image* img  原图像
+ *        LONG tag_width 图像宽度
+ *        LONG tag_height图像高度
+ * @return {*}
+ */
 LI_API
 Li_Image* Li_ReShape(Li_Image* img,LONG tag_width,LONG tag_height);
 
