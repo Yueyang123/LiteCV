@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 16:24:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-13 17:50:41
+ * @LastEditTime: 2020-11-13 17:58:01
 -->
 # LiteCV 使用说明
 ## （一）写在前面
@@ -172,13 +172,17 @@ set(USE_PNG    OFF)
 
 #### (二)gcc直接编译的方法
 Makefile我就不写了
-
+```
 gcc -c .\li_image.c -I../inc/Core -o li_image.o
-ar -r .\li_image.a .\li_image.o
-gcc -c .\li_image_proc.c -I..\inc\Core\  -I..\inc\Imgproc\ -o li_image_proc.o
-ar -r .\li_image_proc.a .\li_image_proc.o
-gcc .\main.c  .\Litecv\Core\li_image.a .\Litecv\Imgproc\li_image_proc.a  -I.\Litecv\inc\Core\  -I.\Litecv\inc\Imgproc\ -o Licv
 
+ar -r .\li_image.a .\li_image.o
+
+gcc -c .\li_image_proc.c -I..\inc\Core\  -I..\inc\Imgproc\ -o li_image_proc.o
+
+ar -r .\li_image_proc.a .\li_image_proc.o
+
+gcc .\main.c  .\Litecv\Core\li_image.a .\Litecv\Imgproc\li_image_proc.a  -I.\Litecv\inc\Core\  -I.\Litecv\inc\Imgproc\ -o Licv
+```
 
 ### （3）不想用jpeg，png图片的可以不看了
 
