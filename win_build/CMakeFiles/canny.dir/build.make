@@ -100,6 +100,9 @@ canny.exe: CMakeFiles/canny.dir/example/canny/canny.c.obj
 canny.exe: CMakeFiles/canny.dir/build.make
 canny.exe: Litecv/liblicvcore.a
 canny.exe: Litecv/liblicvimgproc.a
+canny.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
+canny.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
+canny.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
 canny.exe: CMakeFiles/canny.dir/linklibs.rsp
 canny.exe: CMakeFiles/canny.dir/objects1.rsp
 canny.exe: CMakeFiles/canny.dir/link.txt

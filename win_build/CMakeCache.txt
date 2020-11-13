@@ -239,6 +239,12 @@ LICV_BINARY_DIR:STATIC=E:/LiteCV/win_build
 //Value Computed by CMake
 LICV_SOURCE_DIR:STATIC=E:/LiteCV
 
+//Dependencies for the target
+licvcore_LIB_DEPENDS:STATIC=general;E:/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;m;
+
+//Dependencies for the target
+licvimgproc_LIB_DEPENDS:STATIC=general;E:/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;m;
+
 
 ########################
 # INTERNAL cache entries

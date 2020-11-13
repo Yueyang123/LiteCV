@@ -33,8 +33,8 @@ endif ()
 endif()
 
 
-set(USE_JPEG   OFF)
-set(USE_PNG    OFF)
+set(USE_JPEG   ON)
+set(USE_PNG    ON)
 add_subdirectory(Litecv)
 
 
