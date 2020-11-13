@@ -100,9 +100,6 @@ LICV.exe: CMakeFiles/LICV.dir/main.c.obj
 LICV.exe: CMakeFiles/LICV.dir/build.make
 LICV.exe: Litecv/liblicvcore.a
 LICV.exe: Litecv/liblicvimgproc.a
-LICV.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
-LICV.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
-LICV.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
 LICV.exe: CMakeFiles/LICV.dir/linklibs.rsp
 LICV.exe: CMakeFiles/LICV.dir/objects1.rsp
 LICV.exe: CMakeFiles/LICV.dir/link.txt
