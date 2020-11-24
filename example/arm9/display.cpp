@@ -11,10 +11,28 @@ extern "C" {
 #endif
 int main(int argc,char** argv)
 {
-    // Painter* p=new Painter("/dev/fb0");
-    // PICTYPE pic=JPEG;
-    // Li_Image* out=Li_Load_Image((BYTE*)"lena.jpg",pic);
+    Li_Image* out;
+    if(argc!=3)return 0;
+    Painter* p=new Painter(argv[1]);
     
-    // Li_Save_Image((BYTE*)"1.jpg",out);
+    if(strstr(argv[2],"bmp")!=NULL)
+    out=Li_Load_Image((BYTE*)argv[2],BMP_888);
+    else if(strstr(argv[2],"png")!=NULL)
+    out=Li_Load_Image((BYTE*)argv[2],PNG);
+    else if(strstr(argv[2],"jpg")!=NULL)
+    out=Li_Load_Image((BYTE*)argv[2],JPEG);
+    else
+    out=Li_Load_Image((BYTE*)argv[2],BMP_888);
+
+    Li_Image* ffb=Li_ReShape(out,p->width,p->height);
+
+    for(int i=0;i<ffb->height;i++)
+        for(int j=0;j<ffb->width;j++)
+        {
+            BYTE* ptr=(BYTE*) ffb->at(ffb,j,i);
+            p->Point(j,p->height- i,LI_RGB(*(ptr+2),*(ptr+1),*(ptr)));
+        }
+
+    Li_Save_Image((BYTE*)"2.bmp",ffb);
     return 0;
 }

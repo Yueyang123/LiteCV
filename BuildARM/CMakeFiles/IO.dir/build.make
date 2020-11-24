@@ -91,6 +91,9 @@ IO_EXTERNAL_OBJECTS =
 IO: CMakeFiles/IO.dir/example/basicio/basicio.c.o
 IO: CMakeFiles/IO.dir/build.make
 IO: Litecv/liblicvcore.a
+IO: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
+IO: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
+IO: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
 IO: CMakeFiles/IO.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable IO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IO.dir/link.txt --verbose=$(VERBOSE)

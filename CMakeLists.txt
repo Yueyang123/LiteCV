@@ -16,16 +16,18 @@ set(LICV_EXP04 ${DIR_EXP04})
 aux_source_directory(./example/canny   DIR_EXP05)
 set(LICV_EXP05 ${DIR_EXP05})
 
-set(ARM OFF)
+set(ARM ON)
 
-
-if (CMAKE_HOST_WIN32)
-    set(WINDOWS ON)
-elseif (CMAKE_HOST_APPLE)
-    set(MACOS   ON)
-elseif (CMAKE_HOST_UNIX)
-    set(LINUX   ON)
-endif ()
+if(ARM)
+elseif()
+    if (CMAKE_HOST_WIN32)
+        set(WINDOWS ON)
+    elseif (CMAKE_HOST_APPLE)
+        set(MACOS   ON)
+    elseif (CMAKE_HOST_UNIX)
+        set(LINUX   ON)
+    endif ()
+endif()
 
 
 

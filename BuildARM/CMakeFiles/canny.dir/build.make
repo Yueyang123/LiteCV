@@ -92,6 +92,9 @@ canny: CMakeFiles/canny.dir/example/canny/canny.c.o
 canny: CMakeFiles/canny.dir/build.make
 canny: Litecv/liblicvcore.a
 canny: Litecv/liblicvimgproc.a
+canny: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
+canny: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
+canny: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
 canny: CMakeFiles/canny.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable canny"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/canny.dir/link.txt --verbose=$(VERBOSE)

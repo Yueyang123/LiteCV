@@ -8,7 +8,11 @@ INCLUDE=-I /home/swann/IMX_283A/Qt/App/LiteCV/Litecv/inc/Core
 INCLUDE+=-I ./fb
 INCLUDE+=-I /home/swann/SDK/X86/LiteCV/Litecv/inc/Core
 INCLUDE+=-I /home/swann/SDK/X86/LiteCV/Litecv/inc/Imgproc
-LIB+= /home/swann/SDK/X86/LiteCV/arm_build/Litecv/liblicvcore.a
+LIB+= /home/swann/SDK/X86/LiteCV/BuildARM/Litecv/liblicvcore.a
+LIB+=/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
+LIB+=/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
+LIB+=/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
+
 .PHONY: all clean
 all:$(TARGET)
 

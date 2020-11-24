@@ -36,7 +36,7 @@ int main()
      Li_String(out,0xFFF00F,50,50,200,32,"321123",LI_FONT_32);
 
 
-     Li_Save_Image("./picture/1.bmp",out);
+     Li_Save_Image("1.bmp",out);
      Li_Destroy_Image(out);
 
      LILOG("over");

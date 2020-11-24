@@ -91,6 +91,9 @@ Painter_EXTERNAL_OBJECTS =
 Painter: CMakeFiles/Painter.dir/example/painter/painter.c.o
 Painter: CMakeFiles/Painter.dir/build.make
 Painter: Litecv/liblicvcore.a
+Painter: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
+Painter: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
+Painter: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
 Painter: CMakeFiles/Painter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Painter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Painter.dir/link.txt --verbose=$(VERBOSE)

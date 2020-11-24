@@ -21,8 +21,9 @@ private:
     char* pfb;
     int fbfd;
     int color_bytes;
-    unsigned int color,width,height;
+
 public:
+    unsigned int color,width,height;
     Painter(char* str);
     ~Painter();
     void print_info();

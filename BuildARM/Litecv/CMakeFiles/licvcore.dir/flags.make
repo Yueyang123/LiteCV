@@ -6,5 +6,5 @@ C_FLAGS =   -std=c99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Core -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Imgproc 
+C_INCLUDES = -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Core -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Imgproc -I/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/include -I/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/include 
 
