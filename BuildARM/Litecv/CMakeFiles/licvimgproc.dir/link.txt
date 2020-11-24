@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblicvimgproc.a  CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o
+/usr/bin/ranlib liblicvimgproc.a

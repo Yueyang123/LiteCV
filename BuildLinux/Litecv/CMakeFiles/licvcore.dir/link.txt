@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblicvcore.a  CMakeFiles/licvcore.dir/Core/li_image.c.o
+/usr/bin/ranlib liblicvcore.a

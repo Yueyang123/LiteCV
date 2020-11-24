@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/IO.dir/example/basicio/basicio.c.o  -o IO -rdynamic Litecv/liblicvcore.a /home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a /home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a /home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a -lm 

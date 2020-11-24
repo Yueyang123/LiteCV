@@ -54,6 +54,16 @@
 #define RGB565_G      0x07E0
 #define RGB565_B      0x001F
 
+#define LI_ARGB(a, r, g, b) ((((unsigned int)(a)) << 24) | (((unsigned int)(r)) << 16) | (((unsigned int)(g)) << 8) | ((unsigned int)(b)))
+#define LI_ARGB_A(rgb) ((((unsigned int)(rgb)) >> 24) & 0xFF)
+#define LI_RGB(r, g, b) ((0xFF << 24) | (((unsigned int)(r)) << 16) | (((unsigned int)(g)) << 8) | ((unsigned int)(b)))
+#define LI_RGB_R(rgb) ((((unsigned int)(rgb)) >> 16) & 0xFF)
+#define LI_RGB_G(rgb) ((((unsigned int)(rgb)) >> 8) & 0xFF)
+#define LI_RGB_B(rgb) (((unsigned int)(rgb)) & 0xFF)
+#define LI_RGB_32_to_16(rgb) (((((unsigned int)(rgb)) & 0xFF) >> 3) | ((((unsigned int)(rgb)) & 0xFC00) >> 5) | ((((unsigned int)(rgb)) & 0xF80000) >> 8))
+#define LI_RGB_16_to_32(rgb) ((0xFF << 24) | ((((unsigned int)(rgb)) & 0x1F) << 3) | ((((unsigned int)(rgb)) & 0x7E0) << 5) | ((((unsigned int)(rgb)) & 0xF800) << 8))
+
+
 /*
 *             linux64             windows64        linux32         windows32
 

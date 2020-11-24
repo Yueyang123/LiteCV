@@ -18,11 +18,7 @@ set(LICV_EXP05 ${DIR_EXP05})
 
 set(ARM OFF)
 
-if(ARM)
-aux_source_directory(./example/arm9 DIR_EXP03)
-set(LICV_EXP03 ${DIR_EXP03})
 
-else()
 if (CMAKE_HOST_WIN32)
     set(WINDOWS ON)
 elseif (CMAKE_HOST_APPLE)
@@ -30,7 +26,7 @@ elseif (CMAKE_HOST_APPLE)
 elseif (CMAKE_HOST_UNIX)
     set(LINUX   ON)
 endif ()
-endif()
+
 
 
 set(USE_JPEG   ON)
@@ -55,9 +51,3 @@ target_link_libraries(smooth licvimgproc)
 add_executable(canny ${LICV_EXP05})
 target_link_libraries(canny licvcore)
 target_link_libraries(canny licvimgproc)
-
-
-if(ARM)
-add_executable(display ${LICV_EXP03})
-target_link_libraries(display licvcore)
-endif(ARM)

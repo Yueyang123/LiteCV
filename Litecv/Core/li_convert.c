@@ -15,6 +15,7 @@
 #include "bmp.h"
 #include "stdlib.h"
 #include "string.h"
+
 /**
  *  Y = 0.299 * R + 0.587 * G + 0.114 * B;
     Y=D+E+F;

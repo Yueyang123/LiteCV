@@ -12,11 +12,13 @@
 
 
 #ifdef USE_JPEG
+
 #include "jconfig.h"
 #include "jmorecfg.h"
 #include <jpeglib.h>
 #include <setjmp.h>
 #include "cv.h"
+
 /**
  * @name: 
  * @msg: 将RGB数据编码并写JPG图片

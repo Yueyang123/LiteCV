@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc liblicvcore.a CMakeFiles/licvcore.dir/Core/li_image.c.obj
+C:\MinGW\bin\ranlib.exe liblicvcore.a

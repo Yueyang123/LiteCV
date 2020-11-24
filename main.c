@@ -33,7 +33,7 @@ int main()
      char* picname="./picture/panal (";
      char outfile[20];
      char infile[20];
-     for(int i=0;i<1;i++){
+     for(int i=2;i<4;i++){
           sprintf(infile,"%s%d%s",picname,i+1,").jpg");
           sprintf(outfile,"%s%d%s","out",i+1,".bmp");
 

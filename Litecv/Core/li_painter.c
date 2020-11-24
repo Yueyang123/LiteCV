@@ -11,7 +11,6 @@
 #ifndef LI_PAINTER_C
 #define LI_PAINTER_C
 
-
 #include "cv.h"
 #include "math.h"
 

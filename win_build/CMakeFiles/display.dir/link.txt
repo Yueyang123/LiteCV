@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\display.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\display.dir/objects.a @CMakeFiles\display.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\display.dir/objects.a -Wl,--no-whole-archive -o display.exe -Wl,--out-implib,libdisplay.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\display.dir\linklibs.rsp
