@@ -48,6 +48,14 @@ E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_image_proc.h
 stdio.h
 -
 
+E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_hist.c
+li_image_proc.h
+E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_image_proc.h
+li_painter.h
+E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_painter.h
+string.h
+-
+
 E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_hough.c
 cv.h
 E:/WORKPLACE/LiteCV/Litecv/Imgproc/cv.h
@@ -81,6 +89,8 @@ li_conv.c
 E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_conv.c
 li_hough.c
 E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_hough.c
+li_hist.c
+E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_hist.c
 
 E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_smooth.c
 cv.h

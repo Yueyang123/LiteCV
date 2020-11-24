@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-04 15:49:42
+ * @LastEditTime: 2020-11-24 22:00:07
  */
 
 #include <stdio.h>
@@ -31,6 +31,7 @@ int main()
      Li_Point(out,0xFF00FF,20,20);
      Li_Circle(out,0xFF0000,100,100,30);
      Li_Line(out,0xFF00FF,20,20,60,60);
+     Li_Line_H(out,0xFF00FF,30,100);
      Li_Char(out,0xFF00FF,40,40,'2',LI_FONT_12);
      Li_Char(out,0xFF00FF,40,80,'2',LI_FONT_16);
      Li_String(out,0xFFF00F,50,50,200,32,"321123",LI_FONT_32);

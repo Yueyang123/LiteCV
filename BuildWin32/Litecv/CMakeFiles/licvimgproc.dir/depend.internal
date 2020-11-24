@@ -9,6 +9,7 @@ Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj
  ../Litecv/inc/Imgproc/li_image_proc.h
  E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_canny.c
  E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_conv.c
+ E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_hist.c
  E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_hough.c
  E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_image_proc.c
  E:/WORKPLACE/LiteCV/Litecv/Imgproc/li_smooth.c

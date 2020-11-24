@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:01:01
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-11 09:30:04
+ * @LastEditTime: 2020-11-24 22:37:30
  */
 #include "li_image_proc.h"
 #include "string.h"
@@ -133,7 +133,69 @@ Li_Image* Li_Double_Threshold(Li_Image* img,double min,double max)
     }
 }
 
+/**
+ * @name: Li_Add
+ * @msg: 图像像素相加
+ * @param {Li_Image* img1,Li_Image* img2}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Add(Li_Image* img1,Li_Image* img2)
+{
+    int width=img1->width<img2->width?img1->width:img2->width;
+    int height=img1->height<img2->height?img1->height:img2->height;
+    Li_Image* out= Li_Copy_Image(img1);
+    for(int i=0;i<height;i++)
+        for(int j=0;j<width;j++)
+        {
+            BYTE* ptr1,*ptr2,*ptr;
+            ptr=out->at(out,j,i);
+            ptr1=img1->at(img1,j,i);
+            ptr2=img2->at(img2,j,i);
+            for(int i=0;i<img1->imgdepth+1;i++)
+            {
+                if((ptr1[i]+ptr2[i])<255)
+                ptr[i]=ptr1[i]+ptr2[i];
+                else
+                ptr[i]=255;
+            }
+        }
+        return out;
+}
+
+/**
+ * @name: Li_Minus
+ * @msg: 图像像素相加
+ * @param {Li_Image* img1,Li_Image* img2}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Minus(Li_Image* img1,Li_Image* img2)
+{
+    int width=img1->width<img2->width?img1->width:img2->width;
+    int height=img1->height<img2->height?img1->height:img2->height;
+    Li_Image* out= Li_Copy_Image(img1);
+    for(int i=0;i<height;i++)
+        for(int j=0;j<width;j++)
+        {
+            BYTE* ptr1,*ptr2,*ptr;
+            ptr=out->at(out,j,i);
+            ptr1=img1->at(img1,j,i);
+            ptr2=img2->at(img2,j,i);
+            for(int i=0;i<img1->imgdepth+1;i++)
+            {
+                if((ptr1[i]-ptr2[i])>0)
+                ptr[i]=ptr1[i]-ptr2[i];
+                else
+                ptr[i]=0;
+            }
+        }
+        return out;
+}
+
+
 #include "li_canny.c"
 #include "li_smooth.c"
 #include "li_conv.c"
 #include "li_hough.c"
+#include "li_hist.c"

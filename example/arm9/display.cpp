@@ -1,3 +1,15 @@
+/*
+ * @Descripttion: 基于嵌入式LINUX的diplay程序
+ * @version: V1.0
+ * @Author: Yueyang
+ * @email: 1700695611@qq.com
+ * @Date: 2020-11-24 18:54:21
+ * @LastEditors: Yueyang
+ * @LastEditTime: 2020-11-24 19:27:48
+ * @Use: ./display /dev/fb0  PATH(.jpg,.bmp,.png)
+ */
+
+
 #include "string.h"
 #include "fb.h"
 

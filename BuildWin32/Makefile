@@ -194,6 +194,19 @@ smooth/fast:
 .PHONY : smooth/fast
 
 #=============================================================================
+# Target rules for targets named Hist
+
+# Build rule for target.
+Hist: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Hist
+.PHONY : Hist
+
+# fast build rule for target.
+Hist/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hist.dir\build.make CMakeFiles/Hist.dir/build
+.PHONY : Hist/fast
+
+#=============================================================================
 # Target rules for targets named licvcore
 
 # Build rule for target.
@@ -218,6 +231,33 @@ licvimgproc: cmake_check_build_system
 licvimgproc/fast:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/build
 .PHONY : licvimgproc/fast
+
+example/Hist/Hist.obj: example/Hist/Hist.c.obj
+
+.PHONY : example/Hist/Hist.obj
+
+# target to build an object file
+example/Hist/Hist.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hist.dir\build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.obj
+.PHONY : example/Hist/Hist.c.obj
+
+example/Hist/Hist.i: example/Hist/Hist.c.i
+
+.PHONY : example/Hist/Hist.i
+
+# target to preprocess a source file
+example/Hist/Hist.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hist.dir\build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.i
+.PHONY : example/Hist/Hist.c.i
+
+example/Hist/Hist.s: example/Hist/Hist.c.s
+
+.PHONY : example/Hist/Hist.s
+
+# target to generate assembly for a file
+example/Hist/Hist.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hist.dir\build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.s
+.PHONY : example/Hist/Hist.c.s
 
 example/basicio/basicio.obj: example/basicio/basicio.c.obj
 
@@ -362,6 +402,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Hist
 	@echo ... IO
 	@echo ... LICV
 	@echo ... Painter
@@ -369,6 +410,9 @@ help:
 	@echo ... licvcore
 	@echo ... licvimgproc
 	@echo ... smooth
+	@echo ... example/Hist/Hist.obj
+	@echo ... example/Hist/Hist.i
+	@echo ... example/Hist/Hist.s
 	@echo ... example/basicio/basicio.obj
 	@echo ... example/basicio/basicio.i
 	@echo ... example/basicio/basicio.s

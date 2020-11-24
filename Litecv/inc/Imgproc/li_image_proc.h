@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-04 15:41:55
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-13 18:04:32
+ * @LastEditTime: 2020-11-24 23:13:14
  */
 #ifndef LI_IMG_PROC
 #define LI_IMG_PROC
@@ -56,6 +56,14 @@ enum Li_Smooth_Type
     Li_MEDIUM,  //中值滤波
     
 };
+
+//一张灰度直方图数据表
+typedef struct tagLi_Hist
+{
+    float data[256];
+}Li_Hist;
+
+
 
 /**
  * @name: Li_Split
@@ -218,4 +226,122 @@ LONG Li_Hough_Circle_R(Li_Image* img,LiCircle* circles, LONG R,LONG* range);
 LI_API 
 void Li_Hough_Circle(Li_Image* img,LiCircle* circles, LONG Rmin,LONG Rmax,LONG* range);
 
+
+/**
+ * @name: Li_Dilate
+ * @msg: 图像膨胀(局部最小)
+ * @param {Li_Image* img}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Dilate(Li_Image* img);
+
+/**
+ * @name: Li_Erode
+ * @msg: 图像腐蚀(局部最小)
+ * @param {Li_Image* img}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Erode(Li_Image* img);
+
+/**
+ * @name: Li_Add
+ * @msg: 图像像素相加
+ * @param {Li_Image* img1,Li_Image* img2}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Add(Li_Image* img1,Li_Image* img2);
+
+/**
+ * @name: Li_Minus
+ * @msg: 图像像素相加
+ * @param {Li_Image* img1,Li_Image* img2}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Minus(Li_Image* img1,Li_Image* img2);
+
+/**
+ * @name: Li_Grandient
+ * @msg: 形态学梯度
+ * @param {Li_Image* img}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Grandient(Li_Image* img);
+
+/**
+ * @name: Li_Mod_Open
+ * @msg: 形态学开运算
+ * @param {Li_Image* img}
+ * @return {Li_Image* }
+ */
+LI_API
+Li_Image* Li_Mod_Open(Li_Image* img);
+
+
+/**
+ * @name: Li_Mod_Close
+ * @msg: 形态学闭运算
+ * @param {Li_Image* img}
+ * @return {Li_Image* }
+ */
+LI_API
+Li_Image* Li_Mod_Close(Li_Image* img);
+
+/**
+ * @name: Li_TopHat
+ * @msg: 图像顶帽运算
+ * @param {Li_Image* img}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_TopHat(Li_Image* img);
+
+/**
+ * @name: Li_BlackHat
+ * @msg: 图像黑帽运算
+ * @param {Li_Image* img}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_BlackHat(Li_Image* img);
+
+/**
+ * @name: Li_Visual_Hist
+ * @msg: 直方图转化为图像
+ * @param {Li_Hist* hist}
+ * @return {Li_Image*}
+ */
+LI_API
+Li_Image* Li_Visual_Hist(Li_Hist* hist);
+
+/**
+ * @name: Li_Get_Hist
+ * @msg: 绘制直方图
+ * @param {Li_Image* img 图像}
+ * @return {Li_Hist* 直方图数据}
+ */
+LI_API 
+Li_Hist* Li_Get_Hist(Li_Image* img);
+
+/**
+ * @name: Li_Print_Hist
+ * @msg: 打印直方图
+ * @param {Li_Hist* hist}
+ * @return {*}
+ */
+LI_API
+void Li_Print_Hist(Li_Hist* hist);
+
+/**
+ * @name: Li_Normalize_Hist
+ * @msg: 直方图均衡化
+ * @param {Li_Image* img}
+ * @return {*}
+ */
+LI_API
+Li_Image* Li_Normalize_Hist(Li_Image* img);
 #endif // !LI_IMG_PROC

@@ -6,7 +6,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:43:37
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-11 14:09:19
+ * @LastEditTime: 2020-11-24 22:01:19
  */
 #ifndef LI_PAINTER_C
 #define LI_PAINTER_C
@@ -455,6 +455,12 @@ void Li_Line(Li_Image* mat,LONG color,LONG x1, LONG y1, LONG x2, LONG y2)
             uCol+=incy;
         }
     }
+}
+
+LI_API 
+void Li_Line_H(Li_Image* mat,LONG color,LONG x, LONG length)
+{
+    Li_Line(mat,color,x,0,x,length);
 }
 
 LI_API

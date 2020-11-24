@@ -6,7 +6,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-01 14:43:37
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-11 12:39:16
+ * @LastEditTime: 2020-11-24 21:58:59
  */
 #ifndef LI_PAINTER_H
 #define LI_PAINTER_H
@@ -31,4 +31,6 @@ void Li_String(Li_Image* mat,LONG color,LONG x,LONG y,LONG width,LONG height,BYT
 LI_API
 void Li_Line_P(Li_Image* mat,LONG color,LONG threa, LONG R);
 
+LI_API 
+void Li_Line_H(Li_Image* mat,LONG color,LONG x, LONG length);
 #endif // DEBUG
