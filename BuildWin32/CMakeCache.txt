@@ -240,13 +240,13 @@ LICV_BINARY_DIR:STATIC=E:/WORKPLACE/LiteCV/BuildWin32
 LICV_SOURCE_DIR:STATIC=E:/WORKPLACE/LiteCV
 
 //Dependencies for the target
-licvcore_LIB_DEPENDS:STATIC=general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a;general;m;
+licvcore_LIB_DEPENDS:STATIC=general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a;general;m;
 
 //Dependencies for the target
-licvimgproc_LIB_DEPENDS:STATIC=general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a;general;m;
+licvimgproc_LIB_DEPENDS:STATIC=general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a;general;m;
 
 //Dependencies for the target
-licvqr_LIB_DEPENDS:STATIC=general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a;general;m;
+licvqr_LIB_DEPENDS:STATIC=general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a;general;E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a;general;m;
 
 
 ########################

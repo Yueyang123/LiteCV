@@ -8,14 +8,6 @@
 
 ../Litecv/3rd/win_3rd_lib/qr_win_install/include/qrencode.h
 
-../Litecv/3rd/win_3rd_lib/quirc_win_install/include/quirc.h
-stdint.h
--
-
-../Litecv/3rd/win_3rd_lib/quirc_win_install/include/quirc_internal.h
-quirc.h
-../Litecv/3rd/win_3rd_lib/quirc_win_install/include/quirc.h
-
 ../Litecv/inc/Core/bmp.h
 stdio.h
 ../Litecv/inc/Core/stdio.h
@@ -43,8 +35,4 @@ li_image.h
 E:/WORKPLACE/LiteCV/Litecv/QRdec/li_image.h
 li_qrcode.h
 E:/WORKPLACE/LiteCV/Litecv/QRdec/li_qrcode.h
-quirc.h
-E:/WORKPLACE/LiteCV/Litecv/QRdec/quirc.h
-quirc_internal.h
-E:/WORKPLACE/LiteCV/Litecv/QRdec/quirc_internal.h
 

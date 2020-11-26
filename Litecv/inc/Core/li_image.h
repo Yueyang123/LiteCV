@@ -5,13 +5,31 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-13 18:06:26
+ * @LastEditTime: 2020-11-27 00:57:38
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
 
 #include "cv.h"
 #include "bmp.h"
+
+/**
+ * @name:Li_Wait_Q
+ * @msg: 等待一个q
+ * @param {*}
+ * @return {*}
+ */
+LI_API
+void Li_Wait_Q();
+
+/**
+ * @name: Li_CV_Version
+ * @msg: 打印程序信息
+ * @param {*}
+ * @return {*}
+ */
+LI_API
+void Li_CV_Version();
 
 /**
  * @name: li_free_arr
@@ -125,7 +143,7 @@ Li_Image* Li_Copy_Image(Li_Image *img);
  * @return Li_Image*  一张图片
  */
 LI_API
-void Li_CvtColor(const LiArr* src,LiArr *dst,LONG width,LONG height,BYTE cvtype);
+void Li_CvtColor( LiArr* src,LiArr *dst,LONG width,LONG height,BYTE cvtype);
 
 /**
  * @name: Li_Convert_Image
@@ -137,8 +155,7 @@ void Li_CvtColor(const LiArr* src,LiArr *dst,LONG width,LONG height,BYTE cvtype)
  * @return Li_Image*  一张图片
  */
 LI_API
-Li_Image* Li_Convert_Image(const Li_Image* src,BYTE convertype);
-
+Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype);
 /**
  * @name: Li_Get_Roi
  * @msg: 获取感兴趣区域

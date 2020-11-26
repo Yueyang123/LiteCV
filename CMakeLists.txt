@@ -21,7 +21,8 @@ set(LICV_EXP06 ${DIR_EXP06})
 aux_source_directory(./example/QR   DIR_EXP07)
 set(LICV_EXP07 ${DIR_EXP07})
 
-set(ARM ON)
+#如果想要交叉编译开启这个
+set(ARM OFF)
 
 if(ARM)
    message(ARM)
@@ -52,17 +53,21 @@ target_link_libraries(${PROJECT_NAME} licvimgproc)
 add_executable(IO ${LICV_EXP01})
 target_link_libraries(IO licvcore)
 
+#绘图测试
 add_executable(Painter ${LICV_EXP02})
 target_link_libraries(Painter licvcore)
 
-add_executable(smooth ${LICV_EXP04})
-target_link_libraries(smooth licvcore)
-target_link_libraries(smooth licvimgproc)
+#常见卷积测试
+add_executable(conv ${LICV_EXP04})
+target_link_libraries(conv licvcore)
+target_link_libraries(conv licvimgproc)
 
+#边缘检测测试
 add_executable(canny ${LICV_EXP05})
 target_link_libraries(canny licvcore)
 target_link_libraries(canny licvimgproc)
 
+#灰度直方图测试
 add_executable(Hist ${LICV_EXP06})
 target_link_libraries(Hist licvcore)
 target_link_libraries(Hist licvimgproc)

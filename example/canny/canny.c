@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-12 10:01:13
+ * @LastEditTime: 2020-11-27 01:07:12
  */
 
 #include <stdio.h>
@@ -20,6 +20,7 @@
 
 int main()
 {
+     Li_CV_Version();
      BYTE* ptr=NULL;
      Li_Image* out =Li_Load_Image("./picture/panal (1).jpg",LI_JPEG);
      Li_Image* bmp=Li_Convert_Image(out,LI_JPEG_2_BMP);
@@ -29,6 +30,7 @@ int main()
      Li_Image* img= Li_Canny(smooth,LI_CANNY_PREWITT,30,150);
      Li_Save_Image("canny_mydefine.bmp",img);
 
+     Li_Wait_Q();
      LILOG("over");
      return 0; 
 }

@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-24 22:00:07
+ * @LastEditTime: 2020-11-27 01:06:03
  */
 
 #include <stdio.h>
@@ -25,7 +25,7 @@ int main()
      //也就是说这里的指针等于说没有进行内存申请
      //也就是说不要指望通过函数传参的方式为指针赋值
 
-
+     Li_CV_Version();
      BYTE* ptr=NULL;
      Li_Image* out =Li_Create_Image(300,300,LI_DEP_24U,LI_BMP_888);
      Li_Point(out,0xFF00FF,20,20);
@@ -37,9 +37,9 @@ int main()
      Li_String(out,0xFFF00F,50,50,200,32,"321123",LI_FONT_32);
 
 
-     Li_Save_Image("1.bmp",out);
+     Li_Save_Image("Painter.bmp",out);
      Li_Destroy_Image(out);
-
+     Li_Wait_Q();
      LILOG("over");
      return 0; 
 }

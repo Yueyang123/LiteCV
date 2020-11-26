@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:41:59
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:33:27
+ * @LastEditTime: 2020-11-27 01:03:37
  */
 #include "cv.h"
 #include "stdlib.h"
@@ -15,8 +15,9 @@
 #define LOG  "LI_CV_CORE"
 
 #include "bmp.c"
-#include "png.c"
 #include "jpeg.c"
+#include "png.c"
+
 /**
  * @name: li_malloc_arr
  * @msg: 为LiArr申请内存
@@ -37,7 +38,7 @@ LiArr* li_malloc_arr(LONG size)
  */
 void li_free_arr(LiArr* arr)
 {
-    return free((void *)arr);
+    free((void *)arr);
 }
 
 /**
@@ -62,8 +63,11 @@ void Li_Destroy_Mat(Li_Mat* mat)
  */
 LiArr* li_bgr_at(Li_Image* mat,LONG x,LONG y)
 {
-  if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
-  return mat->data+mat->width*(1+mat->imgdepth)*y+(1+mat->imgdepth)*x;
+	BYTE* ptr;
+  if(x<mat->width&&y<mat->height){
+		ptr=((BYTE*)mat->data)+mat->width*(1+mat->imgdepth)*y+(1+mat->imgdepth)*x;
+		return ptr;
+	}
   else {
   LILOG("BEYOND THE MAT");
   return NULL;
@@ -72,8 +76,11 @@ LiArr* li_bgr_at(Li_Image* mat,LONG x,LONG y)
 
 LiArr* li_gray_at(Li_Image* mat,LONG x,LONG y)
 {
-  if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
-  return mat->data+mat->width*1*y+1*x;
+	BYTE* ptr;
+  if(x<mat->width&&y<mat->height){
+		ptr=(BYTE*)mat->data+mat->width*1*y+1*x;
+		return ptr;
+	}
   else {
   //LILOG("BEYOND THE MAT");
   return NULL;
@@ -82,8 +89,11 @@ LiArr* li_gray_at(Li_Image* mat,LONG x,LONG y)
 
 LiArr* li_rgba_at(Li_Image* mat,LONG x,LONG y)
 {
-  if(x<mat->width&&y<mat->height&&x>=0&&y>=0)
-  return mat->data+mat->width*4*y+4*x;
+	BYTE* ptr;
+  if(x<mat->width&&y<mat->height){
+		ptr=(BYTE*) mat->data+mat->width*4*y+4*x;
+		return ptr;
+	}
   else {
   LILOG("BEYOND THE MAT");
   return NULL;
@@ -242,7 +252,33 @@ BITMAPINFOHEADER get_default_info_head(Li_Mat m)
    return bi;
 }
 
+/**
+ * @name: Li_CV_Version
+ * @msg: 打印程序信息
+ * @param {*}
+ * @return {*}
+ */
+LI_API
+void Li_CV_Version()
+{
+  char data[200]="LiteCV version:V 2.0";
+  printf("%s\n",data);
+}
 
+/**
+ * @name:Li_Wait_Q
+ * @msg: 等待一个q
+ * @param {*}
+ * @return {*}
+ */
+LI_API
+void Li_Wait_Q()
+{
+  char b=0;
+  while(b!='q'){
+  scanf("%c",b);
+  }
+}
 
 /**
  * @name: Li_Save_Image

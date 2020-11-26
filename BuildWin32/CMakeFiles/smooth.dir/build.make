@@ -104,7 +104,6 @@ smooth.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
 smooth.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
 smooth.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
 smooth.exe: ../Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a
-smooth.exe: ../Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a
 smooth.exe: CMakeFiles/smooth.dir/linklibs.rsp
 smooth.exe: CMakeFiles/smooth.dir/objects1.rsp
 smooth.exe: CMakeFiles/smooth.dir/link.txt

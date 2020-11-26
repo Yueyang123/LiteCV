@@ -10,6 +10,7 @@ Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/3rd/win_3rd_lib/pn
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/3rd/win_3rd_lib/png_win_install/include/pnglibconf.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/inc/Core/bmp.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/inc/Core/cv.h
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/inc/Core/li_image.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/Core/bmp.c
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/Core/jpeg.c
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.obj: ../Litecv/Core/li_convert.c

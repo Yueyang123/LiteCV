@@ -104,7 +104,6 @@ Hist.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
 Hist.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
 Hist.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
 Hist.exe: ../Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a
-Hist.exe: ../Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a
 Hist.exe: CMakeFiles/Hist.dir/linklibs.rsp
 Hist.exe: CMakeFiles/Hist.dir/objects1.rsp
 Hist.exe: CMakeFiles/Hist.dir/link.txt

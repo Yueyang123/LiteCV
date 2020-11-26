@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-12 11:13:48
+ * @LastEditTime: 2020-11-27 01:11:04
  */
 
 #include <stdio.h>
@@ -27,6 +27,7 @@
 
 int main()
 {
+     Li_CV_Version();
      LiLine l;
      LiCircle c;
      Li_Image* out,*bmp,*gray,*smooth,*canny,*roi ;
@@ -74,6 +75,7 @@ int main()
           Li_Save_Image("./roi.bmp",roi);
           Li_Save_Image(outfile,res);
      }
+     Li_Wait_Q();
      LILOG("over");
      return 0; 
 }

@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:18:19
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:40:47
+ * @LastEditTime: 2020-11-27 00:45:28
  */
 #ifndef JPEG_C
 #define JPEG_C
@@ -119,7 +119,7 @@ BYTE* Read_Jpeg(char* filepath,LONG* width,LONG* height)
   jpeg_stdio_src(&cinfo, infile);
   jpeg_read_header(&cinfo, TRUE);
   jpeg_start_decompress(&cinfo);
-  row_stride = (cinfo.output_width * 3 );
+  row_stride =(cinfo.output_width * 3 + 3) & ~3;
   imgData=(BYTE*)malloc(cinfo.output_height*cinfo.output_width*3);
   buffer =malloc(row_stride*1);
   while (cinfo.output_scanline < cinfo.output_height) {

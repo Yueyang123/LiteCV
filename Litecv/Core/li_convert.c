@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:15:24
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-10 22:39:39
+ * @LastEditTime: 2020-11-27 00:32:12
  */
 #ifndef LI_CONVERT
 #define LI_CONVERT
@@ -13,6 +13,7 @@
 
 #include "cv.h"
 #include "bmp.h"
+#include "li_image.h"
 #include "stdlib.h"
 #include "string.h"
 
@@ -93,8 +94,8 @@ void Li_Arr_bgr_yuyv(LiArr *pRgb, LiArr *pYuv, int width, int height)
  
 	for(int h = 0; h < height; h ++)
 	{
-		BYTE *ptr1 = pRgb + h * width * 3;
-		BYTE *ptr2 = pYuv + h * width * 2;
+		BYTE *ptr1 = (BYTE*)pRgb + h * width * 3;
+		BYTE *ptr2 = (BYTE*)pYuv + h * width * 2;
  
 		for(int w = 0; w < width1; w += 2)
 		{
@@ -283,21 +284,21 @@ void Li_Arr_bgr_bgra(LiArr* src,LiArr *dst, LONG width, LONG height)
 {
     	int row_bytes;
     	int i,j;
-    	uint8_t* ptr;
-    	int src_pad;
+    	BYTE* ptr;
+			BYTE* ptr1=dst;
     	uint32_t off;
      
     	row_bytes = (width * 3 + 3) & ~3; 
     	off = 0*row_bytes;
     	for(i = 0; i < height;i++)
     	{   
-        ptr = src + off;
+        ptr = (BYTE*)src + off;
     		for(j = 0; j < width; j++)
     		{
-    			*(BYTE*)dst++ = *ptr++;
-    			*(BYTE*)dst++ = *ptr++;
-    			*(BYTE*)dst++ = *ptr++;
-    			*(BYTE*)dst++ = 0;
+    			*ptr1++ = *ptr++;
+    			*ptr1++ = *ptr++;
+    			*ptr1++ = *ptr++;
+    			*ptr1++ = 0;
     		}
             off += row_bytes;
     	}
@@ -305,25 +306,21 @@ void Li_Arr_bgr_bgra(LiArr* src,LiArr *dst, LONG width, LONG height)
 
 void Li_Arr_bgra_bgr(LiArr* src,LiArr *dst, int width, int height)
 {
-    	uint32_t src_row_bytes;
     	uint32_t dst_row_bytes;
     	uint32_t off;
     	int i,j;
     	uint32_t* ptr;
     	uint8_t* img;
     	uint32_t color;
-    	int pad;
     	
-    	src_row_bytes = width << 2;
     	dst_row_bytes = (width * 3 + 3) & ~3;
-    	pad = dst_row_bytes - width * 3;
      
     	off = 0 * dst_row_bytes;
     	ptr = (uint32_t*)src;
     	
     	for(i = 0; i < height; i++)
     	{  
-    		img = dst + off;
+    		img = (uint8_t*)dst + off;
     		for (j = 0; j < width; j++)
     		{   
     			color = *ptr++;
@@ -416,7 +413,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   if(src->pt==LI_JPEG){
    dst=Li_Copy_Image(src);
-   dst->pt=LI_BMP_888;
+   dst->pt=BMP_888;
   }else{
       LILOG("TYPE ERROR");
       break;
@@ -427,7 +424,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   if(src->pt==LI_BMP_888){
    dst=Li_Copy_Image(src);
-   dst->pt=LI_JPEG;
+   dst->pt=JPEG;
   }else{
       LILOG("TYPE ERROR");
       break;
@@ -437,7 +434,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
   case LI_PNG_2_BMP:
   if(src->pt==LI_PNG){
    dst=Li_Copy_Image(src);
-   dst->pt=LI_BMP_32;
+   dst->pt=BMP_32;
   }else{
       LILOG("TYPE ERROR");
       break;
@@ -447,7 +444,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
   case LI_BMP_2_PNG:
   if(src->pt==LI_BMP_32){
    dst=Li_Copy_Image(src);
-   dst->pt=LI_PNG;
+   dst->pt=PNG;
   }else{
       LILOG("TYPE ERROR");
       break;
@@ -457,7 +454,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_888_2_LI_BMP32:
     if(src->pt==LI_BMP_888){
-    dst=Li_Create_Image(src->width,src->height,LI_DEP_32U,LI_BMP_32);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_32U,BMP_32);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_BGR2BGRA);
     }else {
       LILOG("TYPE ERROR");
@@ -467,7 +464,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_32_2_LI_BMP888:
     if(src->pt==LI_BMP_32){
-    dst=Li_Create_Image(src->width,src->height,LI_DEP_24U,LI_BMP_888);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_24U,BMP_888);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_BGRA2BGR);
     }else {
       LILOG("TYPE ERROR");
@@ -477,7 +474,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_888_2_LI_BMP_8:
     if(src->pt==LI_BMP_888){
-    dst=Li_Create_Image(src->width,src->height,LI_DEP_8U,LI_BMP_8);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_8U,BMP_8);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_BGR2GRAY);
     }else {
       LILOG("TYPE ERROR");
@@ -487,7 +484,7 @@ Li_Image* Li_Convert_Image( Li_Image* src,BYTE convertype)
 
   case LI_BMP_8_2_LI_BMP_888:
     if(src->pt==LI_BMP_8){
-    dst=Li_Create_Image(src->width,src->height,LI_DEP_24U,LI_BMP_888);
+    dst=Li_Create_Image(src->width,src->height,LI_DEP_24U,BMP_888);
     Li_CvtColor(src->data,dst->data,src->width,src->height,LI_GRAY2BGR);
     }else {
       LILOG("TYPE ERROR");

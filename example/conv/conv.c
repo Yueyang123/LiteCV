@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-24 21:12:04
+ * @LastEditTime: 2020-11-27 01:07:37
  */
 
 #include <stdio.h>
@@ -20,6 +20,7 @@
 
 int main()
 {
+     Li_CV_Version();
      BYTE* ptr=NULL;
      Li_Image* out =Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);
      Li_Image* sharp=Li_Sharp(out);//图像锐化
@@ -58,6 +59,7 @@ int main()
      Li_Save_Image("close.bmp",close);
      Li_Save_Image("top.bmp",top);
      Li_Save_Image("black.bmp",black);
+     Li_Wait_Q();
      LILOG("over");
      return 0; 
 }

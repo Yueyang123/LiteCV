@@ -105,7 +105,6 @@ QR.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
 QR.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
 QR.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
 QR.exe: ../Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a
-QR.exe: ../Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a
 QR.exe: CMakeFiles/QR.dir/linklibs.rsp
 QR.exe: CMakeFiles/QR.dir/objects1.rsp
 QR.exe: CMakeFiles/QR.dir/link.txt

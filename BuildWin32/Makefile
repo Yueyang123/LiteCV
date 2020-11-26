@@ -181,17 +181,17 @@ Painter/fast:
 .PHONY : Painter/fast
 
 #=============================================================================
-# Target rules for targets named smooth
+# Target rules for targets named conv
 
 # Build rule for target.
-smooth: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 smooth
-.PHONY : smooth
+conv: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 conv
+.PHONY : conv
 
 # fast build rule for target.
-smooth/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/build
-.PHONY : smooth/fast
+conv/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conv.dir\build.make CMakeFiles/conv.dir/build
+.PHONY : conv/fast
 
 #=============================================================================
 # Target rules for targets named Hist
@@ -372,7 +372,7 @@ example/conv/conv.obj: example/conv/conv.c.obj
 
 # target to build an object file
 example/conv/conv.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/example/conv/conv.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conv.dir\build.make CMakeFiles/conv.dir/example/conv/conv.c.obj
 .PHONY : example/conv/conv.c.obj
 
 example/conv/conv.i: example/conv/conv.c.i
@@ -381,7 +381,7 @@ example/conv/conv.i: example/conv/conv.c.i
 
 # target to preprocess a source file
 example/conv/conv.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/example/conv/conv.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conv.dir\build.make CMakeFiles/conv.dir/example/conv/conv.c.i
 .PHONY : example/conv/conv.c.i
 
 example/conv/conv.s: example/conv/conv.c.s
@@ -390,7 +390,7 @@ example/conv/conv.s: example/conv/conv.c.s
 
 # target to generate assembly for a file
 example/conv/conv.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smooth.dir\build.make CMakeFiles/smooth.dir/example/conv/conv.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\conv.dir\build.make CMakeFiles/conv.dir/example/conv/conv.c.s
 .PHONY : example/conv/conv.c.s
 
 example/painter/painter.obj: example/painter/painter.c.obj
@@ -461,10 +461,10 @@ help:
 	@echo ... Painter
 	@echo ... QR
 	@echo ... canny
+	@echo ... conv
 	@echo ... licvcore
 	@echo ... licvimgproc
 	@echo ... licvqr
-	@echo ... smooth
 	@echo ... example/Hist/Hist.obj
 	@echo ... example/Hist/Hist.i
 	@echo ... example/Hist/Hist.s

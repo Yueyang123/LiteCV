@@ -7,6 +7,7 @@ Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/inc/Cor
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/inc/Core/li_painter.h
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/inc/Imgproc/li_image_proc.h
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/Imgproc/li_canny.c
+Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/Imgproc/li_conv.c
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/Imgproc/li_hist.c
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/Imgproc/li_hough.c
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.obj: ../Litecv/Imgproc/li_image_proc.c
