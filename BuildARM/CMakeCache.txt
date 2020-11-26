@@ -172,10 +172,13 @@ LICV_BINARY_DIR:STATIC=/home/swann/SDK/X86/LiteCV/BuildARM
 LICV_SOURCE_DIR:STATIC=/home/swann/SDK/X86/LiteCV
 
 //Dependencies for the target
-licvcore_LIB_DEPENDS:STATIC=general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a;general;m;
+licvcore_LIB_DEPENDS:STATIC=general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a;general;m;
 
 //Dependencies for the target
-licvimgproc_LIB_DEPENDS:STATIC=general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a;general;m;
+licvimgproc_LIB_DEPENDS:STATIC=general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a;general;m;
+
+//Dependencies for the target
+licvqr_LIB_DEPENDS:STATIC=general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a;general;/home/swann/SDK/X86/LiteCV/Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a;general;m;
 
 
 ########################

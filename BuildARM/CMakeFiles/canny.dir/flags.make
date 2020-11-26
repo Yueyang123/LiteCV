@@ -6,5 +6,5 @@ C_FLAGS =   -std=c99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Core -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Imgproc 
+C_INCLUDES = -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Core -I/home/swann/SDK/X86/LiteCV/Litecv/inc/Imgproc -I/home/swann/SDK/X86/LiteCV/Litecv/inc/QRdec 
 

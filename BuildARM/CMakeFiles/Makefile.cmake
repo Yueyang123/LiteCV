@@ -43,11 +43,14 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/QR.dir/DependInfo.cmake"
+  "CMakeFiles/Hist.dir/DependInfo.cmake"
   "CMakeFiles/canny.dir/DependInfo.cmake"
   "CMakeFiles/LICV.dir/DependInfo.cmake"
   "CMakeFiles/smooth.dir/DependInfo.cmake"
   "CMakeFiles/IO.dir/DependInfo.cmake"
   "CMakeFiles/Painter.dir/DependInfo.cmake"
-  "Litecv/CMakeFiles/licvimgproc.dir/DependInfo.cmake"
   "Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
+  "Litecv/CMakeFiles/licvimgproc.dir/DependInfo.cmake"
+  "Litecv/CMakeFiles/licvqr.dir/DependInfo.cmake"
   )

@@ -60,14 +60,91 @@ CMAKE_SOURCE_DIR = /home/swann/SDK/X86/LiteCV
 CMAKE_BINARY_DIR = /home/swann/SDK/X86/LiteCV/BuildARM
 
 #=============================================================================
+# Target rules for target CMakeFiles/QR.dir
+
+# All Build rule for target.
+CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvqr.dir/all
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/depend
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=9,10 "Built target QR"
+.PHONY : CMakeFiles/QR.dir/all
+
+# Include target in all.
+all: CMakeFiles/QR.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/QR.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/QR.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 0
+.PHONY : CMakeFiles/QR.dir/rule
+
+# Convenience name for target.
+QR: CMakeFiles/QR.dir/rule
+
+.PHONY : QR
+
+# clean rule for target.
+CMakeFiles/QR.dir/clean:
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/clean
+.PHONY : CMakeFiles/QR.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/QR.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Hist.dir
+
+# All Build rule for target.
+CMakeFiles/Hist.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/Hist.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/depend
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=1,2 "Built target Hist"
+.PHONY : CMakeFiles/Hist.dir/all
+
+# Include target in all.
+all: CMakeFiles/Hist.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Hist.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Hist.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 0
+.PHONY : CMakeFiles/Hist.dir/rule
+
+# Convenience name for target.
+Hist: CMakeFiles/Hist.dir/rule
+
+.PHONY : Hist
+
+# clean rule for target.
+CMakeFiles/Hist.dir/clean:
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/clean
+.PHONY : CMakeFiles/Hist.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Hist.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/canny.dir
 
 # All Build rule for target.
-CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/depend
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=7,8 "Built target canny"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=11,12 "Built target canny"
 .PHONY : CMakeFiles/canny.dir/all
 
 # Include target in all.
@@ -101,11 +178,11 @@ clean: CMakeFiles/canny.dir/clean
 # Target rules for target CMakeFiles/LICV.dir
 
 # All Build rule for target.
-CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 	$(MAKE) -f CMakeFiles/LICV.dir/build.make CMakeFiles/LICV.dir/depend
 	$(MAKE) -f CMakeFiles/LICV.dir/build.make CMakeFiles/LICV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=3,4 "Built target LICV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=5,6 "Built target LICV"
 .PHONY : CMakeFiles/LICV.dir/all
 
 # Include target in all.
@@ -139,11 +216,11 @@ clean: CMakeFiles/LICV.dir/clean
 # Target rules for target CMakeFiles/smooth.dir
 
 # All Build rule for target.
-CMakeFiles/smooth.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 CMakeFiles/smooth.dir/all: Litecv/CMakeFiles/licvcore.dir/all
+CMakeFiles/smooth.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
 	$(MAKE) -f CMakeFiles/smooth.dir/build.make CMakeFiles/smooth.dir/depend
 	$(MAKE) -f CMakeFiles/smooth.dir/build.make CMakeFiles/smooth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=13,14 "Built target smooth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=19,20 "Built target smooth"
 .PHONY : CMakeFiles/smooth.dir/all
 
 # Include target in all.
@@ -180,7 +257,7 @@ clean: CMakeFiles/smooth.dir/clean
 CMakeFiles/IO.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/IO.dir/build.make CMakeFiles/IO.dir/depend
 	$(MAKE) -f CMakeFiles/IO.dir/build.make CMakeFiles/IO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=1,2 "Built target IO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=3,4 "Built target IO"
 .PHONY : CMakeFiles/IO.dir/all
 
 # Include target in all.
@@ -217,7 +294,7 @@ clean: CMakeFiles/IO.dir/clean
 CMakeFiles/Painter.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/Painter.dir/build.make CMakeFiles/Painter.dir/depend
 	$(MAKE) -f CMakeFiles/Painter.dir/build.make CMakeFiles/Painter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=5,6 "Built target Painter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=7,8 "Built target Painter"
 .PHONY : CMakeFiles/Painter.dir/all
 
 # Include target in all.
@@ -251,14 +328,16 @@ clean: CMakeFiles/Painter.dir/clean
 # Directory level rules for directory Litecv
 
 # Convenience name for "all" pass in the directory.
-Litecv/all: Litecv/CMakeFiles/licvimgproc.dir/all
 Litecv/all: Litecv/CMakeFiles/licvcore.dir/all
+Litecv/all: Litecv/CMakeFiles/licvimgproc.dir/all
+Litecv/all: Litecv/CMakeFiles/licvqr.dir/all
 
 .PHONY : Litecv/all
 
 # Convenience name for "clean" pass in the directory.
-Litecv/clean: Litecv/CMakeFiles/licvimgproc.dir/clean
 Litecv/clean: Litecv/CMakeFiles/licvcore.dir/clean
+Litecv/clean: Litecv/CMakeFiles/licvimgproc.dir/clean
+Litecv/clean: Litecv/CMakeFiles/licvqr.dir/clean
 
 .PHONY : Litecv/clean
 
@@ -268,13 +347,50 @@ Litecv/preinstall:
 .PHONY : Litecv/preinstall
 
 #=============================================================================
+# Target rules for target Litecv/CMakeFiles/licvcore.dir
+
+# All Build rule for target.
+Litecv/CMakeFiles/licvcore.dir/all:
+	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/depend
+	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=13,14 "Built target licvcore"
+.PHONY : Litecv/CMakeFiles/licvcore.dir/all
+
+# Include target in all.
+all: Litecv/CMakeFiles/licvcore.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Litecv/CMakeFiles/licvcore.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvcore.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 0
+.PHONY : Litecv/CMakeFiles/licvcore.dir/rule
+
+# Convenience name for target.
+licvcore: Litecv/CMakeFiles/licvcore.dir/rule
+
+.PHONY : licvcore
+
+# clean rule for target.
+Litecv/CMakeFiles/licvcore.dir/clean:
+	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/clean
+.PHONY : Litecv/CMakeFiles/licvcore.dir/clean
+
+# clean rule for target.
+clean: Litecv/CMakeFiles/licvcore.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target Litecv/CMakeFiles/licvimgproc.dir
 
 # All Build rule for target.
 Litecv/CMakeFiles/licvimgproc.dir/all:
 	$(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/depend
 	$(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=11,12 "Built target licvimgproc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=15,16 "Built target licvimgproc"
 .PHONY : Litecv/CMakeFiles/licvimgproc.dir/all
 
 # Include target in all.
@@ -305,39 +421,39 @@ clean: Litecv/CMakeFiles/licvimgproc.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target Litecv/CMakeFiles/licvcore.dir
+# Target rules for target Litecv/CMakeFiles/licvqr.dir
 
 # All Build rule for target.
-Litecv/CMakeFiles/licvcore.dir/all:
-	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/depend
-	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=9,10 "Built target licvcore"
-.PHONY : Litecv/CMakeFiles/licvcore.dir/all
+Litecv/CMakeFiles/licvqr.dir/all:
+	$(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/depend
+	$(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=17,18 "Built target licvqr"
+.PHONY : Litecv/CMakeFiles/licvqr.dir/all
 
 # Include target in all.
-all: Litecv/CMakeFiles/licvcore.dir/all
+all: Litecv/CMakeFiles/licvqr.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-Litecv/CMakeFiles/licvcore.dir/rule: cmake_check_build_system
+Litecv/CMakeFiles/licvqr.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvcore.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvqr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles 0
-.PHONY : Litecv/CMakeFiles/licvcore.dir/rule
+.PHONY : Litecv/CMakeFiles/licvqr.dir/rule
 
 # Convenience name for target.
-licvcore: Litecv/CMakeFiles/licvcore.dir/rule
+licvqr: Litecv/CMakeFiles/licvqr.dir/rule
 
-.PHONY : licvcore
-
-# clean rule for target.
-Litecv/CMakeFiles/licvcore.dir/clean:
-	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/clean
-.PHONY : Litecv/CMakeFiles/licvcore.dir/clean
+.PHONY : licvqr
 
 # clean rule for target.
-clean: Litecv/CMakeFiles/licvcore.dir/clean
+Litecv/CMakeFiles/licvqr.dir/clean:
+	$(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/clean
+.PHONY : Litecv/CMakeFiles/licvqr.dir/clean
+
+# clean rule for target.
+clean: Litecv/CMakeFiles/licvqr.dir/clean
 
 .PHONY : clean
 

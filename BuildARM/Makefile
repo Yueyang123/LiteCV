@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named QR
+
+# Build rule for target.
+QR: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 QR
+.PHONY : QR
+
+# fast build rule for target.
+QR/fast:
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/build
+.PHONY : QR/fast
+
+#=============================================================================
+# Target rules for targets named Hist
+
+# Build rule for target.
+Hist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Hist
+.PHONY : Hist
+
+# fast build rule for target.
+Hist/fast:
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/build
+.PHONY : Hist/fast
+
+#=============================================================================
 # Target rules for targets named canny
 
 # Build rule for target.
@@ -176,6 +202,19 @@ Painter/fast:
 .PHONY : Painter/fast
 
 #=============================================================================
+# Target rules for targets named licvcore
+
+# Build rule for target.
+licvcore: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 licvcore
+.PHONY : licvcore
+
+# fast build rule for target.
+licvcore/fast:
+	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
+.PHONY : licvcore/fast
+
+#=============================================================================
 # Target rules for targets named licvimgproc
 
 # Build rule for target.
@@ -189,17 +228,71 @@ licvimgproc/fast:
 .PHONY : licvimgproc/fast
 
 #=============================================================================
-# Target rules for targets named licvcore
+# Target rules for targets named licvqr
 
 # Build rule for target.
-licvcore: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 licvcore
-.PHONY : licvcore
+licvqr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 licvqr
+.PHONY : licvqr
 
 # fast build rule for target.
-licvcore/fast:
-	$(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
-.PHONY : licvcore/fast
+licvqr/fast:
+	$(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/build
+.PHONY : licvqr/fast
+
+example/Hist/Hist.o: example/Hist/Hist.c.o
+
+.PHONY : example/Hist/Hist.o
+
+# target to build an object file
+example/Hist/Hist.c.o:
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.o
+.PHONY : example/Hist/Hist.c.o
+
+example/Hist/Hist.i: example/Hist/Hist.c.i
+
+.PHONY : example/Hist/Hist.i
+
+# target to preprocess a source file
+example/Hist/Hist.c.i:
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.i
+.PHONY : example/Hist/Hist.c.i
+
+example/Hist/Hist.s: example/Hist/Hist.c.s
+
+.PHONY : example/Hist/Hist.s
+
+# target to generate assembly for a file
+example/Hist/Hist.c.s:
+	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.s
+.PHONY : example/Hist/Hist.c.s
+
+example/QR/qr.o: example/QR/qr.c.o
+
+.PHONY : example/QR/qr.o
+
+# target to build an object file
+example/QR/qr.c.o:
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/example/QR/qr.c.o
+.PHONY : example/QR/qr.c.o
+
+example/QR/qr.i: example/QR/qr.c.i
+
+.PHONY : example/QR/qr.i
+
+# target to preprocess a source file
+example/QR/qr.c.i:
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/example/QR/qr.c.i
+.PHONY : example/QR/qr.c.i
+
+example/QR/qr.s: example/QR/qr.c.s
+
+.PHONY : example/QR/qr.s
+
+# target to generate assembly for a file
+example/QR/qr.c.s:
+	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/example/QR/qr.c.s
+.PHONY : example/QR/qr.c.s
 
 example/basicio/basicio.o: example/basicio/basicio.c.o
 
@@ -342,6 +435,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... QR"
+	@echo "... Hist"
 	@echo "... rebuild_cache"
 	@echo "... canny"
 	@echo "... edit_cache"
@@ -349,8 +444,15 @@ help:
 	@echo "... smooth"
 	@echo "... IO"
 	@echo "... Painter"
-	@echo "... licvimgproc"
 	@echo "... licvcore"
+	@echo "... licvimgproc"
+	@echo "... licvqr"
+	@echo "... example/Hist/Hist.o"
+	@echo "... example/Hist/Hist.i"
+	@echo "... example/Hist/Hist.s"
+	@echo "... example/QR/qr.o"
+	@echo "... example/QR/qr.i"
+	@echo "... example/QR/qr.s"
 	@echo "... example/basicio/basicio.o"
 	@echo "... example/basicio/basicio.i"
 	@echo "... example/basicio/basicio.s"

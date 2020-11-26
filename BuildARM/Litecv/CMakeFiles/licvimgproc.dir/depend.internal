@@ -9,6 +9,7 @@ Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o
  ../Litecv/inc/Imgproc/li_image_proc.h
  /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_canny.c
  /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_conv.c
+ /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_hist.c
  /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_hough.c
  /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c
  /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_smooth.c

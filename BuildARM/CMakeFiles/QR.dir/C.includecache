@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Litecv/inc/Core/bmp.h
+stdio.h
+../Litecv/inc/Core/stdio.h
+cv.h
+../Litecv/inc/Core/cv.h
+
+../Litecv/inc/Core/cv.h
+
+../Litecv/inc/Core/li_image.h
+cv.h
+../Litecv/inc/Core/cv.h
+bmp.h
+../Litecv/inc/Core/bmp.h
+
+../Litecv/inc/QRdec/li_qrcode.h
+
+/home/swann/SDK/X86/LiteCV/example/QR/qr.c
+cv.h
+/home/swann/SDK/X86/LiteCV/example/QR/cv.h
+li_image.h
+/home/swann/SDK/X86/LiteCV/example/QR/li_image.h
+li_qrcode.h
+/home/swann/SDK/X86/LiteCV/example/QR/li_qrcode.h
+

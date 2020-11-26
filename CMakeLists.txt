@@ -21,7 +21,7 @@ set(LICV_EXP06 ${DIR_EXP06})
 aux_source_directory(./example/QR   DIR_EXP07)
 set(LICV_EXP07 ${DIR_EXP07})
 
-set(ARM OFF)
+set(ARM ON)
 
 if(ARM)
    message(ARM)

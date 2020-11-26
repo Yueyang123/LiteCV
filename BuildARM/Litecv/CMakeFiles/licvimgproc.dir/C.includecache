@@ -48,6 +48,14 @@ li_image_proc.h
 stdio.h
 -
 
+/home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_hist.c
+li_image_proc.h
+/home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.h
+li_painter.h
+/home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_painter.h
+string.h
+-
+
 /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_hough.c
 cv.h
 /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/cv.h
@@ -81,6 +89,8 @@ li_conv.c
 /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_conv.c
 li_hough.c
 /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_hough.c
+li_hist.c
+/home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_hist.c
 
 /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_smooth.c
 cv.h

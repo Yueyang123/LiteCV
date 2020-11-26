@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/swann/SDK/X86/LiteCV/BuildARM
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Litecv/CMakeFiles/licvcore.dir/rule:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvcore.dir/rule
+.PHONY : Litecv/CMakeFiles/licvcore.dir/rule
+
+# Convenience name for target.
+licvcore: Litecv/CMakeFiles/licvcore.dir/rule
+
+.PHONY : licvcore
+
+# fast build rule for target.
+licvcore/fast:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
+.PHONY : licvcore/fast
+
+# Convenience name for target.
 Litecv/CMakeFiles/licvimgproc.dir/rule:
 	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvimgproc.dir/rule
 .PHONY : Litecv/CMakeFiles/licvimgproc.dir/rule
@@ -126,19 +141,19 @@ licvimgproc/fast:
 .PHONY : licvimgproc/fast
 
 # Convenience name for target.
-Litecv/CMakeFiles/licvcore.dir/rule:
-	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvcore.dir/rule
-.PHONY : Litecv/CMakeFiles/licvcore.dir/rule
+Litecv/CMakeFiles/licvqr.dir/rule:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f CMakeFiles/Makefile2 Litecv/CMakeFiles/licvqr.dir/rule
+.PHONY : Litecv/CMakeFiles/licvqr.dir/rule
 
 # Convenience name for target.
-licvcore: Litecv/CMakeFiles/licvcore.dir/rule
+licvqr: Litecv/CMakeFiles/licvqr.dir/rule
 
-.PHONY : licvcore
+.PHONY : licvqr
 
 # fast build rule for target.
-licvcore/fast:
-	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvcore.dir/build.make Litecv/CMakeFiles/licvcore.dir/build
-.PHONY : licvcore/fast
+licvqr/fast:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/build
+.PHONY : licvqr/fast
 
 Core/li_image.o: Core/li_image.c.o
 
@@ -194,22 +209,53 @@ Imgproc/li_image_proc.c.s:
 	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvimgproc.dir/build.make Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.s
 .PHONY : Imgproc/li_image_proc.c.s
 
+QRdec/li_qrcode.o: QRdec/li_qrcode.c.o
+
+.PHONY : QRdec/li_qrcode.o
+
+# target to build an object file
+QRdec/li_qrcode.c.o:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.o
+.PHONY : QRdec/li_qrcode.c.o
+
+QRdec/li_qrcode.i: QRdec/li_qrcode.c.i
+
+.PHONY : QRdec/li_qrcode.i
+
+# target to preprocess a source file
+QRdec/li_qrcode.c.i:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.i
+.PHONY : QRdec/li_qrcode.c.i
+
+QRdec/li_qrcode.s: QRdec/li_qrcode.c.s
+
+.PHONY : QRdec/li_qrcode.s
+
+# target to generate assembly for a file
+QRdec/li_qrcode.c.s:
+	cd /home/swann/SDK/X86/LiteCV/BuildARM && $(MAKE) -f Litecv/CMakeFiles/licvqr.dir/build.make Litecv/CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.s
+.PHONY : QRdec/li_qrcode.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... licvimgproc"
 	@echo "... licvcore"
+	@echo "... licvimgproc"
+	@echo "... licvqr"
+	@echo "... rebuild_cache"
 	@echo "... Core/li_image.o"
 	@echo "... Core/li_image.i"
 	@echo "... Core/li_image.s"
 	@echo "... Imgproc/li_image_proc.o"
 	@echo "... Imgproc/li_image_proc.i"
 	@echo "... Imgproc/li_image_proc.s"
+	@echo "... QRdec/li_qrcode.o"
+	@echo "... QRdec/li_qrcode.i"
+	@echo "... QRdec/li_qrcode.s"
 .PHONY : help
 
 
