@@ -207,6 +207,19 @@ Hist/fast:
 .PHONY : Hist/fast
 
 #=============================================================================
+# Target rules for targets named QR
+
+# Build rule for target.
+QR: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 QR
+.PHONY : QR
+
+# fast build rule for target.
+QR/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QR.dir\build.make CMakeFiles/QR.dir/build
+.PHONY : QR/fast
+
+#=============================================================================
 # Target rules for targets named licvcore
 
 # Build rule for target.
@@ -231,6 +244,19 @@ licvimgproc: cmake_check_build_system
 licvimgproc/fast:
 	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/build
 .PHONY : licvimgproc/fast
+
+#=============================================================================
+# Target rules for targets named licvqr
+
+# Build rule for target.
+licvqr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 licvqr
+.PHONY : licvqr
+
+# fast build rule for target.
+licvqr/fast:
+	$(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvqr.dir\build.make Litecv/CMakeFiles/licvqr.dir/build
+.PHONY : licvqr/fast
 
 example/Hist/Hist.obj: example/Hist/Hist.c.obj
 
@@ -258,6 +284,33 @@ example/Hist/Hist.s: example/Hist/Hist.c.s
 example/Hist/Hist.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hist.dir\build.make CMakeFiles/Hist.dir/example/Hist/Hist.c.s
 .PHONY : example/Hist/Hist.c.s
+
+example/QR/qr.obj: example/QR/qr.c.obj
+
+.PHONY : example/QR/qr.obj
+
+# target to build an object file
+example/QR/qr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QR.dir\build.make CMakeFiles/QR.dir/example/QR/qr.c.obj
+.PHONY : example/QR/qr.c.obj
+
+example/QR/qr.i: example/QR/qr.c.i
+
+.PHONY : example/QR/qr.i
+
+# target to preprocess a source file
+example/QR/qr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QR.dir\build.make CMakeFiles/QR.dir/example/QR/qr.c.i
+.PHONY : example/QR/qr.c.i
+
+example/QR/qr.s: example/QR/qr.c.s
+
+.PHONY : example/QR/qr.s
+
+# target to generate assembly for a file
+example/QR/qr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\QR.dir\build.make CMakeFiles/QR.dir/example/QR/qr.c.s
+.PHONY : example/QR/qr.c.s
 
 example/basicio/basicio.obj: example/basicio/basicio.c.obj
 
@@ -406,13 +459,18 @@ help:
 	@echo ... IO
 	@echo ... LICV
 	@echo ... Painter
+	@echo ... QR
 	@echo ... canny
 	@echo ... licvcore
 	@echo ... licvimgproc
+	@echo ... licvqr
 	@echo ... smooth
 	@echo ... example/Hist/Hist.obj
 	@echo ... example/Hist/Hist.i
 	@echo ... example/Hist/Hist.s
+	@echo ... example/QR/qr.obj
+	@echo ... example/QR/qr.i
+	@echo ... example/QR/qr.s
 	@echo ... example/basicio/basicio.obj
 	@echo ... example/basicio/basicio.i
 	@echo ... example/basicio/basicio.s

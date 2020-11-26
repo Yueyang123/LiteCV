@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 project(LICV)
 include_directories (Litecv/inc/Core)
 include_directories (Litecv/inc/Imgproc)
+include_directories (Litecv/inc/QRdec)
 aux_source_directory(./ DIR_MAIN)
 set(LICV_MAIN ${DIR_MAIN})
 
@@ -17,6 +18,8 @@ aux_source_directory(./example/canny   DIR_EXP05)
 set(LICV_EXP05 ${DIR_EXP05})
 aux_source_directory(./example/Hist   DIR_EXP06)
 set(LICV_EXP06 ${DIR_EXP06})
+aux_source_directory(./example/QR   DIR_EXP07)
+set(LICV_EXP07 ${DIR_EXP07})
 
 set(ARM OFF)
 
@@ -37,6 +40,8 @@ endif()
 
 set(USE_JPEG   ON)
 set(USE_PNG    ON)
+#使能二维码识别
+set(USE_QR     ON)
 add_subdirectory(Litecv)
 
 
@@ -61,3 +66,11 @@ target_link_libraries(canny licvimgproc)
 add_executable(Hist ${LICV_EXP06})
 target_link_libraries(Hist licvcore)
 target_link_libraries(Hist licvimgproc)
+
+
+if(USE_QR)
+add_executable(QR ${LICV_EXP07})
+target_link_libraries(QR licvcore)
+target_link_libraries(QR licvimgproc)
+target_link_libraries(QR licvqr)
+endif()

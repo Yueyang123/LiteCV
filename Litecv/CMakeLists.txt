@@ -2,12 +2,15 @@
 include_directories(
     inc/Core
     inc/Imgproc
+    inc/QRdec
 )
 FILE(GLOB DIR_SRCS  "Core/li_image.c")
 FILE(GLOB PROC_SRCS "Imgproc/li_image_proc.c")
 
+
 SET(LICV_CORE ${DIR_SRCS})
 SET(LICV_PROC ${PROC_SRCS})
+
 
 #根据实际情况修改静态库的绝对路径
 #linux中不需要指定库的头文件目录
@@ -42,7 +45,12 @@ elseif(WINDOWS)
     link_libraries(  E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a)
     link_libraries(  E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a )
     endif(USE_PNG)
-
+    if(USE_QR)
+    include_directories(E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/include)
+    link_libraries(E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a)
+    include_directories(E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/quirc_win_install/include)
+    link_libraries(E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a)
+    endif(USE_QR)
 elseif(ARM)
     Message(ARM)
     if(USE_JPEG)
@@ -58,8 +66,13 @@ elseif(ARM)
 
 endif()
 
+
 link_libraries(m)
 add_library(licvcore   STATIC  ${LICV_CORE})
 add_library(licvimgproc STATIC  ${LICV_PROC})
 
-
+if(USE_QR)
+    FILE(GLOB QR_SRCS "QRdec/li_qrcode.c")
+    SET(LICV_QR ${QR_SRCS})
+    add_library(licvqr STATIC  ${LICV_QR})
+endif(USE_QR)

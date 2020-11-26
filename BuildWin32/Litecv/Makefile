@@ -158,6 +158,21 @@ licvimgproc/fast:
 	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/build
 .PHONY : licvimgproc/fast
 
+# Convenience name for target.
+Litecv/CMakeFiles/licvqr.dir/rule:
+	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Litecv/CMakeFiles/licvqr.dir/rule
+.PHONY : Litecv/CMakeFiles/licvqr.dir/rule
+
+# Convenience name for target.
+licvqr: Litecv/CMakeFiles/licvqr.dir/rule
+
+.PHONY : licvqr
+
+# fast build rule for target.
+licvqr/fast:
+	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvqr.dir\build.make Litecv/CMakeFiles/licvqr.dir/build
+.PHONY : licvqr/fast
+
 Core/li_image.obj: Core/li_image.c.obj
 
 .PHONY : Core/li_image.obj
@@ -212,6 +227,33 @@ Imgproc/li_image_proc.c.s:
 	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvimgproc.dir\build.make Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.s
 .PHONY : Imgproc/li_image_proc.c.s
 
+QRdec/li_qrcode.obj: QRdec/li_qrcode.c.obj
+
+.PHONY : QRdec/li_qrcode.obj
+
+# target to build an object file
+QRdec/li_qrcode.c.obj:
+	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvqr.dir\build.make Litecv/CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.obj
+.PHONY : QRdec/li_qrcode.c.obj
+
+QRdec/li_qrcode.i: QRdec/li_qrcode.c.i
+
+.PHONY : QRdec/li_qrcode.i
+
+# target to preprocess a source file
+QRdec/li_qrcode.c.i:
+	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvqr.dir\build.make Litecv/CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.i
+.PHONY : QRdec/li_qrcode.c.i
+
+QRdec/li_qrcode.s: QRdec/li_qrcode.c.s
+
+.PHONY : QRdec/li_qrcode.s
+
+# target to generate assembly for a file
+QRdec/li_qrcode.c.s:
+	cd /d E:\WORKPLACE\LiteCV\BuildWin32 && $(MAKE) $(MAKESILENT) -f Litecv\CMakeFiles\licvqr.dir\build.make Litecv/CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.s
+.PHONY : QRdec/li_qrcode.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -222,12 +264,16 @@ help:
 	@echo ... rebuild_cache
 	@echo ... licvcore
 	@echo ... licvimgproc
+	@echo ... licvqr
 	@echo ... Core/li_image.obj
 	@echo ... Core/li_image.i
 	@echo ... Core/li_image.s
 	@echo ... Imgproc/li_image_proc.obj
 	@echo ... Imgproc/li_image_proc.i
 	@echo ... Imgproc/li_image_proc.s
+	@echo ... QRdec/li_qrcode.obj
+	@echo ... QRdec/li_qrcode.i
+	@echo ... QRdec/li_qrcode.s
 .PHONY : help
 
 

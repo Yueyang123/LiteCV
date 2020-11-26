@@ -12,6 +12,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Litecv/inc/Core"
   "../Litecv/inc/Imgproc"
+  "../Litecv/inc/QRdec"
   )
 
 # Targets to which this target links.

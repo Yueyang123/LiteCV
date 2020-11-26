@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc liblicvqr.a CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.obj
+C:\MinGW\bin\ranlib.exe liblicvqr.a

@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-24 23:19:14
+ * @LastEditTime: 2020-11-24 23:24:11
  */
 
 #include <stdio.h>
@@ -20,8 +20,7 @@
 
 int main()
 {
-     BYTE* ptr=NULL;
-     Li_Image* out =Li_Load_Image("./picture/lena.bmp",LI_BMP_888);     
+     Li_Image* out =Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);     
      Li_Image* gray=Li_Convert_Image(out,LI_BMP_888_2_LI_BMP_8);
      Li_Save_Image("./gray.bmp",gray);
      Li_Hist*hist=Li_Get_Hist(gray);

@@ -58,6 +58,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Painter.dir/DependInfo.cmake"
   "CMakeFiles/smooth.dir/DependInfo.cmake"
   "CMakeFiles/Hist.dir/DependInfo.cmake"
+  "CMakeFiles/QR.dir/DependInfo.cmake"
   "Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
   "Litecv/CMakeFiles/licvimgproc.dir/DependInfo.cmake"
+  "Litecv/CMakeFiles/licvqr.dir/DependInfo.cmake"
   )

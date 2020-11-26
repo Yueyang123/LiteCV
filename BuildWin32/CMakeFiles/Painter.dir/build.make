@@ -102,6 +102,8 @@ Painter.exe: Litecv/liblicvcore.a
 Painter.exe: ../Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
 Painter.exe: ../Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
 Painter.exe: ../Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
+Painter.exe: ../Litecv/3rd/win_3rd_lib/qr_win_install/lib/libqrencode.a
+Painter.exe: ../Litecv/3rd/win_3rd_lib/quirc_win_install/lib/libquirc.a
 Painter.exe: CMakeFiles/Painter.dir/linklibs.rsp
 Painter.exe: CMakeFiles/Painter.dir/objects1.rsp
 Painter.exe: CMakeFiles/Painter.dir/link.txt

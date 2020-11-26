@@ -5,7 +5,9 @@
             "includePath": [
                 "${workspaceFolder}/Litecv/inc/Core",
                 "${workspaceFolder}/Litecv/inc/Imgproc",
-                "${workspaceFolder}/LiteCV/example/arm9/fb"
+                "${workspaceFolder}/Litecv/inc/QRdec",
+                "${workspaceFolder}/LiteCV/3rd/src/libqrencode",
+                "${workspaceFolder}/LiteCV/3rd/src/quirc/lib"
             ],
             "defines": [
                 "_DEBUG",

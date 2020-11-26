@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libquirc.a CMakeFiles/quirc.dir/lib/decode.c.obj CMakeFiles/quirc.dir/lib/identify.c.obj CMakeFiles/quirc.dir/lib/quirc.c.obj CMakeFiles/quirc.dir/lib/version_db.c.obj
+C:\MinGW\bin\ranlib.exe libquirc.a

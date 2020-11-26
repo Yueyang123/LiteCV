@@ -1,0 +1,5 @@
+C:/Program Files (x86)/QRencode/share/man/man1/qrencode.1
+C:/Program Files (x86)/QRencode/lib/pkgconfig/libqrencode.pc
+C:/Program Files (x86)/QRencode/include/qrencode.h
+C:/Program Files (x86)/QRencode/lib/libqrencode.a
+C:/Program Files (x86)/QRencode/bin/qrencode.exe
