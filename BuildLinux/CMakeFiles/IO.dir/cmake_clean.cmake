@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IO.dir/example/basicio/basicio.c.o"
-  "IO.pdb"
   "IO"
+  "IO.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

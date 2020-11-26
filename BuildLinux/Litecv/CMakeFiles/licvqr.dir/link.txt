@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblicvqr.a  CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.o
+/usr/bin/ranlib liblicvqr.a

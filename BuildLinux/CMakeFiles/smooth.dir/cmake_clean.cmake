@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/smooth.dir/example/conv/conv.c.o"
-  "smooth.pdb"
   "smooth"
+  "smooth.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

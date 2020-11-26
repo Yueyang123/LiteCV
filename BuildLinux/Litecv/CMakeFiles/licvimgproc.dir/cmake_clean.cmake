@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o"
-  "liblicvimgproc.pdb"
   "liblicvimgproc.a"
+  "liblicvimgproc.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

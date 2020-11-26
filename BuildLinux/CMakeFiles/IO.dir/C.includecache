@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -20,7 +20,7 @@ cv.h
 bmp.h
 ../Litecv/inc/Core/bmp.h
 
-/home/swann/SDK/X86/LiteCV/example/basicio/basicio.c
+/home/swann/LiteCV/example/basicio/basicio.c
 stdio.h
 -
 stdlib.h
@@ -30,9 +30,9 @@ string.h
 malloc.h
 -
 bmp.h
-/home/swann/SDK/X86/LiteCV/example/basicio/bmp.h
+/home/swann/LiteCV/example/basicio/bmp.h
 cv.h
-/home/swann/SDK/X86/LiteCV/example/basicio/cv.h
+/home/swann/LiteCV/example/basicio/cv.h
 li_image.h
-/home/swann/SDK/X86/LiteCV/example/basicio/li_image.h
+/home/swann/LiteCV/example/basicio/li_image.h
 

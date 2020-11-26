@@ -5,15 +5,14 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-26 11:43:15
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-26 15:02:47
+ * @LastEditTime: 2020-11-26 18:01:26
  */
 #include <string.h>
 #include "qrencode.h"  
 #include "cv.h"
 #include "li_image.h"
 #include "li_qrcode.h"
-#include "quirc.h"
-#include "quirc_internal.h"
+
 /**
  * @name: Li_QREncode
  * @msg: 二维码生成
@@ -64,61 +63,3 @@ Li_Image* Li_QREncode(BYTE* src)
     return out;
 }
 
-/**
- * @name: Li_QRCode
- * @msg: 图像解码
- * @param {Li_Image* img}
- * @return {BYTE*}
- * @TODO 现在还用不了
- */
-BYTE* Li_QRCode(Li_Image* img)
-{
-    struct quirc *qr;
-    Li_Image* out,*out1;
-	uint8_t *image;
-    if(img->imgdepth==LI_DEP_8U)
-    out=Li_Copy_Image(img);
-    if(img->imgdepth==LI_DEP_24U)
-    out=Li_Convert_Image(img,LI_BGR2GRAY);
-    else if(img->imgdepth==LI_DEP_32U){
-        out1=Li_Convert_Image(img,LI_BGRA2BGR);
-        out=Li_Convert_Image(out1,LI_BGR2GRAY);
-        Li_Destroy_Image(out1);
-    }else return NULL;
-
-	qr = quirc_new();
-	if (!qr) {
-		LILOG("Failed to allocate memory");
-		return NULL;
-	}   	
-	if (quirc_resize(qr, out->width, out->height) < 0) {
-		LILOG("Failed to allocate video memory");
-		return NULL;
-	}
-    int w=out->width;
-    int h=out->height;
-    image = quirc_begin(qr, NULL, NULL);
-    for(int y=0;y<h;y++)
-        for(int x=0;x<w;x++)
-        {
-            BYTE* ptr=out->at(out,x,y);
-            *(image+y*w+x)=*ptr;
-        }
-    quirc_end(qr);
-	int num_codes;
-	int i;
-	num_codes = quirc_count(qr);
-	for (i = 0; i < num_codes; i++) {
-		struct quirc_code code;
-		struct quirc_data data;
-		quirc_decode_error_t err;
-		quirc_extract(qr, i, &code);
-		/* Decoding stage */
-        err = quirc_decode(&code, &data);
-        if (err) {
-            LILOG("DECODE FAILED ");
-        }
-        printf("Data: %s\n", data.payload);
-	}
-    return NULL;
-}

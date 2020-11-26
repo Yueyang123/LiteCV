@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/display.dir/example/arm9/display.cpp.o  -o display -rdynamic Litecv/liblicvcore.a ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng16.a ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a -lm 
