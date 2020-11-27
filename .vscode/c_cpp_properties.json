@@ -7,7 +7,7 @@
                 "${workspaceFolder}/Litecv/inc/Imgproc",
                 "${workspaceFolder}/Litecv/inc/QRdec",
                 "${workspaceFolder}/LiteCV/3rd/src/libqrencode",
-                "${workspaceFolder}/LiteCV/3rd/src/quirc/lib"
+                "${workspaceFolder}/LiteCV/3rd/win_3rd_lib/seetaface_win_install/include"
             ],
             "defines": [
                 "_DEBUG",
