@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-26 19:35:49
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-27 01:17:12
+ * @LastEditTime: 2020-11-28 12:01:40
  */
 
 #include <stdio.h>
@@ -21,6 +21,8 @@ int main()
      //加载保存销毁图片
      Li_Image* out=Li_Load_Image("./picture/whu_rgb888.bmp",LI_BMP_888);
      Li_Save_Image("rgb888.bmp",out);
+     Li_Image* ro= Li_Rotate_180(out);
+     Li_Save_Image("rotate.bmp",ro);
      Li_Destroy_Image(out);
 
      Li_Image* out3=Li_Load_Image("./picture/whu_gray.bmp",LI_BMP_8);  

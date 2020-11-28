@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-11-10 22:15:24
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-27 00:32:12
+ * @LastEditTime: 2020-11-28 12:00:29
  */
 #ifndef LI_CONVERT
 #define LI_CONVERT
@@ -16,7 +16,7 @@
 #include "li_image.h"
 #include "stdlib.h"
 #include "string.h"
-
+#include <math.h>
 /**
  *  Y = 0.299 * R + 0.587 * G + 0.114 * B;
     Y=D+E+F;
@@ -549,6 +549,27 @@ Li_Image* Li_ReShape(Li_Image* img,LONG tag_width,LONG tag_height)
       ptr2=img->at(img,(LONG)((double)j/dx),(LONG)((double)i/dy));
       memcpy(ptr1,ptr2,img->imgdepth+1);
     }
+    return out;
+}
+
+/**
+ * @name: Li_Rotate_180
+ * @msg: 旋转180
+ * @param {Li_Image* img}
+ * @return {*}
+ */
+LI_API
+Li_Image* Li_Rotate_180(Li_Image* img)
+{
+    Li_Image* out=Li_Create_Image(img->width,img->height,img->imgdepth,img->pt);
+    for(int y=0;y<img->height;y++)
+      for(int x=0;x<img->width;x++)
+      {
+        BYTE* ptr1=out->at(out,x,y);
+        BYTE* ptr2=img->at(img,img->width - 1 - x,img->height - 1 - y);
+        for(int k=0;k<img->imgdepth+1;k++)
+          *(ptr1+k)=*(ptr2+k);
+      }
     return out;
 }
 

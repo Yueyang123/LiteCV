@@ -93,6 +93,8 @@ stdlib.h
 E:/WORKPLACE/LiteCV/Litecv/Core/stdlib.h
 string.h
 E:/WORKPLACE/LiteCV/Litecv/Core/string.h
+math.h
+-
 
 E:/WORKPLACE/LiteCV/Litecv/Core/li_image.c
 cv.h

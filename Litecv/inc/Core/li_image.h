@@ -5,7 +5,7 @@
  * @email: 1700695611@qq.com
  * @Date: 2020-10-27 22:43:25
  * @LastEditors: Yueyang
- * @LastEditTime: 2020-11-27 00:57:38
+ * @LastEditTime: 2020-11-28 12:00:44
  */
 #ifndef LI_IMAGE_H
 #define LI_IMAGE_H
@@ -179,6 +179,15 @@ Li_Image* Li_Get_Roi(Li_Image* img,LONG x1,LONG y1,LONG x2,LONG y2);
  */
 LI_API
 Li_Image* Li_ReShape(Li_Image* img,LONG tag_width,LONG tag_height);
+
+/**
+ * @name: Li_Rotate_180
+ * @msg: 旋转180
+ * @param {Li_Image* img}
+ * @return {*}
+ */
+LI_API
+Li_Image* Li_Rotate_180(Li_Image* img);
 
 #endif // !LI_IMAGE_H
 
