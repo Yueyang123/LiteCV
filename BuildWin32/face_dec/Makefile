@@ -10,7 +10,7 @@ LIB+=E:/WORKPLACE/LiteCV/BuildWin32/Litecv/liblicvcore.a
 LIB+=E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/jpeg_win_install/lib/libjpeg.a
 LIB+=E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/png_win_install/lib/libpng.a
 LIB+=E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/zlib_win_install/lib/libz.a
-SEETLIB+=-L E:/WORKPLACE/LiteCV/Litecv/3rd/win_3rd_lib/seetaface_win_install/bin/ -lSeetaFaceDetector -lSeetaFaceLandmarker -lSeetaFaceRecognizer
+SEETLIB+=-L E:/WORKPLACE/LiteCV/BuildWin32/face_dec/bin/ -lSeetaFaceDetector -lSeetaFaceLandmarker -lSeetaFaceRecognizer
 
 
 .PHONY: all clean
