@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libSeetaFaceTracker.so.v2.5.5 -o ../bin/libSeetaFaceTracker.so.v2.5.5 CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o ../bin/libSeetaFaceDetector.so.v2.5.5 ../bin/libSeetaNet.so.v2.5.5 -lpthread -Wl,-rpath,/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildLinux/bin: 

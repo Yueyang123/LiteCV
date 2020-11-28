@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: SeetaFaceTracker
+Description: SeetaFaceTracker module
+Version: v2.5.5
+Requires: SeetaFaceDetector
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} SeetaFaceTracker
+Libs.private: 
+Cflags: -I${includedir}

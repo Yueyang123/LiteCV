@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: SeetaFace2
+Description: SeetaFace2
+Version: v2.5.5
+Requires: SeetaQualityAssessor SeetaFaceRecognizer SeetaFaceLandmarker SeetaFaceTracker SeetaFaceDetector SeetaNet 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  
+Libs.private: 
+Cflags: -I${includedir}

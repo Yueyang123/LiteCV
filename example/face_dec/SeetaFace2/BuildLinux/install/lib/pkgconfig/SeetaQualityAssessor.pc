@@ -1,0 +1,14 @@
+prefix=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildLinux/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: SeetaQualityAssessor
+Description: SeetaQualityAssessor module
+Version: v2.5.5
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} SeetaQualityAssessor
+Libs.private: 
+Cflags: -I${includedir}

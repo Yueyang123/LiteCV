@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: SeetaFaceRecognizer
+Description: SeetaFaceRecognizer module
+Version: v2.5.5
+Requires: SeetaNet
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} SeetaFaceRecognizer
+Libs.private: 
+Cflags: -I${includedir}
