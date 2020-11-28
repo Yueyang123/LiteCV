@@ -1,0 +1,14 @@
+prefix=E:/WORKPLACE/LiteCV/Litecv/3rd/src/SeetaFace2/BuildWin32/install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: SeetaQualityAssessor
+Description: SeetaQualityAssessor module
+Version: a587833
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} SeetaQualityAssessor
+Libs.private: 
+Cflags: -I${includedir}

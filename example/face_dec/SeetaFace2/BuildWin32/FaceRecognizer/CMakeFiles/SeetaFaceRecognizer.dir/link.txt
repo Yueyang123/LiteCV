@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SeetaFaceRecognizer.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\SeetaFaceRecognizer.dir/objects.a @CMakeFiles\SeetaFaceRecognizer.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -O3 -DNDEBUG -shared -o ..\bin\libSeetaFaceRecognizer.dll -Wl,--out-implib,..\lib\libSeetaFaceRecognizer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\SeetaFaceRecognizer.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\SeetaFaceRecognizer.dir\linklibs.rsp
