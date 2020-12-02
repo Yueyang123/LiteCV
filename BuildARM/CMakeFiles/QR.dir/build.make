@@ -60,15 +60,15 @@ include CMakeFiles/QR.dir/flags.make
 CMakeFiles/QR.dir/example/QR/qr.c.o: CMakeFiles/QR.dir/flags.make
 CMakeFiles/QR.dir/example/QR/qr.c.o: ../example/QR/qr.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/QR.dir/example/QR/qr.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/QR.dir/example/QR/qr.c.o   -c /home/swann/SDK/X86/LiteCV/example/QR/qr.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/QR.dir/example/QR/qr.c.o   -c /home/swann/SDK/X86/LiteCV/example/QR/qr.c
 
 CMakeFiles/QR.dir/example/QR/qr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/QR.dir/example/QR/qr.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/QR/qr.c > CMakeFiles/QR.dir/example/QR/qr.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/QR/qr.c > CMakeFiles/QR.dir/example/QR/qr.c.i
 
 CMakeFiles/QR.dir/example/QR/qr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/QR.dir/example/QR/qr.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/QR/qr.c -o CMakeFiles/QR.dir/example/QR/qr.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/QR/qr.c -o CMakeFiles/QR.dir/example/QR/qr.c.s
 
 CMakeFiles/QR.dir/example/QR/qr.c.o.requires:
 
@@ -93,10 +93,10 @@ QR: CMakeFiles/QR.dir/build.make
 QR: Litecv/liblicvcore.a
 QR: Litecv/liblicvimgproc.a
 QR: Litecv/liblicvqr.a
-QR: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-QR: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-QR: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-QR: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+QR: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+QR: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+QR: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+QR: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 QR: CMakeFiles/QR.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable QR"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QR.dir/link.txt --verbose=$(VERBOSE)

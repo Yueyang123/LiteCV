@@ -60,15 +60,15 @@ include CMakeFiles/LICV.dir/flags.make
 CMakeFiles/LICV.dir/main.c.o: CMakeFiles/LICV.dir/flags.make
 CMakeFiles/LICV.dir/main.c.o: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LICV.dir/main.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LICV.dir/main.c.o   -c /home/swann/SDK/X86/LiteCV/main.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LICV.dir/main.c.o   -c /home/swann/SDK/X86/LiteCV/main.c
 
 CMakeFiles/LICV.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LICV.dir/main.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/main.c > CMakeFiles/LICV.dir/main.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/main.c > CMakeFiles/LICV.dir/main.c.i
 
 CMakeFiles/LICV.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LICV.dir/main.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/main.c -o CMakeFiles/LICV.dir/main.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/main.c -o CMakeFiles/LICV.dir/main.c.s
 
 CMakeFiles/LICV.dir/main.c.o.requires:
 
@@ -92,10 +92,10 @@ LICV: CMakeFiles/LICV.dir/main.c.o
 LICV: CMakeFiles/LICV.dir/build.make
 LICV: Litecv/liblicvcore.a
 LICV: Litecv/liblicvimgproc.a
-LICV: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-LICV: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-LICV: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-LICV: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+LICV: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+LICV: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+LICV: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+LICV: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 LICV: CMakeFiles/LICV.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable LICV"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LICV.dir/link.txt --verbose=$(VERBOSE)

@@ -5,9 +5,6 @@ Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/jp
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jerror.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jmorecfg.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jpeglib.h
-Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/png.h
-Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/pngconf.h
-Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/pnglibconf.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/bmp.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/cv.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/li_image.h

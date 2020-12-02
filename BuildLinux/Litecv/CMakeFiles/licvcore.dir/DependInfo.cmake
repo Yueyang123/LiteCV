@@ -14,7 +14,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Litecv/inc/Imgproc"
   "../Litecv/inc/QRdec"
   "../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include"
-  "../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16"
+  "../Litecv/3rd/linux_3rd_lib/png_linux_install/include"
   "../Litecv/3rd/linux_3rd_lib/qr_linux_install/include"
   )
 

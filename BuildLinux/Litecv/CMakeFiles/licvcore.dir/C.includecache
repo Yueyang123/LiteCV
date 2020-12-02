@@ -22,26 +22,6 @@ jpegint.h
 jerror.h
 ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include/jerror.h
 
-../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/png.h
-pnglibconf.h
-../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/pnglibconf.h
-pngconf.h
-../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/pngconf.h
-
-../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/pngconf.h
-limits.h
--
-stddef.h
--
-stdio.h
--
-setjmp.h
--
-time.h
--
-
-../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16/pnglibconf.h
-
 ../Litecv/inc/Core/bmp.h
 stdio.h
 ../Litecv/inc/Core/stdio.h

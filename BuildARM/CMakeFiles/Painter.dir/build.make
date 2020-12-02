@@ -60,15 +60,15 @@ include CMakeFiles/Painter.dir/flags.make
 CMakeFiles/Painter.dir/example/painter/painter.c.o: CMakeFiles/Painter.dir/flags.make
 CMakeFiles/Painter.dir/example/painter/painter.c.o: ../example/painter/painter.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Painter.dir/example/painter/painter.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Painter.dir/example/painter/painter.c.o   -c /home/swann/SDK/X86/LiteCV/example/painter/painter.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Painter.dir/example/painter/painter.c.o   -c /home/swann/SDK/X86/LiteCV/example/painter/painter.c
 
 CMakeFiles/Painter.dir/example/painter/painter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Painter.dir/example/painter/painter.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/painter/painter.c > CMakeFiles/Painter.dir/example/painter/painter.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/painter/painter.c > CMakeFiles/Painter.dir/example/painter/painter.c.i
 
 CMakeFiles/Painter.dir/example/painter/painter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Painter.dir/example/painter/painter.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/painter/painter.c -o CMakeFiles/Painter.dir/example/painter/painter.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/painter/painter.c -o CMakeFiles/Painter.dir/example/painter/painter.c.s
 
 CMakeFiles/Painter.dir/example/painter/painter.c.o.requires:
 
@@ -91,10 +91,10 @@ Painter_EXTERNAL_OBJECTS =
 Painter: CMakeFiles/Painter.dir/example/painter/painter.c.o
 Painter: CMakeFiles/Painter.dir/build.make
 Painter: Litecv/liblicvcore.a
-Painter: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-Painter: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-Painter: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-Painter: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+Painter: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+Painter: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+Painter: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+Painter: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 Painter: CMakeFiles/Painter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Painter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Painter.dir/link.txt --verbose=$(VERBOSE)

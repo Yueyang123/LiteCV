@@ -60,15 +60,15 @@ include Litecv/CMakeFiles/licvimgproc.dir/flags.make
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o: Litecv/CMakeFiles/licvimgproc.dir/flags.make
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o: ../Litecv/Imgproc/li_image_proc.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o"
-	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o   -c /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c
+	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o   -c /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c
 
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.i"
-	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c > CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.i
+	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c > CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.i
 
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.s"
-	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c -o CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.s
+	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c -o CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.s
 
 Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o.requires:
 

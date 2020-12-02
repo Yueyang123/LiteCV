@@ -93,7 +93,7 @@ canny: CMakeFiles/canny.dir/build.make
 canny: Litecv/liblicvcore.a
 canny: Litecv/liblicvimgproc.a
 canny: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a
-canny: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a
+canny: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a
 canny: ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a
 canny: ../Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a
 canny: CMakeFiles/canny.dir/link.txt

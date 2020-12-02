@@ -92,7 +92,7 @@ IO: CMakeFiles/IO.dir/example/basicio/basicio.c.o
 IO: CMakeFiles/IO.dir/build.make
 IO: Litecv/liblicvcore.a
 IO: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a
-IO: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a
+IO: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a
 IO: ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a
 IO: ../Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a
 IO: CMakeFiles/IO.dir/link.txt

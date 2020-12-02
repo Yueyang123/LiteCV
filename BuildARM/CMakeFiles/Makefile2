@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/swann/SDK/X86/LiteCV/BuildARM
 # Target rules for target CMakeFiles/QR.dir
 
 # All Build rule for target.
-CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 CMakeFiles/QR.dir/all: Litecv/CMakeFiles/licvqr.dir/all
 	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/depend
 	$(MAKE) -f CMakeFiles/QR.dir/build.make CMakeFiles/QR.dir/build
@@ -102,8 +102,8 @@ clean: CMakeFiles/QR.dir/clean
 # Target rules for target CMakeFiles/Hist.dir
 
 # All Build rule for target.
-CMakeFiles/Hist.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 CMakeFiles/Hist.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+CMakeFiles/Hist.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/depend
 	$(MAKE) -f CMakeFiles/Hist.dir/build.make CMakeFiles/Hist.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=1,2 "Built target Hist"
@@ -140,8 +140,8 @@ clean: CMakeFiles/Hist.dir/clean
 # Target rules for target CMakeFiles/canny.dir
 
 # All Build rule for target.
-CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+CMakeFiles/canny.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/depend
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=11,12 "Built target canny"
@@ -178,8 +178,8 @@ clean: CMakeFiles/canny.dir/clean
 # Target rules for target CMakeFiles/LICV.dir
 
 # All Build rule for target.
-CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+CMakeFiles/LICV.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/LICV.dir/build.make CMakeFiles/LICV.dir/depend
 	$(MAKE) -f CMakeFiles/LICV.dir/build.make CMakeFiles/LICV.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=5,6 "Built target LICV"
@@ -290,8 +290,8 @@ clean: CMakeFiles/Painter.dir/clean
 # Target rules for target CMakeFiles/conv.dir
 
 # All Build rule for target.
-CMakeFiles/conv.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 CMakeFiles/conv.dir/all: Litecv/CMakeFiles/licvimgproc.dir/all
+CMakeFiles/conv.dir/all: Litecv/CMakeFiles/licvcore.dir/all
 	$(MAKE) -f CMakeFiles/conv.dir/build.make CMakeFiles/conv.dir/depend
 	$(MAKE) -f CMakeFiles/conv.dir/build.make CMakeFiles/conv.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=13,14 "Built target conv"

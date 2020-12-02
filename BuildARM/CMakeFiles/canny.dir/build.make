@@ -60,15 +60,15 @@ include CMakeFiles/canny.dir/flags.make
 CMakeFiles/canny.dir/example/canny/canny.c.o: CMakeFiles/canny.dir/flags.make
 CMakeFiles/canny.dir/example/canny/canny.c.o: ../example/canny/canny.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/canny.dir/example/canny/canny.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/canny.dir/example/canny/canny.c.o   -c /home/swann/SDK/X86/LiteCV/example/canny/canny.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/canny.dir/example/canny/canny.c.o   -c /home/swann/SDK/X86/LiteCV/example/canny/canny.c
 
 CMakeFiles/canny.dir/example/canny/canny.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/canny.dir/example/canny/canny.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/canny/canny.c > CMakeFiles/canny.dir/example/canny/canny.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/canny/canny.c > CMakeFiles/canny.dir/example/canny/canny.c.i
 
 CMakeFiles/canny.dir/example/canny/canny.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/canny.dir/example/canny/canny.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/canny/canny.c -o CMakeFiles/canny.dir/example/canny/canny.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/canny/canny.c -o CMakeFiles/canny.dir/example/canny/canny.c.s
 
 CMakeFiles/canny.dir/example/canny/canny.c.o.requires:
 
@@ -92,10 +92,10 @@ canny: CMakeFiles/canny.dir/example/canny/canny.c.o
 canny: CMakeFiles/canny.dir/build.make
 canny: Litecv/liblicvcore.a
 canny: Litecv/liblicvimgproc.a
-canny: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-canny: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-canny: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-canny: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+canny: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+canny: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+canny: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+canny: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 canny: CMakeFiles/canny.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable canny"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/canny.dir/link.txt --verbose=$(VERBOSE)

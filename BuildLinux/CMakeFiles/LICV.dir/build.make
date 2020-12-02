@@ -93,7 +93,7 @@ LICV: CMakeFiles/LICV.dir/build.make
 LICV: Litecv/liblicvcore.a
 LICV: Litecv/liblicvimgproc.a
 LICV: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a
-LICV: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a
+LICV: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a
 LICV: ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a
 LICV: ../Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a
 LICV: CMakeFiles/LICV.dir/link.txt

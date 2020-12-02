@@ -94,7 +94,7 @@ QR: Litecv/liblicvcore.a
 QR: Litecv/liblicvimgproc.a
 QR: Litecv/liblicvqr.a
 QR: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a
-QR: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a
+QR: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a
 QR: ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a
 QR: ../Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a
 QR: CMakeFiles/QR.dir/link.txt

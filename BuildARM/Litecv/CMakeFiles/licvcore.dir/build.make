@@ -60,15 +60,15 @@ include Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: Litecv/CMakeFiles/licvcore.dir/flags.make
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/li_image.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o"
-	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/licvcore.dir/Core/li_image.c.o   -c /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c
+	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/licvcore.dir/Core/li_image.c.o   -c /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/licvcore.dir/Core/li_image.c.i"
-	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c > CMakeFiles/licvcore.dir/Core/li_image.c.i
+	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c > CMakeFiles/licvcore.dir/Core/li_image.c.i
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/licvcore.dir/Core/li_image.c.s"
-	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c -o CMakeFiles/licvcore.dir/Core/li_image.c.s
+	cd /home/swann/SDK/X86/LiteCV/BuildARM/Litecv && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c -o CMakeFiles/licvcore.dir/Core/li_image.c.s
 
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o.requires:
 

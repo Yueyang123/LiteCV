@@ -92,7 +92,7 @@ Painter: CMakeFiles/Painter.dir/example/painter/painter.c.o
 Painter: CMakeFiles/Painter.dir/build.make
 Painter: Litecv/liblicvcore.a
 Painter: ../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a
-Painter: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a
+Painter: ../Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng.a
 Painter: ../Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a
 Painter: ../Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a
 Painter: CMakeFiles/Painter.dir/link.txt

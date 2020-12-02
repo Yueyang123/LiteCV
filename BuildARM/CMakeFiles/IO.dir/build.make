@@ -60,15 +60,15 @@ include CMakeFiles/IO.dir/flags.make
 CMakeFiles/IO.dir/example/basicio/basicio.c.o: CMakeFiles/IO.dir/flags.make
 CMakeFiles/IO.dir/example/basicio/basicio.c.o: ../example/basicio/basicio.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/IO.dir/example/basicio/basicio.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IO.dir/example/basicio/basicio.c.o   -c /home/swann/SDK/X86/LiteCV/example/basicio/basicio.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IO.dir/example/basicio/basicio.c.o   -c /home/swann/SDK/X86/LiteCV/example/basicio/basicio.c
 
 CMakeFiles/IO.dir/example/basicio/basicio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IO.dir/example/basicio/basicio.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/basicio/basicio.c > CMakeFiles/IO.dir/example/basicio/basicio.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/basicio/basicio.c > CMakeFiles/IO.dir/example/basicio/basicio.c.i
 
 CMakeFiles/IO.dir/example/basicio/basicio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IO.dir/example/basicio/basicio.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/basicio/basicio.c -o CMakeFiles/IO.dir/example/basicio/basicio.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/basicio/basicio.c -o CMakeFiles/IO.dir/example/basicio/basicio.c.s
 
 CMakeFiles/IO.dir/example/basicio/basicio.c.o.requires:
 
@@ -91,10 +91,10 @@ IO_EXTERNAL_OBJECTS =
 IO: CMakeFiles/IO.dir/example/basicio/basicio.c.o
 IO: CMakeFiles/IO.dir/build.make
 IO: Litecv/liblicvcore.a
-IO: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-IO: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-IO: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-IO: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+IO: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+IO: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+IO: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+IO: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 IO: CMakeFiles/IO.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable IO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IO.dir/link.txt --verbose=$(VERBOSE)

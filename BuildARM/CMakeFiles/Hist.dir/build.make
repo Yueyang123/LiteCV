@@ -60,15 +60,15 @@ include CMakeFiles/Hist.dir/flags.make
 CMakeFiles/Hist.dir/example/Hist/Hist.c.o: CMakeFiles/Hist.dir/flags.make
 CMakeFiles/Hist.dir/example/Hist/Hist.c.o: ../example/Hist/Hist.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Hist.dir/example/Hist/Hist.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Hist.dir/example/Hist/Hist.c.o   -c /home/swann/SDK/X86/LiteCV/example/Hist/Hist.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Hist.dir/example/Hist/Hist.c.o   -c /home/swann/SDK/X86/LiteCV/example/Hist/Hist.c
 
 CMakeFiles/Hist.dir/example/Hist/Hist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Hist.dir/example/Hist/Hist.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/Hist/Hist.c > CMakeFiles/Hist.dir/example/Hist/Hist.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/Hist/Hist.c > CMakeFiles/Hist.dir/example/Hist/Hist.c.i
 
 CMakeFiles/Hist.dir/example/Hist/Hist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Hist.dir/example/Hist/Hist.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/Hist/Hist.c -o CMakeFiles/Hist.dir/example/Hist/Hist.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/Hist/Hist.c -o CMakeFiles/Hist.dir/example/Hist/Hist.c.s
 
 CMakeFiles/Hist.dir/example/Hist/Hist.c.o.requires:
 
@@ -92,10 +92,10 @@ Hist: CMakeFiles/Hist.dir/example/Hist/Hist.c.o
 Hist: CMakeFiles/Hist.dir/build.make
 Hist: Litecv/liblicvcore.a
 Hist: Litecv/liblicvimgproc.a
-Hist: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-Hist: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-Hist: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-Hist: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+Hist: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+Hist: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+Hist: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+Hist: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 Hist: CMakeFiles/Hist.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Hist"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Hist.dir/link.txt --verbose=$(VERBOSE)

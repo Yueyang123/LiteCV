@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../Litecv/3rd/arm_3rd_build/qr_linux_install/include/qrencode.h
+../Litecv/3rd/arm_3rd_lib/qr_arm_install/include/qrencode.h
 
 ../Litecv/inc/Core/bmp.h
 stdio.h

@@ -60,15 +60,15 @@ include CMakeFiles/conv.dir/flags.make
 CMakeFiles/conv.dir/example/conv/conv.c.o: CMakeFiles/conv.dir/flags.make
 CMakeFiles/conv.dir/example/conv/conv.c.o: ../example/conv/conv.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/conv.dir/example/conv/conv.c.o"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/conv.dir/example/conv/conv.c.o   -c /home/swann/SDK/X86/LiteCV/example/conv/conv.c
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/conv.dir/example/conv/conv.c.o   -c /home/swann/SDK/X86/LiteCV/example/conv/conv.c
 
 CMakeFiles/conv.dir/example/conv/conv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/conv.dir/example/conv/conv.c.i"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/conv/conv.c > CMakeFiles/conv.dir/example/conv/conv.c.i
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/conv/conv.c > CMakeFiles/conv.dir/example/conv/conv.c.i
 
 CMakeFiles/conv.dir/example/conv/conv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/conv.dir/example/conv/conv.c.s"
-	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/conv/conv.c -o CMakeFiles/conv.dir/example/conv/conv.c.s
+	/home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/conv/conv.c -o CMakeFiles/conv.dir/example/conv/conv.c.s
 
 CMakeFiles/conv.dir/example/conv/conv.c.o.requires:
 
@@ -92,10 +92,10 @@ conv: CMakeFiles/conv.dir/example/conv/conv.c.o
 conv: CMakeFiles/conv.dir/build.make
 conv: Litecv/liblicvcore.a
 conv: Litecv/liblicvimgproc.a
-conv: ../Litecv/3rd/arm_3rd_build/jpeg_arm_install/lib/libjpeg.a
-conv: ../Litecv/3rd/arm_3rd_build/png_arm_install/lib/libpng.a
-conv: ../Litecv/3rd/arm_3rd_build/zlib_arm_install/lib/libz.a
-conv: ../Litecv/3rd/arm_3rd_build/qr_linux_install/lib/libqrencode.a
+conv: ../Litecv/3rd/arm_3rd_lib/jpeg_arm_install/lib/libjpeg.a
+conv: ../Litecv/3rd/arm_3rd_lib/png_arm_install/lib/libpng.a
+conv: ../Litecv/3rd/arm_3rd_lib/zlib_arm_install/lib/libz.a
+conv: ../Litecv/3rd/arm_3rd_lib/qr_arm_install/lib/libqrencode.a
 conv: CMakeFiles/conv.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swann/SDK/X86/LiteCV/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable conv"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/conv.dir/link.txt --verbose=$(VERBOSE)
