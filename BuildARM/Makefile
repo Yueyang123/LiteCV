@@ -163,19 +163,6 @@ LICV/fast:
 .PHONY : LICV/fast
 
 #=============================================================================
-# Target rules for targets named smooth
-
-# Build rule for target.
-smooth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 smooth
-.PHONY : smooth
-
-# fast build rule for target.
-smooth/fast:
-	$(MAKE) -f CMakeFiles/smooth.dir/build.make CMakeFiles/smooth.dir/build
-.PHONY : smooth/fast
-
-#=============================================================================
 # Target rules for targets named IO
 
 # Build rule for target.
@@ -200,6 +187,19 @@ Painter: cmake_check_build_system
 Painter/fast:
 	$(MAKE) -f CMakeFiles/Painter.dir/build.make CMakeFiles/Painter.dir/build
 .PHONY : Painter/fast
+
+#=============================================================================
+# Target rules for targets named conv
+
+# Build rule for target.
+conv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 conv
+.PHONY : conv
+
+# fast build rule for target.
+conv/fast:
+	$(MAKE) -f CMakeFiles/conv.dir/build.make CMakeFiles/conv.dir/build
+.PHONY : conv/fast
 
 #=============================================================================
 # Target rules for targets named licvcore
@@ -354,7 +354,7 @@ example/conv/conv.o: example/conv/conv.c.o
 
 # target to build an object file
 example/conv/conv.c.o:
-	$(MAKE) -f CMakeFiles/smooth.dir/build.make CMakeFiles/smooth.dir/example/conv/conv.c.o
+	$(MAKE) -f CMakeFiles/conv.dir/build.make CMakeFiles/conv.dir/example/conv/conv.c.o
 .PHONY : example/conv/conv.c.o
 
 example/conv/conv.i: example/conv/conv.c.i
@@ -363,7 +363,7 @@ example/conv/conv.i: example/conv/conv.c.i
 
 # target to preprocess a source file
 example/conv/conv.c.i:
-	$(MAKE) -f CMakeFiles/smooth.dir/build.make CMakeFiles/smooth.dir/example/conv/conv.c.i
+	$(MAKE) -f CMakeFiles/conv.dir/build.make CMakeFiles/conv.dir/example/conv/conv.c.i
 .PHONY : example/conv/conv.c.i
 
 example/conv/conv.s: example/conv/conv.c.s
@@ -372,7 +372,7 @@ example/conv/conv.s: example/conv/conv.c.s
 
 # target to generate assembly for a file
 example/conv/conv.c.s:
-	$(MAKE) -f CMakeFiles/smooth.dir/build.make CMakeFiles/smooth.dir/example/conv/conv.c.s
+	$(MAKE) -f CMakeFiles/conv.dir/build.make CMakeFiles/conv.dir/example/conv/conv.c.s
 .PHONY : example/conv/conv.c.s
 
 example/painter/painter.o: example/painter/painter.c.o
@@ -441,9 +441,9 @@ help:
 	@echo "... canny"
 	@echo "... edit_cache"
 	@echo "... LICV"
-	@echo "... smooth"
 	@echo "... IO"
 	@echo "... Painter"
+	@echo "... conv"
 	@echo "... licvcore"
 	@echo "... licvimgproc"
 	@echo "... licvqr"

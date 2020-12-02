@@ -10,6 +10,7 @@ Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/arm_3rd_build/pn
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/3rd/arm_3rd_build/png_arm_install/include/pnglibconf.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/bmp.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/cv.h
+Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/inc/Core/li_image.h
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/bmp.c
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/jpeg.c
 Litecv/CMakeFiles/licvcore.dir/Core/li_image.c.o: ../Litecv/Core/li_convert.c

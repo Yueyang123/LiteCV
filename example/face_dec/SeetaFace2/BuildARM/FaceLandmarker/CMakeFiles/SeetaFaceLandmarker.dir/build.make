@@ -60,15 +60,15 @@ include FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/flags.make
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o: FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/flags.make
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o: ../FaceLandmarker/src/seeta/FaceLandmarker.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/src/seeta/FaceLandmarker.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/src/seeta/FaceLandmarker.cpp
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/src/seeta/FaceLandmarker.cpp > CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/src/seeta/FaceLandmarker.cpp > CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.i
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/src/seeta/FaceLandmarker.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/src/seeta/FaceLandmarker.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.s
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o.requires:
 
@@ -84,15 +84,15 @@ FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/src/seeta/FaceLandmarker.cpp.o
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.o: FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/flags.make
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.o: ../FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.i
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.s
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cpp.o.requires:
 
@@ -108,15 +108,15 @@ FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/FaceLandmarkerPrivate.cp
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o: FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/flags.make
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o: ../FaceLandmarker/seeta/common_alignment.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/common_alignment.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/common_alignment.cpp
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/common_alignment.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/common_alignment.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.i
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/common_alignment.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/common_alignment.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.s
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o.requires:
 
@@ -132,15 +132,15 @@ FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/common_alignment.cpp.o.p
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o: FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/flags.make
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o: ../FaceLandmarker/seeta/graphics2d.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/graphics2d.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/graphics2d.cpp
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/graphics2d.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/graphics2d.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.i
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/graphics2d.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/graphics2d.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.s
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o.requires:
 
@@ -156,15 +156,15 @@ FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/graphics2d.cpp.o.provide
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.o: FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/flags.make
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.o: ../FaceLandmarker/seeta/ImageProcess.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/ImageProcess.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/ImageProcess.cpp
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/ImageProcess.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/ImageProcess.cpp > CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.i
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/ImageProcess.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceLandmarker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceLandmarker/seeta/ImageProcess.cpp -o CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.s
 
 FaceLandmarker/CMakeFiles/SeetaFaceLandmarker.dir/seeta/ImageProcess.cpp.o.requires:
 

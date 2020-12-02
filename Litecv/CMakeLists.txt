@@ -16,19 +16,19 @@ SET(LICV_PROC ${PROC_SRCS})
 #linux中不需要指定库的头文件目录
 if(LINUX)
     if(USE_JPEG)
-    include_directories(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include)
-    link_libraries(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a)
+    include_directories(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include)
+    link_libraries(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/jpeg_linux_install/lib/libjpeg.a)
     endif(USE_JPEG)
 
     if(USE_PNG)
-    include_directories(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/include)
-    link_libraries(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a)
-    link_libraries(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a)
+    include_directories(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16)
+    link_libraries(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/png_linux_install/lib/libpng16.a)
+    link_libraries(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/zlib_linux_install/lib/libz.a)
     endif(USE_PNG)
 
     if(USE_QR)
-    include_directories(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/qr_linux_install/include)
-    link_libraries(/home/swann/LiteCV/Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a)
+    include_directories(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/qr_linux_install/include)
+    link_libraries(/home/swann/SDK/X86/LiteCV/Litecv/3rd/linux_3rd_lib/qr_linux_install/lib/libqrencode.a)
     endif(USE_QR)
 
 

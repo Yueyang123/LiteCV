@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/QR.dir/example/QR/qr.c.o"
-  "QR"
   "QR.pdb"
+  "QR"
 )
 
 # Per-language clean rules from dependency scanning.

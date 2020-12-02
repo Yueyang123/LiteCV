@@ -60,15 +60,15 @@ include SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o: ../SeetaNet/src/SeetaNetForward.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetForward.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetForward.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetForward.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetForward.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetForward.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetForward.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o.requires:
 
@@ -84,15 +84,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetForward.cpp.o.provides.build: Seeta
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o: ../SeetaNet/src/SeetaNetMathCPU.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetMathCPU.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetMathCPU.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetMathCPU.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetMathCPU.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetMathCPU.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetMathCPU.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o.requires:
 
@@ -108,15 +108,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetMathCPU.cpp.o.provides.build: Seeta
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o: ../SeetaNet/src/SeetaNetProto.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetProto.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetProto.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetProto.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetProto.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetProto.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetProto.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o.requires:
 
@@ -132,15 +132,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetProto.cpp.o.provides.build: SeetaNe
 SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o: ../SeetaNet/src/ReadFromSeetaNetLayer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/ReadFromSeetaNetLayer.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/ReadFromSeetaNetLayer.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/ReadFromSeetaNetLayer.cpp > CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/ReadFromSeetaNetLayer.cpp > CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/ReadFromSeetaNetLayer.cpp -o CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/ReadFromSeetaNetLayer.cpp -o CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o.requires:
 
@@ -156,15 +156,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/ReadFromSeetaNetLayer.cpp.o.provides.build:
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o: ../SeetaNet/src/orz/mem/vat.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/vat.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/vat.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/vat.cpp > CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/vat.cpp > CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/vat.cpp -o CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/vat.cpp -o CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o.requires:
 
@@ -180,15 +180,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/vat.cpp.o.provides.build: SeetaNet/
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o: ../SeetaNet/src/orz/mem/pot.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/pot.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/pot.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/pot.cpp > CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/pot.cpp > CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/pot.cpp -o CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/mem/pot.cpp -o CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o.requires:
 
@@ -204,15 +204,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/mem/pot.cpp.o.provides.build: SeetaNet/
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o: ../SeetaNet/src/orz/sync/shotgun.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/shotgun.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/shotgun.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/shotgun.cpp > CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/shotgun.cpp > CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/shotgun.cpp -o CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/shotgun.cpp -o CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o.requires:
 
@@ -228,15 +228,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/shotgun.cpp.o.provides.build: Seet
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o: ../SeetaNet/src/orz/sync/cartridge.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/cartridge.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/cartridge.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/cartridge.cpp > CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/cartridge.cpp > CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/cartridge.cpp -o CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/cartridge.cpp -o CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o.requires:
 
@@ -252,15 +252,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/cartridge.cpp.o.provides.build: Se
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o: ../SeetaNet/src/orz/sync/canyon.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/canyon.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/canyon.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/canyon.cpp > CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/canyon.cpp > CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/canyon.cpp -o CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/sync/canyon.cpp -o CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o.requires:
 
@@ -276,15 +276,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/sync/canyon.cpp.o.provides.build: Seeta
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o: ../SeetaNet/src/orz/tools/box.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/tools/box.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/tools/box.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/tools/box.cpp > CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/tools/box.cpp > CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/tools/box.cpp -o CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/orz/tools/box.cpp -o CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o.requires:
 
@@ -300,15 +300,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/orz/tools/box.cpp.o.provides.build: SeetaNe
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o: ../SeetaNet/src/SeetaNet.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNet.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNet.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNet.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNet.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNet.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNet.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o.requires:
 
@@ -324,15 +324,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNet.cpp.o.provides.build: SeetaNet/CMa
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o: ../SeetaNet/src/SeetaNetParseProto.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetParseProto.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetParseProto.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetParseProto.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetParseProto.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetParseProto.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetParseProto.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o.requires:
 
@@ -348,15 +348,15 @@ SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetParseProto.cpp.o.provides.build: Se
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.o: SeetaNet/CMakeFiles/SeetaNet.dir/flags.make
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.o: ../SeetaNet/src/SeetaNetIm2Col.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetIm2Col.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetIm2Col.cpp
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetIm2Col.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetIm2Col.cpp > CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.i
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetIm2Col.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/SeetaNet && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/SeetaNet/src/SeetaNetIm2Col.cpp -o CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.s
 
 SeetaNet/CMakeFiles/SeetaNet.dir/src/SeetaNetIm2Col.cpp.o.requires:
 

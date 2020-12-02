@@ -50,6 +50,12 @@ cv.h
 
 ../Litecv/inc/Core/cv.h
 
+../Litecv/inc/Core/li_image.h
+cv.h
+../Litecv/inc/Core/cv.h
+bmp.h
+../Litecv/inc/Core/bmp.h
+
 /home/swann/SDK/X86/LiteCV/Litecv/Core/bmp.c
 stdio.h
 -
@@ -81,10 +87,14 @@ cv.h
 /home/swann/SDK/X86/LiteCV/Litecv/Core/cv.h
 bmp.h
 /home/swann/SDK/X86/LiteCV/Litecv/Core/bmp.h
+li_image.h
+/home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.h
 stdlib.h
 /home/swann/SDK/X86/LiteCV/Litecv/Core/stdlib.h
 string.h
 /home/swann/SDK/X86/LiteCV/Litecv/Core/string.h
+math.h
+-
 
 /home/swann/SDK/X86/LiteCV/Litecv/Core/li_image.c
 cv.h
@@ -95,10 +105,10 @@ string.h
 /home/swann/SDK/X86/LiteCV/Litecv/Core/string.h
 bmp.c
 /home/swann/SDK/X86/LiteCV/Litecv/Core/bmp.c
-png.c
-/home/swann/SDK/X86/LiteCV/Litecv/Core/png.c
 jpeg.c
 /home/swann/SDK/X86/LiteCV/Litecv/Core/jpeg.c
+png.c
+/home/swann/SDK/X86/LiteCV/Litecv/Core/png.c
 li_convert.c
 /home/swann/SDK/X86/LiteCV/Litecv/Core/li_convert.c
 li_painter.c

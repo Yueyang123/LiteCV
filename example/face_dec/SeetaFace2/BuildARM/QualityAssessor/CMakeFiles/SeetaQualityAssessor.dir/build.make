@@ -60,15 +60,15 @@ include QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o: QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o: ../QualityAssessor/src/PoseQuality.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/PoseQuality.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/PoseQuality.cpp
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/PoseQuality.cpp > CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/PoseQuality.cpp > CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.i
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/PoseQuality.cpp -o CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/PoseQuality.cpp -o CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.s
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o.requires:
 
@@ -84,15 +84,15 @@ QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/PoseQuality.cpp.o.provid
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o: QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o: ../QualityAssessor/src/QualityAssessor.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/QualityAssessor.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/QualityAssessor.cpp
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/QualityAssessor.cpp > CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/QualityAssessor.cpp > CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.i
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/QualityAssessor.cpp -o CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/QualityAssessor.cpp -o CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.s
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o.requires:
 
@@ -108,15 +108,15 @@ QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/QualityAssessor.cpp.o.pr
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o: QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o: ../QualityAssessor/src/ClarityQuality.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/ClarityQuality.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/ClarityQuality.cpp
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/ClarityQuality.cpp > CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/ClarityQuality.cpp > CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.i
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/ClarityQuality.cpp -o CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/src/ClarityQuality.cpp -o CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.s
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o.requires:
 
@@ -132,15 +132,15 @@ QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/src/ClarityQuality.cpp.o.pro
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o: QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o: ../QualityAssessor/seeta/common_alignment.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/common_alignment.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/common_alignment.cpp
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/common_alignment.cpp > CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/common_alignment.cpp > CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.i
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/common_alignment.cpp -o CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/common_alignment.cpp -o CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.s
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o.requires:
 
@@ -156,15 +156,15 @@ QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/common_alignment.cpp.o
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o: QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o: ../QualityAssessor/seeta/graphics2d.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/graphics2d.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/graphics2d.cpp
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/graphics2d.cpp > CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/graphics2d.cpp > CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.i
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/graphics2d.cpp -o CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/graphics2d.cpp -o CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.s
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o.requires:
 
@@ -180,15 +180,15 @@ QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/graphics2d.cpp.o.provi
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.o: QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/flags.make
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.o: ../QualityAssessor/seeta/ImageProcess.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/ImageProcess.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/ImageProcess.cpp
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/ImageProcess.cpp > CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/ImageProcess.cpp > CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.i
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/ImageProcess.cpp -o CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/QualityAssessor && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/QualityAssessor/seeta/ImageProcess.cpp -o CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.s
 
 QualityAssessor/CMakeFiles/SeetaQualityAssessor.dir/seeta/ImageProcess.cpp.o.requires:
 
