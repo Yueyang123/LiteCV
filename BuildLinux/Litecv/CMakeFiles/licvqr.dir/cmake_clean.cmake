@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/licvqr.dir/QRdec/li_qrcode.c.o"
-  "liblicvqr.a"
   "liblicvqr.pdb"
+  "liblicvqr.a"
 )
 
 # Per-language clean rules from dependency scanning.

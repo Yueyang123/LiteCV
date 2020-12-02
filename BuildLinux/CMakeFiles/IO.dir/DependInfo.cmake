@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/swann/LiteCV/example/basicio/basicio.c" "/home/swann/LiteCV/BuildLinux/CMakeFiles/IO.dir/example/basicio/basicio.c.o"
+  "/home/swann/SDK/X86/LiteCV/example/basicio/basicio.c" "/home/swann/SDK/X86/LiteCV/BuildLinux/CMakeFiles/IO.dir/example/basicio/basicio.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/swann/LiteCV/BuildLinux/Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
+  "/home/swann/SDK/X86/LiteCV/BuildLinux/Litecv/CMakeFiles/licvcore.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

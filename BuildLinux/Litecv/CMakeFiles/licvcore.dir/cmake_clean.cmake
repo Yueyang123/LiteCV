@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/licvcore.dir/Core/li_image.c.o"
-  "liblicvcore.a"
   "liblicvcore.pdb"
+  "liblicvcore.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -60,15 +60,15 @@ include FaceDetector/CMakeFiles/SeetaFaceDetector.dir/flags.make
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o: FaceDetector/CMakeFiles/SeetaFaceDetector.dir/flags.make
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o: ../FaceDetector/src/seeta/FaceDetector.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/src/seeta/FaceDetector.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/src/seeta/FaceDetector.cpp
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/src/seeta/FaceDetector.cpp > CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/src/seeta/FaceDetector.cpp > CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.i
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/src/seeta/FaceDetector.cpp -o CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/src/seeta/FaceDetector.cpp -o CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.s
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o.requires:
 
@@ -84,15 +84,15 @@ FaceDetector/CMakeFiles/SeetaFaceDetector.dir/src/seeta/FaceDetector.cpp.o.provi
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o: FaceDetector/CMakeFiles/SeetaFaceDetector.dir/flags.make
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o: ../FaceDetector/seeta/common_alignment.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/common_alignment.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/common_alignment.cpp
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/common_alignment.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/common_alignment.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.i
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/common_alignment.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/common_alignment.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.s
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o.requires:
 
@@ -108,15 +108,15 @@ FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/common_alignment.cpp.o.provi
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o: FaceDetector/CMakeFiles/SeetaFaceDetector.dir/flags.make
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o: ../FaceDetector/seeta/FaceDetectorPrivate.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/FaceDetectorPrivate.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/FaceDetectorPrivate.cpp
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/FaceDetectorPrivate.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/FaceDetectorPrivate.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.i
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/FaceDetectorPrivate.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/FaceDetectorPrivate.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.s
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o.requires:
 
@@ -132,15 +132,15 @@ FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/FaceDetectorPrivate.cpp.o.pr
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o: FaceDetector/CMakeFiles/SeetaFaceDetector.dir/flags.make
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o: ../FaceDetector/seeta/graphics2d.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/graphics2d.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/graphics2d.cpp
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/graphics2d.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/graphics2d.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.i
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/graphics2d.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/graphics2d.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.s
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o.requires:
 
@@ -156,15 +156,15 @@ FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/graphics2d.cpp.o.provides.bu
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.o: FaceDetector/CMakeFiles/SeetaFaceDetector.dir/flags.make
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.o: ../FaceDetector/seeta/ImageProcess.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/ImageProcess.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/ImageProcess.cpp
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/ImageProcess.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/ImageProcess.cpp > CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.i
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/ImageProcess.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceDetector && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceDetector/seeta/ImageProcess.cpp -o CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.s
 
 FaceDetector/CMakeFiles/SeetaFaceDetector.dir/seeta/ImageProcess.cpp.o.requires:
 

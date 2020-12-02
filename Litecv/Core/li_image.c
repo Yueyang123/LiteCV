@@ -276,7 +276,7 @@ void Li_Wait_Q()
 {
   char b=0;
   while(b!='q'){
-  scanf("%c",b);
+  scanf("%c",&b);
   }
 }
 

@@ -60,15 +60,15 @@ include FaceTracker/CMakeFiles/SeetaFaceTracker.dir/flags.make
 FaceTracker/CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o: FaceTracker/CMakeFiles/SeetaFaceTracker.dir/flags.make
 FaceTracker/CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o: ../FaceTracker/src/seeta/FaceTracker.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object FaceTracker/CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceTracker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceTracker/src/seeta/FaceTracker.cpp
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceTracker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o -c /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceTracker/src/seeta/FaceTracker.cpp
 
 FaceTracker/CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.i"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceTracker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceTracker/src/seeta/FaceTracker.cpp > CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.i
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceTracker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceTracker/src/seeta/FaceTracker.cpp > CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.i
 
 FaceTracker/CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.s"
-	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceTracker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-linux-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceTracker/src/seeta/FaceTracker.cpp -o CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.s
+	cd /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/BuildARM/FaceTracker && /home/swann/SDK/IMX_283A/CrossCompile/gcc-4.4.4-glibc-2.11.1-multilib-1.0/arm-fsl-linux-gnueabi/bin/arm-fsl-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swann/SDK/X86/LiteCV/example/face_dec/SeetaFace2/FaceTracker/src/seeta/FaceTracker.cpp -o CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.s
 
 FaceTracker/CMakeFiles/SeetaFaceTracker.dir/src/seeta/FaceTracker.cpp.o.requires:
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/swann/LiteCV/Litecv/Imgproc/li_image_proc.c" "/home/swann/LiteCV/BuildLinux/Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o"
+  "/home/swann/SDK/X86/LiteCV/Litecv/Imgproc/li_image_proc.c" "/home/swann/SDK/X86/LiteCV/BuildLinux/Litecv/CMakeFiles/licvimgproc.dir/Imgproc/li_image_proc.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,7 +14,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Litecv/inc/Imgproc"
   "../Litecv/inc/QRdec"
   "../Litecv/3rd/linux_3rd_lib/jpeg_linux_install/include"
-  "../Litecv/3rd/linux_3rd_lib/png_linux_install/include"
+  "../Litecv/3rd/linux_3rd_lib/png_linux_install/include/libpng16"
   "../Litecv/3rd/linux_3rd_lib/qr_linux_install/include"
   )
 

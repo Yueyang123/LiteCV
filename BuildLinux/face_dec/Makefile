@@ -17,9 +17,9 @@ SEETLIB+=-L /home/swann/SDK/X86/LiteCV/BuildLinux/face_dec/bin -lSeetaFaceDetect
 all:$(TARGET)
 
 $(TARGET) :$(OBJS)
-	$(LD)  $^  $(INCLUDE) $(SEETLIB) -o $@  $(LIB)
+	$(LD)  $^  $(INCLUDE) $(SEETLIB) -std=c++11 -o $@  $(LIB)
 %.o:%.cpp
-	$(CXX) $(INCLUDE) $(SEETLIB) -c $< -o $@
+	$(CXX) $(INCLUDE) $(SEETLIB) -std=c++11 -c $< -o $@
 
 clean :
 	rm -f $(OBJS) $(TARGET) 

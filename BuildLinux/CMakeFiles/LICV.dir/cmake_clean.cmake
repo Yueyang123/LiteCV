@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LICV.dir/main.c.o"
-  "LICV"
   "LICV.pdb"
+  "LICV"
 )
 
 # Per-language clean rules from dependency scanning.

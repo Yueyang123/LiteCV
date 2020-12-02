@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Hist.dir/example/Hist/Hist.c.o"
-  "Hist"
   "Hist.pdb"
+  "Hist"
 )
 
 # Per-language clean rules from dependency scanning.

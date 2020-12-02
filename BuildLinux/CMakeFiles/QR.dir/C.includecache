@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -22,11 +22,11 @@ bmp.h
 
 ../Litecv/inc/QRdec/li_qrcode.h
 
-/home/swann/LiteCV/example/QR/qr.c
+/home/swann/SDK/X86/LiteCV/example/QR/qr.c
 cv.h
-/home/swann/LiteCV/example/QR/cv.h
+/home/swann/SDK/X86/LiteCV/example/QR/cv.h
 li_image.h
-/home/swann/LiteCV/example/QR/li_image.h
+/home/swann/SDK/X86/LiteCV/example/QR/li_image.h
 li_qrcode.h
-/home/swann/LiteCV/example/QR/li_qrcode.h
+/home/swann/SDK/X86/LiteCV/example/QR/li_qrcode.h
 

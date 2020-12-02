@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/canny.dir/example/canny/canny.c.o"
-  "canny"
   "canny.pdb"
+  "canny"
 )
 
 # Per-language clean rules from dependency scanning.
